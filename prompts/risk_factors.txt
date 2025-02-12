@@ -1,0 +1,30 @@
+Using the Risk Factors section of this 10-K report, please summarize the company's key risk factors. The target readers are investors who want to gain a clearer understanding of the potential risks the company faces. Rank the risk factors from most significant to least significant. When crafting your response, please adhere to the following instructions for each entry:
+
+1. risk_factor_title: [Official title or brief descriptor of the risk factor]  
+2. summary: [A short and concise overview (max 280 characters) explaining what the risk factor is and why it matters.]  
+3. details: [A more in-depth explanation (max 500 characters) providing clear, investor-friendly insights into the risk factor, its potential impact, and any mitigating considerations.]
+
+Additional Details:
+• The ranking should represent the severity or potential impact of each risk factor, starting with the most concerning.  
+• Ensure that the summary does not exceed 280 characters and the details do not exceed 500 characters.
+
+<response-format>
+{
+    "results": [
+        {
+            "risk_factor_title": "Your risk factor title here",
+            "summary": "Your short summary here",
+            "details": "Your detailed explanation here"
+        }
+        // Additional entries as needed, in ranked order
+    ]
+}
+</response-format>
+
+Include all necessary context from the Risk Factors section as provided below:
+
+<context-item-1>
+{item1}
+</context-item-1>
+
+Please follow this JSON format when summarizing the company’s key risk factors and do not wrap the response with markdown blocks.

@@ -1,0 +1,32 @@
+<purpose>
+Analyze the Item-1 ("Business") section of the 10-K filing and extract the following information:
+
+1. Business Overview & Revenue Model:
+   - Business Description: Summarize the nature of the business.
+   - Revenue Model: Describe how the company generates its revenue and outline its business model.
+
+2. Long-Term Strategies & Objectives:
+   - Strategic Direction: Extract details on the company’s overall strategy.
+   - Long-Term Goals: Outline the long-term objectives and plans for future growth.
+</purpose>
+
+<response-format>
+{
+  "business_description": "Your summary here",
+  "revenue_model": "Your details here",
+  "strategic_direction": "Your explanation here",
+  "long-term_goals": "Your outline here"
+}
+</response-format>
+
+<note>
+Ensure that your JSON response strictly follows the schema with the 4 keys exactly as provided above.
+</note>
+
+<context-item-1>
+{item1}
+</context-item-1>
+
+<context-item-7>
+{item7}
+</context-item-7>

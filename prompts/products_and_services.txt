@@ -1,0 +1,29 @@
+Using this 10-K report, please summarize the company's key products and services. The target readers are investors who want to gain a clearer understanding of the company. Rank the products and services from the core business (most significant) to the least significant. When crafting your response, please adhere to the following instructions for each entry:
+
+1. product_service_name: [Official name of the product or service]  
+2. summary: [A short and concise overview (max 280 characters) explaining what the product/service is and what it does.]  
+3. details: [A more in-depth explanation (max 500 characters) providing clear, investor-friendly insights into the product/service.]
+
+Additional Details:
+• The ranking should represent the importance of each product/service, starting with the one most integral to the business.  
+• Ensure that the summary does not exceed 280 characters and the details do not exceed 500 characters.
+
+<response-format>
+{
+    "results": [
+        {
+            "product_service_name": "Your product/service name here",
+            "summary": "Your short summary here",
+            "details": "Your detailed explanation here"
+        }
+    ]
+}
+</response-format>
+
+Include all necessary context from the 10-K report as provided below:
+
+<context-item-1>
+{item1}
+</context-item-1>
+
+Please follow this JSON format when summarizing the company’s key products and services and do not wrap the response with markdown blocks.
