@@ -9,16 +9,13 @@ Additional Details:
 • Ensure that the summary does not exceed 280 characters and the details do not exceed 500 characters.
 
 <response-format>
-{
-    "results": [
-        {
-            "risk_factor_title": "Your risk factor title here",
-            "summary": "Your short summary here",
-            "details": "Your detailed explanation here"
-        }
-        // Additional entries as needed, in ranked order
-    ]
-}
+[
+    {
+        "risk_factor_title": "Your risk factor title here",
+        "summary": "Your short summary here",
+        "details": "Your detailed explanation here"
+    }
+]
 </response-format>
 
 Include all necessary context from the Risk Factors section as provided below:

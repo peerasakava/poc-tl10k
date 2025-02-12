@@ -15,7 +15,7 @@ Analyze the Item-1 ("Business") section of the 10-K filing and extract the follo
   "business_description": "Your summary here",
   "revenue_model": "Your details here",
   "strategic_direction": "Your explanation here",
-  "long-term_goals": "Your outline here"
+  "long_term_goals": "Your outline here"
 }
 </response-format>
 

@@ -9,16 +9,13 @@ Additional Details:
 • Ensure that both the summary and management_quote do not exceed 280 characters.
 
 <response-format>
-{
-  "results": [
+[
     {
       "future_strategy_focus_headline": "Your headline here",
       "summary": "Your concise explanation here",
       "management_quote": "Your management quote here"
     }
-    // Additional entries as needed, in ranked order
-  ]
-}
+]
 </response-format>
 
 Include all necessary context from the 10-K report as provided below:

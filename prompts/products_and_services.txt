@@ -9,15 +9,13 @@ Additional Details:
 • Ensure that the summary does not exceed 280 characters and the details do not exceed 500 characters.
 
 <response-format>
-{
-    "results": [
-        {
-            "product_service_name": "Your product/service name here",
-            "summary": "Your short summary here",
-            "details": "Your detailed explanation here"
-        }
-    ]
-}
+[
+    {
+        "product_service_name": "Your product/service name here",
+        "summary": "Your short summary here",
+        "details": "Your detailed explanation here"
+    }
+]
 </response-format>
 
 Include all necessary context from the 10-K report as provided below:
