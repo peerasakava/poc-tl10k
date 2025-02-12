@@ -1,0 +1,246 @@
+{
+  "symbol": "FIX",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1035983/000155837024001529/fix-20231231x10k.htm",
+  "business_overview": {
+    "business_description": "Comfort Systems USA, Inc. provides mechanical and electrical contracting services, including HVAC, plumbing, piping, electrical systems installation, and servicing. They operate across 44 operating units with 172 locations in 131 cities throughout the United States, serving commercial, industrial, and institutional markets, focusing on manufacturing, healthcare, education, office, technology, retail, and government facilities.",
+    "revenue_model": "The company generates revenue through construction and installation services in new buildings (approximately 54.8% of 2023 revenue) and renovation, expansion, maintenance, repair, and replacement services in existing buildings (approximately 45.2% of 2023 revenue). Services are provided under \"design and build\" and \"plan and spec\" projects, as well as maintenance and repair service agreements. Projects typically take six to nine months to complete with an average contract price of approximately $1.1 million.",
+    "strategic_direction": "Comfort Systems USA aims to \"Build Legacies\" with its people, customers, and acquired companies. The company focuses on strengthening core operating competencies, leading in sustainability, efficiency, and technological improvement, and ensuring fair compensation for services and risk management. Key objectives include improving profitability, generating growth, enabling sustainable building environments, improving workforce productivity, and acquiring complementary businesses.",
+    "long_term_goals": "The company's long-term goals include: achieving excellence in core competencies, achieving operating efficiencies, attracting, retaining, and investing in employees, focusing on industrial, commercial, and institutional markets, leveraging resources and capabilities across operating locations, maintaining a diverse customer, geographic, and project base, developing and adopting leading technologies, excelling at modular and off-site construction, growing their service business, and seeking growth through strategic acquisitions."
+  },
+  "products_and_services": [
+    {
+      "product_service_name": "Mechanical Services",
+      "summary": "HVAC, plumbing, piping, controls, off-site construction, monitoring, and fire protection for commercial, industrial, and institutional facilities.",
+      "details": "These services encompass the design, installation, maintenance, repair, and replacement of systems critical for building operation. They address heating, cooling, water, and air quality needs, with a growing emphasis on energy-efficient solutions and sustainable designs. Comfort Systems USA provides both new construction installation (design and build or plan and spec) as well as renovation, expansion, and ongoing maintenance services. This segment represents the majority of the company's revenue."
+    },
+    {
+      "product_service_name": "Electrical Services",
+      "summary": "Installation and servicing of electrical systems for commercial, industrial, and institutional facilities.",
+      "details": "This includes building, installing, maintaining, repairing, and replacing electrical systems. Like mechanical services, electrical services are offered for both new construction and existing buildings. Services include ensuring buildings have adequate and up-to-date electrical capacity; a critical function given the increasing reliance on technology in commercial spaces. The company notes that older electrical systems require regular maintenance and upgrades."
+    },
+    {
+      "product_service_name": "Construction and Installation Services for New Buildings",
+      "summary": "Design, engineering, integration, installation, and start-up of MEP and related systems in newly constructed facilities.",
+      "details": "This segment includes both 'design and build' and 'plan and spec' projects. 'Design and build' involves a consultative approach, designing customized and energy-efficient MEP systems in collaboration with the customer. 'Plan and spec' involves bidding on projects where the MEP systems are already designed. Comfort Systems USA emphasizes its expertise using building information modeling to achieve energy-efficient outcomes, and also notes that its average project takes six to nine months to complete."
+    },
+    {
+      "product_service_name": "Renovation, Expansion, Maintenance, Monitoring, Repair and Replacement Services for Existing Buildings",
+      "summary": "Maintaining, repairing, replacing, reconfiguring, and monitoring MEP and related systems in existing buildings.",
+      "details": "This includes service calls and service agreements and addresses the growth and aging of installed MEP systems. With increasing technology deployment, state-of-the-art control and monitoring systems with sensors are crucial. Comfort Systems USA focuses on optimizing and upgrading existing systems to optimize energy use and reduce customers' carbon footprint."
+    },
+    {
+      "product_service_name": "Modular and Off-Site Construction",
+      "summary": "Construction of superior quality plants and systems away from the construction site.",
+      "details": "This service offering allows for building components in a controlled environment improving quality and efficiency. The company has invested in and grown this capability through acquisitions emphasizing that this expertise will become increasingly important in complex construction projects."
+    }
+  ],
+  "risk_factors": [
+    {
+      "risk_factor_title": "Economic Downturns",
+      "summary": "Economic recessions can significantly harm the business due to its dependence on construction activity. Demand decreases lead to price competition, impacting revenue and profit.",
+      "details": "The company's performance lags behind economic cycles. Recessions can destabilize vendors and subcontractors, increasing liability and potentially leading to unpaid projects. Government spending cuts could further reduce revenue, as 5.8% of 2023 revenue came from the public sector. Such downturns could significantly affect financials."
+    },
+    {
+      "risk_factor_title": "Cost Overruns",
+      "summary": "The company bears the risk of cost overruns, which can reduce profits or cause losses if costs exceed estimates. Unexpected issues can lead to increased expenses.",
+      "details": "Contract prices are based on cost estimates. Inaccurate estimates regarding economic conditions, material prices, labor availability, or unforeseen issues like technical problems or weather delays can lead to overruns. Inflation can raise labor and material costs the company may not be able to pass on. Failure to meet deadlines could result in liquidated damages and harm reputation."
+    },
+    {
+      "risk_factor_title": "Inability to Attract and Retain Qualified Managers and Employees",
+      "summary": "The business relies on skilled labor. Shortages and high turnover can increase costs, reduce profitability, and negatively impact customer relationships.",
+      "details": "Labor is a key component for the business. Low unemployment rates can make it difficult to find affordable skilled personnel. Loss of key employees or inability to recruit new management can hinder growth. Labor shortages can drive up costs and impact profitability and customer relationship."
+    },
+    {
+      "risk_factor_title": "Cybersecurity Breaches",
+      "summary": "Reliance on IT systems makes the company vulnerable to failures and cyberattacks, which could disrupt operations, lead to data loss, and result in financial losses.",
+      "details": "The company uses IT systems for operations, data protection, and relies on third-party software. System failures, natural disasters, or cyberattacks can disrupt business and compromise data. Security breaches could lead to financial losses, legal liabilities, and reputational damage. Increased regulatory focus on cybersecurity also adds compliance costs."
+    },
+    {
+      "risk_factor_title": "Backlog Adjustments and Cancellations",
+      "summary": "Backlog amounts may not translate into actual revenue or profits. Project cancellations or scope adjustments can negatively impact revenue and profitability.",
+      "details": "The company's backlog was $5.16 billion as of December 31, 2023. Backlog provides only a limited indication of near-term revenue direction, and revenue may not be realized as expected. Project cancellations or changes can adversely affect revenue and profit. Backlog is no guarantee of future financial performance."
+    },
+    {
+      "risk_factor_title": "Intense Competition",
+      "summary": "The industry is competitive; smaller companies may win bids based on price. Inability to compete may lead to market share loss and reduced profits.",
+      "details": "The markets served are competitive and fragmented. Price is often the main factor in contract awards. Smaller competitors can win bids due to lower costs. Increased competition and vertical consolidation could reduce profits. The company could lose market share if unable to meet these competitive challenges, or profitability will be impaired if forced to reduce prices."
+    },
+    {
+      "risk_factor_title": "Surety Bond Dependence",
+      "summary": "The company relies on surety bonds; difficulty in the surety market or inability to secure bonds could restrict the ability to bid on contracts.",
+      "details": "The company depends on surety bonds for contracts. Difficulties in the financial and surety markets or restrictive surety terms could limit bonding capacity. Inability to maintain sufficient bonding could preclude bidding on certain contracts. Loss of surety access would hinder the ability to compete for or work on projects."
+    },
+    {
+      "risk_factor_title": "Adverse Weather Conditions",
+      "summary": "Severe weather can disrupt operations, increase costs, and result in potential liability for liquidated damages, impacting business and financial results.",
+      "details": "The business is subject to seasonal variations and is potentially affected by severe weather conditions. Repercussions include service curtailment, operations suspension, failure to meet schedules, injuries, facility damage, and loss of productivity which could harm the business."
+    },
+    {
+      "risk_factor_title": "Impacts of Inflation",
+      "summary": "High inflation rates and market volatility can increase costs for labor and materials and may prevent raising capital if needed.",
+      "details": "Recent global economic conditions, including inflation and market volatility from wars and supply chain issues, have increased the cost of labor, materials, and utilities. Capital market volatility may increase the cost of capital or prevent raising capital, adversely impacting business, financial condition, and results of operations."
+    },
+    {
+      "risk_factor_title": "Customer Payment Delays/Defaults",
+      "summary": "Delays or defaults in customer payments can disrupt cash flow and negatively impact financial condition and results of operations.",
+      "details": "The company commits resources to projects before receiving payments. Customer payment delays require working capital investments. If a customer defaults, it could have a material negative effect on the company's financial condition."
+    },
+    {
+      "risk_factor_title": "Acquisition Risks",
+      "summary": "Future acquisitions can dilute earnings, expose to liabilities, divert management attention, and integration difficulties, adversely affecting business.",
+      "details": "The Company intends to continue pursuing acquisitions. Acquisitions may expose the company to business risks, integration difficulties, employee assimilation challenges. Failure to integrate acquisitions could adversely affect the company's business, financial condition and results of operations."
+    },
+    {
+      "risk_factor_title": "Compliance with Credit Agreement",
+      "summary": "Failure to comply with debt covenants or service indebtedness could negatively affect the business, possibly forcing curtailment, reorganization, or liquidation.",
+      "details": "Failure to comply with covenants under the credit agreement or pay amounts due would constitute a default. This could result in no borrowing allowed, termination of the agreement, acceleration of debt, and/or collateral foreclosure. Inability to service debt could force curtailment, reorganization, or liquidation."
+    },
+    {
+      "risk_factor_title": "Third-Party Reliance",
+      "summary": "The company relies on subcontractors and suppliers. Failure to retain qualified parties or poor performance can harm reputation and profitability.",
+      "details": "The company hires subcontractors and relies on suppliers. Failure to retain subcontractors or suppliers, or if performance falls short, operations and profitability could be harmed. Recent labor shortages could lead to higher wages for employees and higher costs to purchase services from third parties, which reduce profitability."
+    },
+    {
+      "risk_factor_title": "Work Environment",
+      "summary": "Challenging work conditions may negatively affect the company's business and financial condition.",
+      "details": "The company may need to perform work under difficult conditions, including terrain, site conditions, urban centers, and clean-room environments. Extreme weather and harsh conditions may limit availability of resources, increase costs, or cause projects to be cancelled. Inability to manage these conditions can adversely affect the business and financial condition."
+    },
+    {
+      "risk_factor_title": "Decentralized Decision-Making",
+      "summary": "Decentralized management presents risks, including slower problem-solving and misalignment with overall business strategy.",
+      "details": "The company places decision-making with subsidiary management. This could lead to slow or ineffective problem solving or misalignment between a subsidiary's strategy and the company's overall strategy. Failure to follow company compliance policies could lead to exposure to large liabilities."
+    },
+    {
+      "risk_factor_title": "Political and Economic Uncertainties",
+      "summary": "Uncertainty due to events like pandemics, international conflicts, and inflation can constrain spending and negatively affect revenue and profitability.",
+      "details": "Political and economic instability can affect customer and vendor forecasting and planning. Government clients may face budget deficits. Economic instability in global markets could limit access to capital at needed times and negatively impact the company's revenue and profit."
+    },
+    {
+      "risk_factor_title": "Accounting Method (Cost-to-Cost)",
+      "summary": "The cost-to-cost accounting method could result in a reduction or reversal of previously recorded revenue or profits.",
+      "details": "The cost-to-cost input method is used. Earnings are based on revenue, costs, and profitability estimates. Estimates are reviewed regularly and adjusted. Contract losses are recognized when determined. Overstated profits could be reported at the point of determination, eliminating profits from other contracts. Actual costs could differ from estimates."
+    },
+    {
+      "risk_factor_title": "Insurance Policies and Claims",
+      "summary": "High deductibles and difficulties in insurance markets may affect the ability to obtain necessary insurance and increase overall risk exposure.",
+      "details": "The insurance policies have high deductibles; the company is effectively self-insured for typical claims. Insurance market conditions can become restrictive, and insurance providers may not renew policies. Difficulty obtaining insurance could reduce the company's ability to work on projects and significantly increase risk exposure."
+    },
+    {
+      "risk_factor_title": "Poor Safety Performance",
+      "summary": "Unsatisfactory safety performance can result in penalties, reputational damage, higher costs, and impact employee morale and turnover.",
+      "details": "Projects are conducted at sites with numerous safety risks. Incidents can cause injuries, damage, and suspension of operations. Poor safety performance could lead to penalties, civil litigation, and criminal prosecution. Relationships with customers could be affected, along with employee morale."
+    },
+    {
+      "risk_factor_title": "Inadequate Internal Controls",
+      "summary": "Failure of internal controls could harm financial condition, results of operations, and investor confidence in financial information.",
+      "details": "The Company plans to maintain and strengthen internal controls. Any system of controls can only provide reasonable assurances that the objectives of the system are met. Any failure of internal controls could harm financial condition and results of operations."
+    },
+    {
+      "risk_factor_title": "Claims, Lawsuits, and Proceedings",
+      "summary": "Actual and potential legal issues could reduce profitability and liquidity and weaken financial condition, harming reputation & diverting resources.",
+      "details": "The company may be involved in legal proceedings claiming damages from business operations including injury and contract breaches. Uncertainties of litigation make outcomes hard to predict. Inaccurate exposure estimates may reduce profitability and liquidity and hurt financials."
+    },
+    {
+      "risk_factor_title": "Underutilization of Workforce",
+      "summary": "Improper workforce utilization could have a negative impact on the company's profitability if not properly managed.",
+      "details": "The extent to which the Company properly utilizes its workforce affects profitability. Underutilizing the workforce could result in lower gross margins. Overutilization negatively impacts safety, employee satisfaction, and project execution."
+    },
+    {
+      "risk_factor_title": "ESG Regulatory Risks",
+      "summary": "Increasing ESG attention could increase diligence complexity, which could impact reputation and business results",
+      "details": "The business may be harmed by environmental, social and corporate governance matters. Increasing governmental and societal attention to ESG matters could expand the nature, scope, and complexity of matters that we are required to control, assess, and report. If we are unable to adequately address such ESG matters or fail to comply with all laws, regulations, policies and related interpretations, it could negatively impact our reputation and our business results."
+    },
+    {
+      "risk_factor_title": "Trade Policy Changes",
+      "summary": "Changes in U.S. trade policy, including tariffs, may adversely impact the business and results of operations.",
+      "details": "Changes in trade policy may create greater restrictions and economic disincentives. Tariffs and trade wars could trigger retaliatory actions. Imports of raw materials and components may be impacted. Trade restrictions adopted may adversely impact the company's business and results of operations."
+    },
+    {
+      "risk_factor_title": "Tax Matters",
+      "summary": "Tax law changes and disagreements with tax authorities could impact results of operations and financial condition.",
+      "details": "Conducting business across the U.S. requires significant judgment in accounting. Changes in tax laws, regulations or interpretations could materially impact the provision for income taxes, deferred tax assets and liabilities, and liabilities for uncertain tax positions."
+    },
+    {
+      "risk_factor_title": "Health Insurance Costs",
+      "summary": "Increases and uncertainty in health insurance costs could adversely impact results of operations and cash flows.",
+      "details": "Employee health insurance costs have increased. The Affordable Care Act and future amendments could also impact the business. Ongoing uncertainty about the effects of federal health insurance mandates may strain operations."
+    },
+    {
+      "risk_factor_title": "Employee Misconduct",
+      "summary": "Fraud or non-compliance by employees, subcontractors, or partners could harm reputation, reduce profits, and result in enforcement actions.",
+      "details": "Misconduct, fraud, or non-compliance by employees can impact business and reputation. This includes employee theft, safety failures, violations of laws, and improper practices. Preventative measures may be ineffective. Failure to comply with laws or misconduct could lead to fines, penalties or even legal reprecussions."
+    },
+    {
+      "risk_factor_title": "Stock Price Volatility",
+      "summary": "The common stock has experienced price and volume fluctuations, which are likely to continue and may cause losses for stockholders.",
+      "details": "Market price of stock may change in response to factors outside of control, including revenue shortfalls, quarterly fluctuations, or changes in analyst estimates. Volatile stock prices may result in litigation."
+    },
+    {
+      "risk_factor_title": "State and Local Regulatory Risks",
+      "summary": "Subsidiary operations are subject to various state and local regulations; changes or failure to comply could increase costs.",
+      "details": "The locations are located in 27 states which exposes to different state and local laws, which could pose licensing requirements. Changes in these laws, or any failure to comply, can adversely impact operations by increasing costs, or potentially harming reputation."
+    },
+    {
+      "risk_factor_title": "Government Contract Regulations",
+      "summary": "Government contracts subject to audit and regulations; violations can result in fines, termination, or debarment from future contracts.",
+      "details": "Government contractors must comply with regulations related to contract award and performance. Violations may incur fines or debarment. Due to the Company's decentralized nature, it faces risks in maintaining compliance with government contracting requirements."
+    },
+    {
+      "risk_factor_title": "Deliberate Malicious Acts",
+      "summary": "Malicious acts, including terrorism and sabotage, could damage our facilities, disrupt our operations or injure employees",
+      "details": "Intentional acts of destruction could damage or destroy facilities, reducing operational production capacity and potentially requiring to repair or replace facilities at substantial cost. Employees, contractors and the public could suffer substantial physical injury from acts of terrorism Governmental authorities may also impose security requirements that could make operations more difficult or costly."
+    },
+    {
+      "risk_factor_title": "Environmental Regulations",
+      "summary": "Environmental regulations could impose significant costs that could reduce profits.",
+      "details": "HVAC systems are subject to environmental statutes. Failure to comply could subject the company to fines, loss of licenses, or potentially debarment from publicly funded work. New regulatory requirements leading to decreased service demand."
+    },
+    {
+      "risk_factor_title": "Anti-Takeover Provisions",
+      "summary": "Charter contains anti-takeover provisions inhibiting changes in control; may discourage tender offers, mergers, or proxy contests.",
+      "details": "The Board of Directors can issue preferred stock without stockholder approval to discourage control changes. The Delaware General Corporation Law or even provisions of the company's credit agreement may also discourage takeover attempts."
+    },
+    {
+      "risk_factor_title": "Future Share Sales",
+      "summary": "Future sales of common stock may depress the stock price and impair ability to raise capital through additional equity.",
+      "details": "Sales of shares or perception of sales could depress stock price and impair the ability to raise capital. This may result in the company being unable to achieve new projects and therefore, reduce profit margin."
+    }
+  ],
+  "strategies_and_future_plans": [
+    {
+      "future_strategy_focus_headline": "Growth Through Strategic Acquisitions",
+      "summary": "Comfort Systems USA plans to continue acquiring businesses with strong workforces, safety records, design capabilities, market positions, consistent cash flow, and desirable locations to increase cash flow and operating income.",
+      "management_quote": "We believe that we can further increase our cash flow and operating income by continuing to opportunistically enter new markets or service lines through acquisition."
+    },
+    {
+      "future_strategy_focus_headline": "Excel at Modular Construction",
+      "summary": "The company intends to keep improving modular and off-site capabilities through development and acquisitions, recognizing its increasing importance in complex construction projects for superior plant & system builds.",
+      "management_quote": "Through recent and ongoing development and acquisitions, we plan to continue to improve our unmatched capability in mechanical off-site or modular construction."
+    },
+    {
+      "future_strategy_focus_headline": "Service Growth Initiative",
+      "summary": "Comfort Systems USA aims to expand its service and maintenance revenue by strategically allocating managerial and sales resources to train and hire experienced employees, enhancing customer value.",
+      "management_quote": "In many locations we have added or upgraded our capability, and we believe our investments and efforts have provided customer value and stimulated growth in all aspects of our businesses."
+    },
+    {
+      "future_strategy_focus_headline": "Develop and Adopt Leading Technologies",
+      "summary": "The company is committed to using innovative techniques to capitalize from technological developments, improve productivity, quality & design in prefabrication and project planning.",
+      "management_quote": "Our goal is to use our scale and strategic investments to maintain a leading position in design and modeling excellence, increase productivity and quality, and ultimately position ourselves to capitalize from ongoing or future technological developments."
+    },
+    {
+      "future_strategy_focus_headline": "Achieve Excellence in Core Competencies",
+      "summary": "Focus on seven core competencies: safety, customer service, design & build, pre-construction processes, cost tracking, energy-efficient design, and servicing existing systems to attract customers and increase income.",
+      "management_quote": "We have identified seven core competencies that we believe are critical to attracting and retaining customers, increasing operating income and cash flow, and maximizing the productivity of our skilled labor force."
+    },
+    {
+      "future_strategy_focus_headline": "Attract, Retain and Invest in Employees",
+      "summary": "The company seeks to provide enhanced career paths, benefits, and growth opportunities to attract and retain quality employees, focusing on training and development programs across all roles.",
+      "management_quote": "We seek to attract and retain quality employees by providing an enhanced career path that offers a stable income, attractive benefits, and excellent growth opportunities."
+    },
+    {
+      "future_strategy_focus_headline": "Achieve Operating Efficiencies",
+      "summary": "Focus on cost savings through purchasing economies, adopting best practices, and improving job management by refining the job loop and leveraging combined spending.",
+      "management_quote": "We think we can achieve operating efficiencies and cost savings through purchasing economies, adopting \u201cbest practices,\u201d and focusing on efficient job management."
+    }
+  ]
+}
