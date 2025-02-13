@@ -9,6 +9,7 @@ Additional Details:
 • Ensure that the summary does not exceed 280 characters and the details do not exceed 500 characters.
 
 <response-format>
+```json
 [
     {
         "product_service_name": "Your product/service name here",
@@ -16,6 +17,7 @@ Additional Details:
         "details": "Your detailed explanation here"
     }
 ]
+```
 </response-format>
 
 Include all necessary context from the 10-K report as provided below:
@@ -24,4 +26,4 @@ Include all necessary context from the 10-K report as provided below:
 {item1}
 </context-item-1>
 
-Please follow this JSON format when summarizing the company’s key products and services and do not wrap the response with markdown blocks.
+Please follow this JSON format when summarizing the company’s key products and services.

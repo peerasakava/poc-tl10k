@@ -1,4 +1,3 @@
-<purpose>
 Analyze the Item-1 ("Business") section of the 10-K filing and extract the following information:
 
 1. Business Overview & Revenue Model:
@@ -8,15 +7,16 @@ Analyze the Item-1 ("Business") section of the 10-K filing and extract the follo
 2. Long-Term Strategies & Objectives:
    - Strategic Direction: Extract details on the company’s overall strategy.
    - Long-Term Goals: Outline the long-term objectives and plans for future growth.
-</purpose>
 
 <response-format>
+```json
 {
   "business_description": "Your summary here",
   "revenue_model": "Your details here",
   "strategic_direction": "Your explanation here",
   "long_term_goals": "Your outline here"
 }
+```
 </response-format>
 
 <note>

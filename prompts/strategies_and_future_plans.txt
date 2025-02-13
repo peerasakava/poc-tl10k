@@ -9,6 +9,7 @@ Additional Details:
 • Ensure that both the summary and management_quote do not exceed 280 characters.
 
 <response-format>
+```json
 [
     {
       "future_strategy_focus_headline": "Your headline here",
@@ -16,6 +17,7 @@ Additional Details:
       "management_quote": "Your management quote here"
     }
 ]
+```
 </response-format>
 
 Include all necessary context from the 10-K report as provided below:
@@ -28,4 +30,4 @@ Include all necessary context from the 10-K report as provided below:
 {item7}
 </context-item-7>
 
-Please follow this JSON format when summarizing the company's future plans, strategies, and focus areas and do not wrap the response with markdown blocks.
+Please follow this JSON format when summarizing the company's future plans, strategies, and focus areas.
