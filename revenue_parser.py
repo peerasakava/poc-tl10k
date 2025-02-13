@@ -170,28 +170,8 @@ class RevenueParser:
         """
 
         client = self.get_openai_client()
-        prompt = """
-        <task>
-            Extract the table of revenue by products or service and by country or region by focused on the latest year.
-        </task>
-
-        <context>
-            the table from 10-K with XBRL financial contents
-        </context>
-
-        <source_context>
-            {table} 
-        </source_context>
-
-        <response_format>
-            - markdown table
-            - or "no table" if there is no revenue table
-        </response_format>
-
-        <note>
-            do not add any other text just the table. if there is no table, just return "no table"
-        </note>
-        """
+        with open('prompts/revenue_table_extractor.txt', 'r') as f:
+            prompt = f.read()
 
         prompt = prompt.format(table=table)
 
