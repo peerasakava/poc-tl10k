@@ -184,11 +184,12 @@ class RevenueParser:
         </source_context>
 
         <response_format>
-            markdown table
+            - markdown table
+            - or "no table" if there is no revenue table
         </response_format>
 
         <note>
-            do not add any other text just the table.
+            do not add any other text just the table. if there is no table, just return "no table"
         </note>
         """
 
@@ -203,6 +204,9 @@ class RevenueParser:
         )
 
         content = response.choices[0].message.content
+
+        if "no table" in content.lower():
+            return ""
 
         return content
 
@@ -237,7 +241,10 @@ class RevenueParser:
                     for i, table in enumerate(revenue_tables, 1):
                         refined_table = self.refine_table(table)
                         refined_tables.append(refined_table)
-                
+
+        # filter out empty tables
+        refined_tables = [table for table in refined_tables if table]
+
         return refined_tables
 
 if __name__ == '__main__':

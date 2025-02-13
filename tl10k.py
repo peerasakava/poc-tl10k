@@ -113,25 +113,59 @@ def generate_completion(prompt: str, response_model: Type[T], system_prompt: str
     content = response.choices[0].message.content
     return parse_json_response(content, response_model, console)
 
+from rich.console import Console
+from rich.traceback import install
+from time import sleep
+
+install(show_locals=True)
+console = Console()
+
+def retry_with_backoff(func):
+    def wrapper(*args, **kwargs):
+        max_attempts = 3
+        attempt = 1
+        while attempt <= max_attempts:
+            try:
+                return func(*args, **kwargs)
+            except Exception as e:
+                if attempt == max_attempts:
+                    console.print(f"[red]❌ Failed after {max_attempts} attempts[/red]")
+                    console.print(f"[red]Last error: {str(e)}[/red]")
+                    raise
+                wait_time = 2 ** attempt  # exponential backoff
+                console.print(f"[yellow]⚠️ Attempt {attempt} failed. Retrying in {wait_time}s...[/yellow]")
+                console.print(f"[yellow]Error: {str(e)}[/yellow]")
+                sleep(wait_time)
+                attempt += 1
+    return wrapper
+
+@retry_with_backoff
 def get_overview(item1: str, item7: str) -> BusinessOverview:
     prompt = read_prompt(PromptType.OVERVIEW)
     prompt = prompt.replace("{item1}", item1).replace("{item7}", item7)
-    return generate_completion(prompt, BusinessOverview)
+    result = generate_completion(prompt, BusinessOverview)
+    return result
 
+@retry_with_backoff
 def get_products_and_services(item1: str) -> list[ProductService]:
     prompt = read_prompt(PromptType.PRODUCTS_AND_SERVICES)
     prompt = prompt.replace("{item1}", item1)
-    return generate_completion(prompt, list[ProductService])
+    result = generate_completion(prompt, list[ProductService])
+    return result
 
+@retry_with_backoff
 def get_risk_factors(item1: str) -> list[RiskFactor]:
     prompt = read_prompt(PromptType.RISK_FACTORS)
     prompt = prompt.replace("{item1}", item1)
-    return generate_completion(prompt, list[RiskFactor])
+    result = generate_completion(prompt, list[RiskFactor])
+    return result
 
+@retry_with_backoff
 def get_strategies_and_future_plans(item1: str, item7: str) -> list[FutureStrategy]:
     prompt = read_prompt(PromptType.STRATEGIES_AND_FUTURE_PLANS)
     prompt = prompt.replace("{item1}", item1).replace("{item7}", item7)
-    return generate_completion(prompt, list[FutureStrategy])
+    result = generate_completion(prompt, list[FutureStrategy])
+    return result
 
 def get_summarize(symbol: str, console: Console) -> dict:
     # Set Edgar identity
