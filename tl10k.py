@@ -113,6 +113,7 @@ def generate_completion(prompt: str, response_model: Type[T], system_prompt: str
     content = response.choices[0].message.content
     return parse_json_response(content, response_model, console)
 
+import json
 from rich.console import Console
 from rich.traceback import install
 from time import sleep
@@ -193,13 +194,13 @@ def get_summarize(symbol: str, console: Console) -> dict:
         progress.update(fetch_task, description="[yellow]Analyzing revenue tables...[/yellow]")
         parser = RevenueParser()
         revenues = parser.analyze_revenue_tables(filing_url)
-        revenues_table = "\n\n".join(revenues)
+        revenues_table = json.dumps([revenue.model_dump() for revenue in revenues], indent=2)
 
         progress.update(fetch_task, description=f"[green]Found 10-K filing: {filing_url}[/green]")
         ten_k = filing.obj()
 
         item_1 = ten_k["ITEM 1"]
-        item_1_revenue = item_1 + "Revenues\n---\n" + revenues_table
+        item_1_revenue = item_1 + "Revenues:\n\n```" + revenues_table + "```\n\n"
         item_1A = ten_k["ITEM 1A"]
         item_1_merged = item_1 + "\n\n" + item_1A
         item_7 = ten_k["ITEM 7"]
@@ -226,7 +227,7 @@ def get_summarize(symbol: str, console: Console) -> dict:
         "products_and_services": [p.model_dump() for p in products_and_services],
         "risk_factors": [r.model_dump() for r in risk_factors],
         "strategies_and_future_plans": [s.model_dump() for s in strategies_and_future_plans],
-        "revenues": revenues
+        "revenues": [revenue.model_dump() for revenue in revenues]
     }
 
     return summary

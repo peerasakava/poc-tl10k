@@ -5,6 +5,18 @@ from edgar import Company, set_identity
 from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn
 from openai import OpenAI
+from pydantic import BaseModel, Field
+from typing import List, Optional
+
+class RevenueItem(BaseModel):
+    """Model for a single revenue item in the table"""
+    title: str = Field(..., description="Title of the revenue item, product/service name or country/region")
+    amount: float = Field(..., description="Amount of revenue in millions of dollars")
+
+class RevenueTable(BaseModel):
+    """Model for the complete revenue table response"""
+    table_title: str = Field(..., description="Title of the table")
+    revenue_items: List[RevenueItem] = Field(..., description="List of revenue items in the table")
 
 class RevenueParser:
     def __init__(self):
@@ -159,21 +171,22 @@ class RevenueParser:
             base_url="https://openrouter.ai/api/v1"
         )
 
-    def refine_table(self, table):
+    def refine_table(self, table: str) -> Optional[RevenueTable]:
         """Refine the tables by using LLM to extract relevant information.
         
         Args:
             table (str): The table to refine
         
         Returns:
-            str: The refined table in markdown format
+            Optional[RevenueTable]: The refined table as a RevenueTable model, or None if no table found
         """
-
+        from tl10k import parse_json_response
+        
         client = self.get_openai_client()
         with open('prompts/revenue_table_extractor.txt', 'r') as f:
             prompt = f.read()
 
-        prompt = prompt.format(table=table)
+        prompt = prompt.replace("{table_content}", table)
 
         response = client.chat.completions.create(
             model="google/gemini-2.0-flash-001",
@@ -184,11 +197,19 @@ class RevenueParser:
         )
 
         content = response.choices[0].message.content
+        # print the raw response
+        console = Console()
 
         if "no table" in content.lower():
-            return ""
+            return None
 
-        return content
+        try:
+            # Parse and validate the JSON response
+            revenue_table = parse_json_response(content, RevenueTable, console)
+            return revenue_table
+        except ValueError as e:
+            console.print(f"[red]Error parsing revenue table: {e}[/]")
+            return None
 
 
     def analyze_revenue_tables(self, filing_url: str) -> list:
@@ -260,6 +281,9 @@ if __name__ == '__main__':
         progress.update(task, description=f"[green]Found 10-K filing: {filing_url}[/green]")
         
         # Analyze revenue tables
-        refined_tables = parser.analyze_revenue_tables(filing_url, console)
-        
+        refined_tables = parser.analyze_revenue_tables(filing_url)
+
+        # Print the refined tables
+        console.print(refined_tables)
+
         progress.update(task, description="[green]Analysis completed![/green]")

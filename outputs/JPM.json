@@ -1,0 +1,131 @@
+{
+  "symbol": "JPM",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961724000225/jpm-20231231.htm",
+  "business_overview": {
+    "business_description": "JPMorgan Chase & Co. is a leading global financial services firm with $3.9 trillion in assets and $327.9 billion in stockholders\u2019 equity as of December 31, 2023. The firm operates in investment banking, financial services for consumers and small businesses, commercial banking, financial transaction processing, and asset management, serving millions of customers worldwide under the J.P. Morgan and Chase brands.",
+    "revenue_model": "The firm generates revenue through its four major reportable business segments: Consumer & Community Banking (CCB), Corporate & Investment Bank (CIB), Commercial Banking (CB), and Asset & Wealth Management (AWM). These segments offer a variety of products and services to their respective client bases, with details provided in the \"Business segment results\" section of the MD&A.",
+    "strategic_direction": "JPMorgan Chase focuses on attracting, developing, and retaining a high-performing and diverse workforce, with inclusion and accessibility. It emphasizes exceptional client service, operational excellence, integrity, fairness, responsibility, and cultivating a great team and winning culture as guiding business principles. The firm also adapts to evolving regulatory landscapes and incorporates sustainability-related initiatives.",
+    "long_term_goals": "The company aims for long-term growth and success by investing in its workforce, maintaining a strong firm culture, and providing market-competitive compensation and benefits. JPMorgan Chase also seeks to comply with extensive and comprehensive regulations and maintain financial stability while adapting to changes in the financial industry, like incorporating the Basel III capital framework."
+  },
+  "products_and_services": [
+    {
+      "product_service_name": "Consumer & Community Banking (CCB)",
+      "summary": "CCB serves consumers and small businesses, offering financial services like banking, lending, and investment products.",
+      "details": "CCB provides a broad range of financial services to consumers and small businesses. This includes deposit accounts, credit cards, home lending, auto finance, and investment products. It focuses predominantly on the U.S. market and leverages both the Chase brand and a large branch network, as well as digital channels, to serve its customers. CCB generated $70.148 billion in total net revenue in 2023 and a net income of $21.232 billion."
+    },
+    {
+      "product_service_name": "Corporate & Investment Bank (CIB)",
+      "summary": "CIB provides investment banking, markets & securities services, and wholesale payments to corporations, investors, and institutions.",
+      "details": "CIB offers a wide array of investment banking, markets and securities services, and wholesale payments products. Its clients include corporations, institutional investors, financial institutions, governments and municipal entities. Services include strategic advice, capital raising, risk management, and securities trading and brokerage.  CIB generated $48.807 billion in total net revenue and a net income of $14.129 billion in 2023."
+    },
+    {
+      "product_service_name": "Commercial Banking (CB)",
+      "summary": "CB delivers financial solutions, including lending, treasury, and investment banking, to middle market companies and other entities.",
+      "details": "CB provides financial solutions to middle market companies, local governments, and non-profit entities. This includes lending, treasury services, investment banking, and asset management. CB focuses on building long-term relationships with clients by offering tailored financial advice and solutions. CB generated $15.546 billion in total net revenue and a net income of $6.143 billion in 2023."
+    },
+    {
+      "product_service_name": "Asset & Wealth Management (AWM)",
+      "summary": "AWM provides investment and wealth management services to institutions, high-net-worth individuals, and retail investors.",
+      "details": "AWM offers investment management across all major asset classes, wealth management services, and retirement solutions. They serve institutional clients, high-net-worth individuals, and retail investors globally. AWM\u2019s services encompass investment advice, portfolio management, brokerage, and trust and estate planning. AWM generated $19.827 billion in total net revenue and a net income of $5.227 billion in 2023."
+    }
+  ],
+  "risk_factors": [
+    {
+      "risk_factor_title": "Regulatory Risks",
+      "summary": "JPMorgan Chase's business is highly regulated, impacting operations and profitability. Changes in laws, rules, & supervision could hike costs, reduce revenue & limit business opportunities.",
+      "details": "Extensive regulation affects how JPM conducts business. Differences across jurisdictions can create competitive disadvantages. Failure to comply may lead to scrutiny, fines, and reputational harm. Resolving investigations may incur penalties, compliance costs, and restrictions. Unpredictable legal frameworks in some areas may negatively impact operations."
+    },
+    {
+      "risk_factor_title": "Market Risks",
+      "summary": "Economic & market events can harm JPM's businesses. Changes in interest rates, credit spreads, & market fluctuations impact earnings, liquidity, & capital levels.",
+      "details": "Adverse shifts in investor sentiment, economic conditions, or geopolitical events can negatively impact JPM's consumer and wholesale units, investment portfolio, and market-making activities. Consumer businesses are vulnerable to unemployment, real estate value changes, & governmental policies. Wholesale sectors face risks from declining asset values."
+    },
+    {
+      "risk_factor_title": "Operational Risks",
+      "summary": "JPM relies on IT systems & faces cyber threats daily. Failures, cyberattacks, & tech changes can disrupt services, leak data, cause losses, & trigger fines, harming its reputation.",
+      "details": "Operational systems failures can disrupt services with potential financial losses, reputational damage, and regulatory penalties. Cyber attacks risk data breaches and system disruptions, causing harm to JPM and its clients. New tech or product introductions may introduce unforeseen ops risks. Staffing issues, employee conduct, and safeguarding personal info are ongoing concerns."
+    },
+    {
+      "risk_factor_title": "Credit Risks",
+      "summary": "Adverse changes in financial conditions of clients, counterparties, or custodians could lead to losses. Declining collateral value in stressed markets heightens risk.",
+      "details": "JPM faces credit risk from clients/counterparties; defaults can cause disputes & losses. CCP failures increase costs & potential losses. Concentrations of credit/market risk among clients in related industries could cascade losses. In stressed markets, collateral value declines can increase credit. Excessive expansion of consumer credit by competitors also poses a risk."
+    },
+    {
+      "risk_factor_title": "Liquidity Risks",
+      "summary": "Impaired liquidity could hinder JPM's operations. Market disruptions, regulatory changes, or loss of confidence can impact cash flow and access to funding.",
+      "details": "Liquidity can be affected by market illiquidity, regulatory changes, inability to sell assets, counterparty defaults, and loss of customer confidence. Reliance on subsidiary cash flows and potential credit rating downgrades can also affect liquidity and funding costs, potentially limiting JPM's business activities."
+    },
+    {
+      "risk_factor_title": "Reputation Risks",
+      "summary": "Damage to JPM's reputation can significantly harm its business by affecting relationships with clients, investors, and employees. Misconduct and security breaches can be detrimental.",
+      "details": "Reputational damage arises from employee misconduct, security breaches, risk management failures, litigation, and failure to meet ESG expectations. Negative publicity, social media, and activist actions can further harm its image, potentially leading to loss of clients, investors, and employees. Conflicts of interest and failure to meet fiduciary duties also pose a threat."
+    },
+    {
+      "risk_factor_title": "Strategic Risks",
+      "summary": "Ineffective business strategies & increasing competition can damage JPMorgan Chase's standing. Climate change also poses a threat to the company's operations.",
+      "details": "Failure to develop effective business strategies or adapt to regulatory and market changes can hurt JPM's competitive position. Intense competition in the financial services industry may pressure pricing and market share. Climate change may lead to physical and transition-related risks that negatively impact JPM and its client base."
+    },
+    {
+      "risk_factor_title": "Political Risks",
+      "summary": "Political developments can cause economic uncertainty, negatively impacting JPM's businesses. Governmental policies & geopolitical tensions affect markets.",
+      "details": "Economic uncertainty from political developments or geopolitical tensions can erode investor confidence, provoke countermeasures, and affect client financial conditions. Policies regarding trade, sanctions, or climate risk affect JPM's operations, potentially leading to slower growth, market volatility, and reduced commercial activity."
+    },
+    {
+      "risk_factor_title": "Capital Risks",
+      "summary": "Failure to maintain required capital levels could limit JPM's ability to distribute capital to shareholders & support business activities.",
+      "details": "Regulatory capital requirements, including GSIB surcharges and stress capital buffers, can impact JPM's capital needs. Failure to meet these requirements or unfavorable changes in the requirements could reduce stock repurchases, constrain dividends, or curtail business activities. Proposed changes to the Basel III framework may also impact capital requirements."
+    },
+    {
+      "risk_factor_title": "Conduct Risks",
+      "summary": "Employee misconduct can harm clients, market integrity, damage JPMorgan Chase\u2019s reputation, and result in litigation and regulatory action.",
+      "details": "Improper employee actions, such as insider trading, market manipulation, or failure to fulfill fiduciary duties, can lead to litigation, settlements, fines, and reputational damage. Failure to integrate newly-acquired businesses and ensure employee conduct aligns with JPMorgan Chase's expectations can heighten these risks."
+    },
+    {
+      "risk_factor_title": "Country Risks",
+      "summary": "Hostilities between countries or local factors can adversely affect JPM's businesses within affected regions or globally.",
+      "details": "Armed conflict or intensified cyberattacks can result in economic disruption and heightened volatility. Local economic, political, regulatory, and social factors in certain countries can negatively affect JPM's operations and impair revenues, growth, and profitability."
+    },
+    {
+      "risk_factor_title": "People Risks",
+      "summary": "Failure to attract and retain talent could compromise JPMorgan Chase's competitive position.",
+      "details": "Competition for qualified personnel is intense.  JPM's performance could be adversely affected if it is unable to attract or retain qualified and diverse employees or if changes to immigration or travel policies unduly restrict the company's workforce."
+    },
+    {
+      "risk_factor_title": "Legal Risks",
+      "summary": "JPMorgan Chase faces significant legal risks from litigation and formal and informal regulatory and government investigations.",
+      "details": "JPMorgan Chase is named as a defendant or is otherwise involved in many legal proceedings, including class actions, derivative actions and other litigation or disputes with third parties, as well as criminal proceedings.  Regulatory and government agencies conduct examinations of JPMorgan Chase and its subsidiaries both on a routine basis and in targeted exams, and JPMorgan Chase\u2019s businesses and operations are subject to heightened regulatory oversight."
+    }
+  ],
+  "strategies_and_future_plans": [
+    {
+      "future_strategy_focus_headline": "Attract, Develop, and Retain Top Talent",
+      "summary": "JPMorgan Chase aims to maintain a high-performing diverse workforce by offering competitive compensation and benefits, extensive training, and career development opportunities, including hybrid work models, with focus on diversity, equity, and inclusion.",
+      "management_quote": "The goal of JPMorgan Chase\u2019s recruitment efforts is to attract and hire talented individuals in all roles and at all career levels. The Firm strives to provide both external candidates and internal employees who are seeking a different role with challenging and stimulating career opportunities."
+    },
+    {
+      "future_strategy_focus_headline": "Compliance and Risk Management",
+      "summary": "JPMorgan Chase will focus on complying with complex regulations, by investing in robust risk management and controls, including adapting to evolving cyber threats and implementing remediation plans.",
+      "management_quote": "JPMorgan Chase expects that it and other financial services firms will continue to be subject to heightened regulatory scrutiny and governmental investigations and enforcement actions"
+    },
+    {
+      "future_strategy_focus_headline": "Strategic Business Adaption",
+      "summary": "JPMorgan Chase intends to dynamically adapt its business strategies in response to market changes, technology advancements and evolving client expectations by refining its products, services, and geographic reach.",
+      "management_quote": "If management fails to develop and execute effective business strategies, and to anticipate changes affecting those strategies, JPMorgan Chase\u2019s competitive standing and results could suffer."
+    },
+    {
+      "future_strategy_focus_headline": "Focus on Technology and Innovation",
+      "summary": "JPMorgan Chase will continue adapting its products to the latest advancements in technology to attract and retain clients and customers and expanding its mobile banking services and internet-based applications.",
+      "management_quote": "New technologies have required and could require JPMorgan Chase to spend more to modify or adapt its products to attract and retain clients and customers or to match products and services offered by its competitors, including technology companies."
+    },
+    {
+      "future_strategy_focus_headline": "Resiliency Program Effectiveness",
+      "summary": "JPMorgan Chase strives to maintain a program that would enable preparation, adaptation, withstanding, and recovering from business disruptions that may impact critical business functions due to extraordinary events.",
+      "management_quote": "JPMorgan Chase maintains a Firmwide resiliency program that is designed to enable it to prepare for, adapt to, withstand and recover from business disruptions that may impact critical business functions and supporting assets"
+    }
+  ],
+  "revenues": [
+    "|                               | Revenue (in millions) |\n| :---------------------------- | :-------------------- |\n| **Europe/Middle East/Africa** | $20,974              |\n| **Asia-Pacific**              | $10,605              |\n| **Latin America/Caribbean**   | $3,294               |\n| **Total international**       | $34,873              |\n| **North America**             | $123,231             |\n| **Total**                     | $158,104             |\n",
+    "|                                                        | Consumer Community Banking | Corporate Investment Bank | Commercial Banking | Asset Wealth Management |\n| ------------------------------------------------------ | -------------------------- | --------------------------- | -------------------- | ------------------------- |\n| **Noninterest revenue**                            | $15,118                   | $40,315                     | $3,494               | $13,560                  |\n| **Net interest income**                            | $55,030                   | $8,492                      | $12,052              | $6,267                   |\n| **Total net revenue**                                | $70,148                   | $48,807                     | $15,546              | $19,827                  |\n| **Provision for credit losses**                      | $6,899                    | $121                        | $1,970               | $159                     |\n| **Noninterest expense**                              | $34,819                   | $28,594                     | $5,378               | $12,780                  |\n| **Income/(loss) before income tax expense/(benefit)** | $28,430                   | $20,092                     | $8,198               | $6,888                   |\n| **Income tax expense/(benefit)**                     | $7,198                    | $5,963                      | $2,055               | $1,661                   |\n| **Net income/(loss)**                                | $21,232                   | $14,129                     | $6,143               | $5,227                   |\n| **Average equity**                                   | $54,349                   | $108,000                    | $29,507              | $16,671                  |\n| **Total assets**                                     | $642,951                  | $1,338,168                   | $300,325              | $245,512                  |\n| **Return on equity**                                 | 38%                       | 13%                         | 20%                  | 31%                       |\n| **Overhead ratio**                                   | 50%                       | 59%                         | 35%                  | 64%                       |",
+    "| Revenue                          | 2023 (in millions) |\n|-----------------------------------|--------------------|\n| Investment banking fees           | $6,519             |\n| Principal transactions            | $24,460            |\n| Lending- and deposit-related fees | $7,413             |\n| Asset management fees             | $15,220            |\n| Commissions and other fees        | $6,836             |\n| Investment securities losses      | ($3,180)           |\n| Mortgage fees and related income  | $1,176             |\n| Card income                       | $4,784             |\n| Other income                      | $5,609             |\n| Noninterest revenue               | $68,837            |\n| Interest income                   | $170,588           |\n| Interest expense                  | $81,321            |\n| Net interest income               | $89,267            |\n| Total net revenue                 | $158,104           |\n"
+  ]
+}

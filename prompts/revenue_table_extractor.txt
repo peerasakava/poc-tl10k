@@ -7,14 +7,38 @@
 </context>
 
 <source_context>
-    {table} 
+    {table_content} 
 </source_context>
 
 <response_format>
-    - markdown table
-    - or "no table" if there is no revenue table
+<think>
+  // the place for you to think and explain every step of your process
+</think>
+
+```json
+{
+    "table_title": str, // title of the table e.g. "Revenue by Product and Service" or "Revenue by Geography" ...
+    "revenue_items": [
+        // list of items in the table
+        {
+            "title": str, // title of the revenue item, product or service name or country or region
+            "amount": float, // amount of revenue (millions of dollars)
+        }
+    ] 
+}
+```
 </response_format>
 
+<concern-points>
+1. specify the total row in table. some table has multiple total rows. you need to find it and remove it from the table.
+2. extract the title of the table. the title is the name of the product or service or the name of the country or region.
+</concern-points>
+
+<instructions>
+    1. Explain what you are thinking in `<think>` tag. and think tag should not contain in JSON block.
+    2. Write the JSON response in the json block below `<think>...</think>`
+</instructions>
+
 <note>
-    do not add any other text just the table. if there is no table, just return "no table"
+    if there is no total, return null in json block
 </note>

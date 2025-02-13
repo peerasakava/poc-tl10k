@@ -2,201 +2,277 @@
   "symbol": "AAPL",
   "filing_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm",
   "business_overview": {
-    "business_description": "Apple Inc. designs, manufactures, and markets a range of products, including smartphones (iPhone), personal computers (Mac), tablets (iPad), wearables (Apple Watch & AirPods), and accessories. They also offer related services such as advertising, AppleCare, cloud services, digital content platforms (App Store, Apple Arcade, Apple Music, Apple TV+), and payment services (Apple Card, Apple Pay). The company operates in several geographic segments: Americas, Europe, Greater China, Japan, and Rest of Asia Pacific.",
-    "revenue_model": "Apple generates revenue through the sale of its various products (iPhone, Mac, iPad, Wearables, Home and Accessories). Additionally, a significant portion of revenue comes from its services, including advertising, AppleCare, cloud services, digital content platforms and subscription services, and payment services.",
-    "strategic_direction": "Apple is focused on expanding its market opportunities related to smartphones, personal computers, tablets, wearables, accessories, and services. The company emphasizes continual innovation, the introduction of new products and services, and technological advancement to compete effectively. A key element of its strategy is designing and developing nearly the entire solution for its products, including hardware, operating systems, software applications, and related services.",
-    "long_term_goals": "Apple aims to attract, develop, and retain the best talent, fostering an inclusive and supportive environment for its employees to encourage innovation. Continuous investment in research and development is crucial for enhancing existing products and services, and to expand the range of its offerings through internal development, intellectual property licensing, and strategic acquisitions. They also intend to increase its dividend on an annual basis, subject to declaration by the Board."
+    "business_description": "Apple Inc. designs, manufactures, and markets a range of products including smartphones (iPhone), personal computers (Mac), tablets (iPad), wearables (Apple Watch, AirPods), and accessories. It also offers related services such as advertising, AppleCare, cloud services, digital content (App Store, Apple Arcade, Apple Music, Apple TV+), and payment services (Apple Card, Apple Pay). The company operates through geographic segments: Americas, Europe, Greater China, Japan, and Rest of Asia Pacific.",
+    "revenue_model": "Apple generates revenue through the sale of its products (iPhone, Mac, iPad, Wearables, Home and Accessories) and services (Advertising, AppleCare, Cloud Services, Digital Content, and Payment Services). It sells directly to customers through its retail and online stores, and indirectly through third-party cellular network carriers, wholesalers, retailers, and resellers. The company also generates revenue through subscription-based services and licensing arrangements.",
+    "strategic_direction": "Apple is focused on expanding its market opportunities related to smartphones, personal computers, tablets, wearables, accessories, and services. The company emphasizes innovation, integrating hardware, operating systems, software applications, and related services to differentiate its products and ensure timely introductions of competitive offerings.",
+    "long_term_goals": "Apple aims to maintain and enhance its competitive position by continually introducing innovative products, services, and technologies. The company invests in research and development, licensing of intellectual property, and acquisitions to expand its offerings and improve existing products and services. It also focuses on attracting, developing, and retaining top talent to drive its success."
   },
   "products_and_services": [
     {
       "product_service_name": "iPhone",
-      "summary": "Apple's flagship smartphone line, powered by iOS. Core product driving revenue.",
-      "details": "The iPhone is Apple's most significant product, featuring models like the iPhone 16 Pro, iPhone 16, iPhone 15, iPhone 14 and iPhone SE. It runs on iOS and is a primary revenue driver, reflecting its central role in Apple's ecosystem and consumer adoption."
+      "summary": "Apple's flagship smartphone based on iOS. Includes models like iPhone 16 Pro, iPhone 16, iPhone 15, iPhone 14, and iPhone SE.",
+      "details": "iPhone is the core of Apple's product ecosystem. It is a smartphone that focuses on user experience, design, and integration with other Apple services. It's a primary revenue driver, and its success is vital. The iPhone competes in a highly competitive market."
     },
     {
       "product_service_name": "Services",
-      "summary": "Includes AppleCare, Cloud Services, Digital Content, Advertising, and Payment Services.",
-      "details": "Apple's Services segment is a major revenue source, encompassing a range of offerings: AppleCare (support and repair), Cloud Services (data storage), Digital Content (App Store, subscriptions like Apple Music & TV+), Advertising, and Payment Services (Apple Pay, Apple Card). It enhances the ecosystem and user experience, generating recurring revenue."
+      "summary": "Encompasses a range of offerings, including advertising, AppleCare, cloud services, digital content (App Store, Apple Arcade, Apple TV+), and payment services (Apple Pay, Apple Card).",
+      "details": "Apple's Services segment is a growing area that enhances the value of Apple hardware. These services create recurring revenue streams and increase customer loyalty. Key services include the App Store, Apple Music, Apple Pay, and iCloud. Expansion of service offerings is a key strategic priority."
     },
     {
       "product_service_name": "Wearables, Home and Accessories",
-      "summary": "Encompasses Apple Watch, AirPods, Apple Vision Pro, Apple TV, HomePod, and accessories.",
-      "details": "This category includes Apple Watch (smartwatches), AirPods (wireless headphones), Apple Vision Pro (spatial computer), Apple TV (media streaming), HomePod (smart speakers), and various accessories. It broadens Apple's product portfolio beyond core devices."
+      "summary": "Includes Apple Watch, AirPods, Apple Vision Pro, Apple TV, HomePod, and various Apple-branded and third-party accessories.",
+      "details": "This category extends Apple's ecosystem, offering products that complement and integrate with its core devices. This segment contributes significantly to revenue and further increases the stickiness of the Apple ecosystem. Includes innovative products like Apple Vision Pro."
     },
     {
       "product_service_name": "Mac",
-      "summary": "Apple's line of personal computers powered by macOS, including MacBook Air, MacBook Pro, iMac, etc.",
-      "details": "The Mac line features laptops (MacBook Air, MacBook Pro) and desktops (iMac, Mac mini, Mac Studio, Mac Pro), all running macOS. While important, it constitutes a smaller portion of overall revenue compared to the iPhone and Services."
+      "summary": "Apple's line of personal computers running macOS, including MacBook Air, MacBook Pro, iMac, Mac mini, Mac Studio, and Mac Pro.",
+      "details": "The Mac line caters to consumers and professionals, known for its design and performance. While not as large a revenue driver as the iPhone, the Mac remains an important part of Apple's product portfolio and is a key component for the Apple ecosystem. It competes with other PC manufacturers."
     },
     {
       "product_service_name": "iPad",
-      "summary": "Apple's line of tablets powered by iPadOS, including iPad Pro, iPad Air, iPad, and iPad mini.",
-      "details": "The iPad is Apple's tablet line, featuring models like iPad Pro, iPad Air, iPad, and iPad mini, all running iPadOS. Tablets hold a smaller market share compared to smartphones and computers, and therefore contribute less to Apple's overall revenue than other product categories."
+      "summary": "Apple's line of multipurpose tablets based on iPadOS, including iPad Pro, iPad Air, iPad, and iPad mini.",
+      "details": "The iPad line offers a range of tablets for different needs and budgets. It provides a mobile computing experience and competes with other tablet manufacturers. While a solid product, its revenue contribution is less significant than the iPhone and Services."
     }
   ],
   "risk_factors": [
     {
       "risk_factor_title": "Macroeconomic and Industry Risks",
-      "summary": "Global economic conditions impact consumer spending and demand, affecting operations, the supply chain, and financial stability. Economic downturns can materially hurt the business.",
-      "details": "Apple's performance relies heavily on global economic health. Slow growth, inflation, or currency fluctuations can reduce consumer spending and demand for Apple's products. It also can impact suppliers and partners, causing financial instability and supply chain disruptions. These issues can increase credit risks, limit debt issuance, and lower the value of financial instruments, significantly affecting Apple's financial condition and stock price."
+      "summary": "Global economic conditions significantly impact Apple's operations, demand, and supply chain. Economic downturns, trade disputes, and geopolitical tensions can disrupt business and harm financial results.",
+      "details": "Apple's performance relies heavily on global economic stability. Slow growth, inflation, and currency fluctuations can reduce consumer spending and demand. International disputes, like tariffs, increase costs and disrupt the supply chain, requiring costly and disruptive changes. Natural disasters, public health issues, and industrial accidents can also halt production, delay deliveries, and increase expenses. These events can significantly hurt Apple's business, finances, and stock price."
     },
     {
-      "risk_factor_title": "Political Events, Trade Disputes, and Other Disruptions",
-      "summary": "Global events like trade disputes, natural disasters, and public health crises can disrupt manufacturing, supply chains, and demand, affecting operations.",
-      "details": "Apple's global operations are vulnerable to political events, trade disputes, natural disasters, and public health issues like pandemics. Restrictions on international trade can increase costs, force supply chain changes, and disrupt operations. Events like earthquakes or geopolitical tensions can halt manufacturing and deliveries. Public health issues can impact demand and disrupt supply chains. A reliance on single-source suppliers exacerbates these risks. Insurance may not cover all losses."
-    },
-    {
-      "risk_factor_title": "Global Competition and Technological Change",
-      "summary": "The markets for Apple's products are highly competitive and undergo rapid tech changes. Failure to innovate or protect intellectual property hurts the business.",
-      "details": "Apple operates in very competitive markets. Success requires constant innovation. Failure to develop and market new products can harm results. Competitors with lower cost structures also can impact price and margins. Infringement on intellectual property also poses a risk, and effective protection isn't always available. The ability to improve products and services is key to maintaining competitive advantage."
+      "risk_factor_title": "Global Markets and Competition",
+      "summary": "Apple operates in highly competitive markets facing rapid tech changes. Failure to innovate or protect IP could hurt market position and margins.",
+      "details": "The company competes in markets marked by aggressive pricing, short product cycles, and rapid tech adoption. Success depends on continuous innovation & R&D investments; failure to develop new products could impact performance. Competition involves aggressive pricing, imitation of products, and infringement on IP. Failure to maintain competitive advantage through innovation or IP protection could negatively impact results."
     },
     {
       "risk_factor_title": "Dependence on Outsourcing Partners",
-      "summary": "Apple relies heavily on outsourcing for manufacturing and logistics. Reduced control over production affects quality, quantity, and responsiveness.",
-      "details": "Apple outsources most manufacturing to partners in Asia. This reduces direct control over production and distribution, potentially affecting product quality and supply. Single-source suppliers introduce risk as disruption can impact component availability. Changes to the supply chain are complex. Failure of outsourcing partners can negatively impact costs, and the failure of a single source supplier can affect the supply of the custom components that Apple needs."
+      "summary": "Apple relies on outsourcing partners for manufacturing and logistics. Disruptions, failures, or violations by these partners could harm operations.",
+      "details": "Manufacturing is primarily outsourced to partners in Asia. Diminished control can affect product quality and response to changing conditions. Reliance on single-source suppliers for components poses supply and pricing risks. Disruptions can stem from disasters, IT failures, or disputes. Failure of partners or component shortages can negatively impact costs, supply, and financial results. Changes to the supply chain can be costly with added operational and regulatory risks."
     },
     {
-      "risk_factor_title": "Product and Service Defects",
-      "summary": "Design and manufacturing defects can affect products and services. This leads to recalls, warranty expenses, and reputational damage, affecting products and services.",
-      "details": "Apple's complex products and services can have design and manufacturing flaws. Defects in components or software can cause safety risks, environmental damage, and personal injury. Outages and errors in services can disappoint customers. Introducing new tech, like AI, can increase safety risks. Failure to address these issues can damage the company's reputation and reduce demand, leading to potential exposures to product liability, recalls, write-downs and significant expenses."
+      "risk_factor_title": "Product and Service Quality",
+      "summary": "Design and manufacturing defects can negatively affect Apple's business, reputation, and financial standing.",
+      "details": "Complex hardware and software may contain defects affecting performance. Component defects can create safety and liability risks. Service outages and errors can lead to customer dissatisfaction. Failure to detect and fix issues can cause widespread problems and security vulnerabilities. This can lead to product recalls, warranty expenses, and legal claims, harming Apple's reputation and financial performance."
     },
     {
-      "risk_factor_title": "Legal Proceedings and Government Investigations",
-      "summary": "Unfavorable outcomes in legal cases or investigations affect the business. Antitrust, patent, and other claims involve costs and potential penalties.",
-      "details": "Apple faces numerous legal claims and government investigations, including patent disputes and antitrust allegations. Defending these actions is expensive and disruptive. Adverse outcomes can result in damages, changes to business practices, and limitations on product offerings, all of which can materially affect Apple's operations, reputation, and financial health. Insurance may not cover all potential losses."
+      "risk_factor_title": "Legal and Regulatory Compliance",
+      "summary": "Legal proceedings, government investigations, and complex regulations could adversely impact Apple's business and financial results.",
+      "details": "Apple faces increasing claims, legal proceedings, and investigations, including patent claims. Unfavorable outcomes can result in damages, changes to business practices, and limitations on products and services. Compliance with global laws on privacy, data security, and other areas is costly and complex. Violations can lead to liabilities, increased costs & reputational damage."
     },
     {
-      "risk_factor_title": "Complex and Changing Laws and Regulations",
-      "summary": "Global operations are subject to complex laws regarding privacy, trade, and more. Compliance is costly; violations hurt the business.",
-      "details": "Apple's global operations are governed by many complex and evolving laws regarding data protection, consumer protection, import/export, and more. Compliance is onerous and costly. Changes in laws may limit product offerings, alter product design, and impact customer demand. Failure to comply with laws or regulations can lead to penalties, adversely affecting Apple's business, financial condition, and reputation."
+      "risk_factor_title": "Information Security Risks",
+      "summary": "Cyberattacks and data breaches could compromise confidential information, disrupt operations, and damage Apple's reputation with financial and legal consequences.",
+      "details": "The company is a high-profile target for malicious attacks seeking to compromise data or disrupt operations. These attacks can impair the ability to attract and retain customers, damage commercial relationships, may impact the company's stock price and expose the Company to litigation or government investigations, which can result in penalties, fines or judgments against the Company. Security measures may not be sufficient, and incidents can lead to reputational damage, financial losses, and legal penalties. "
     },
     {
-      "risk_factor_title": "Reliance on Third-Party Intellectual Property",
-      "summary": "Apple needs licenses for third-party IP in its products. Failure to obtain these or infringement on others' IP can inhibit business.",
-      "details": "Apple designs and develops many of the hardware, operating system, software applications and services for its products. Apple relies on using third-party IP, and needs licenses. If the company cannot get necessary licenses on reasonable terms, or if its products infringe on others' IP, Apple could be forced to modify or stop selling certain products or services. This will impact the business and financials."
+      "risk_factor_title": "New Product Management",
+      "summary": "Managing frequent product introductions and transitions is vital. Failures can lead to lower revenues, margins, and harm to financial condition.",
+      "details": "The company must continually introduce new products, services, and technologies while efficiently managing transitions. Success depends on factors like timely development, market acceptance, and managing risks. New offerings may replace existing ones and generate lower revenues/margins. Poor management of introductions and transitions can negatively impact the business and financial condition."
     },
     {
-      "risk_factor_title": "Dependence on Third-Party Software Developers",
-      "summary": "The success of Apple's hardware depends on third-party software. Lack of developer support can reduce the appeal of Apple's products.",
-      "details": "Customer decisions to buy Apple products depend partly on the availability of third-party software. If developers don't create and maintain software for Apple's products, then customers may not buy Apple's products. The availability and quality of applications for Apple's devices can suffer when developers focus their efforts on competing platforms."
+      "risk_factor_title": "Reliance on Third-Party Support",
+      "summary": "Apple relies on third-party software developers and content providers. Losing their support could negatively impact product appeal and financials.",
+      "details": "Customer purchase decisions depend on available third-party software and content. If developers shift focus to competing platforms, application availability and quality may suffer. The company distributes applications through the App Store and changes can materially affect the Company\u2019s business, results of operations and financial condition. Failure to secure digital content on reasonable terms harms business."
     },
     {
-      "risk_factor_title": "Fluctuating Quarterly Results",
-      "summary": "Apple's quarterly sales and profits fluctuate due to seasonality, product launches, and product demand, impacting financials unpredictably.",
-      "details": "Apple's profit margins and sales vary across products, services, and regions. Gross margins can be volatile due to pricing pressures, competition, supply shortages, and changing product mix. Quarterly sales are highest in Q1 and sensitive to new product launches. Lower-than-expected demand or supply chain issues exacerbate impact and the Company generates a significant portion of net sales from a single product which can significantly change if demand falters."
+      "risk_factor_title": "Dependence on Key Personnel",
+      "summary": "The success of Apple depends on the talents and efforts of its key personnel, and an inability to retain top talent or its culture could be detrimental.",
+      "details": "The continuous service and availability of key personnel are paramount. Competition for skilled employees is intense, especially in Silicon Valley. Failure to manage changing workforce dynamics can negatively affect the Company\u2019s culture, reputation and operational flexibility. An inability to nurture its inclusive culture could materially adversely affect the recruitment and retention rate of those workers."
     },
     {
-      "risk_factor_title": "Digital Content Availability",
-      "summary": "Failure to secure compelling digital content on reasonable terms could harm financials.",
-      "details": "Apple licenses third-party digital content (selling/subscriptions) and incorporates it into its own services. Licensing arrangements are short-term & may not be renewed. Third-party providers may offer competing products, limit access or increase costs. Apple may be unable to offer content at reasonable prices. Apple also produces its digital content, (costly) & may fail to appeal to customers."
+      "risk_factor_title": "Write-Downs and Purchase Commitments",
+      "summary": "Apple faces the risk of write-downs and cancellation fees due to obsolescence, excess inventory, and incorrect forecasting.",
+      "details": "The company writes down obsolete or excess inventory and accrues cancellation fees. Impairment assessments are performed on long-lived assets. Rapid product obsolescence can cause write-downs and impairments. Incorrect forecasting leads to excess/insufficient components or unused purchase commitments. Such issues may lead to further purchase commitment cancellation risk."
     },
     {
-      "risk_factor_title": "Reliance on Talented Employees",
-      "summary": "Apple's success depends on its employees. Losing key personnel or failing to nurture its culture affects the company's future.",
-      "details": "Apple depends on the talents and efforts of its team members and key personnel. Competition for skilled tech workers is intense. Workforce dynamics are constantly evolving putting strain on company culture. If Apple fails to nurture an inclusive culture, it could affect its ability to recruit and retain employees which is critical to future success."
+      "risk_factor_title": "Dependence on Resellers",
+      "summary": "Apple relies on carriers, wholesalers, retailers, and other resellers; poor performance by them could affect sales.",
+      "details": "Apple distributes products through various resellers, some of whom also sell competitors' products. The financial condition or marketing efforts of resellers can weaken, impacting sales. Resellers may reduce orders, or stop distributing Apple's products. Investments in enhancing reseller sales may not yield returns."
     },
     {
-      "risk_factor_title": "Reliance on Resellers",
-      "summary": "Apple uses carriers, retailers, and resellers. Their performance impacts Apple's business; their financial weakness disrupts sales.",
-      "details": "Apple distributes products through carriers, retailers, and resellers, some also carrying competitors' products. Resellers' financial conditions or decisions to reduce orders can hurt Apple's sales. Investments to improve reseller sales may not yield returns. Some carriers offer financing for device purchases, and there\u2019s no guarantee these offers will persist."
+      "risk_factor_title": "Financial Risks: Currency Fluctuations",
+      "summary": "Changes in currency values can hurt Apple's international sales, profits, and component costs, impacting financial performance.",
+      "details": "The company is exposed to foreign exchange rate risks. A weaker foreign currency can reduce the USD value of international sales and earnings (and vice versa). The company uses derivatives to hedge, but effectiveness is limited. Exchange rate volatility has and could adversely affect gross margins on products and components in foreign countries."
     },
     {
-      "risk_factor_title": "IT System Failures and Network Disruptions",
-      "summary": "Failures in IT systems and networks disrupt business, affecting online services, transactions, manufacturing, and shipping.",
-      "details": "Apple and its supply chain rely on complex IT systems. Failures from disasters, cyberattacks, or disruptions can impact online services, customer transactions, and product manufacturing/shipping. Upgrades and continuity measures are expensive and not always effective. Failures can negatively impact operational efficiency and result in reputational harm and financial losses."
-    },
-    {
-      "risk_factor_title": "Data Security and Confidentiality",
-      "summary": "Data breaches and unauthorized access lead to reputational/financial damage. High profile makes Apple a target for attacks.",
-      "details": "Apple stores confidential data, including personal information. Losses or unauthorized access to data can harm its business, reputation, and financials. Attacks seek to compromise data confidentiality and disrupt operations. Security measures may not be sufficient, and attacks can escalate during geopolitical tensions. Insurance may not cover all losses."
-    },
-    {
-      "risk_factor_title": "Investments and Acquisitions",
-      "summary": "New investments and acquisitions create risks, including distraction, liabilities, and failure to gain regulatory approval.",
-      "details": "Apple invests in new business strategies. These entail risks like management distraction, liabilities, operating in new sectors, and asset impairment. Acquisition risks include failure to obtain approvals, limiting the anticipated benefits of a transaction. New ventures are inherently risky and may not succeed. The failure of investments could materially impact Apple's business, reputation, finances, and operations."
+      "risk_factor_title": "Investment in New Business Strategies and Aquisitions",
+      "summary": "Investment in new business strategies and acquisitions could disrupt the Company\u2019s ongoing business, present risks not originally contemplated and materially adversely affect the Company\u2019s financials.",
+      "details": "Investment and acquisition transactions are exposed to failing to obtain required regulatory approvals on a timely basis or at all, or the imposition of onerous conditions that could delay or prevent the Company from completing a transaction or otherwise limit the Company\u2019s ability to fully realize the anticipated benefits of a transaction. These new ventures are inherently risky and may not be successful."
     },
     {
       "risk_factor_title": "Retail Store Risks",
-      "summary": "Retail stores face risks (macroeconomic effects, costs, lease terms) impacting results.",
-      "details": "Apple's retail operations are exposed to the risk from macroeconomic factors and general retail activity, rising costs of construction and management costs, managing vendor relationships, inventory management, and can involve costs associated with retail inventory and management of stores. The business can be affected by store leases and quality of retail locations."
+      "summary": "Apple\u2019s retail operations are subject to many factors that pose risks and uncertainties and could adversely impact the Company\u2019s business, results of operations and financial condition",
+      "details": "Apple\u2019s retail operations are subject to factors including macroeconomic factors that could have an adverse effect on general retail activity. Other factors include the Company\u2019s ability to mange costs associated with retail store construction and operation; and obtain and renew leases in quality retail locations at a reasonable cost"
     },
     {
-      "risk_factor_title": "Environmental, Social and Governance (ESG) Considerations",
-      "summary": "ESG expectations expose Apple to liabilities, costs, and reputational harm if goals aren't met or policies are seen lacking.",
-      "details": "Governments, investors, and other stakeholders are focused on ESG considerations. Responding and achieving ESG goals involves uncertainties, investments, and dependence on third-party data. Failure to achieve goals, comply with laws, or meet expectations can lead to legal proceedings, reputational damage, and harm to Apple's business and stock price."
+      "risk_factor_title": "Financial Risks: Credit & Investments",
+      "summary": "Credit risk on receivables & fluctuations in investment values can impact Apple's financials, especially amid economic downturns.",
+      "details": "Investments are susceptible to shifts in liquidity and credit deterioration. Credit risk from trade receivables and vendor receivables is greater in poor economies. A substantial portion of Apple's receivables are not covered by collateral, third-party bank support or financing arrangements, or credit insurance"
     },
     {
-      "risk_factor_title": "Intense Scrutiny of the Technology Industry",
-      "summary": "Apple is subject to scrutiny and regulation, leading to investigations/legal actions.",
-      "details": "The technology industry, including Apple, is under increasing media, political and regulatory scrutiny, which exposes Apple to regulation, government investigations, legal actions and penalties. Changes to business practices to comply with regulations can negatively impact the reputation of Apple's products which affects sales and overall standing."
-    },
-    {
-      "risk_factor_title": "Data Protection Laws",
-      "summary": "Stringent data laws add costs, force changes, and expose Apple to penalties from violations.",
-      "details": "The Company is subject to an increasing number of federal, state and international laws relating to data privacy. Laws continue to rapidly change and may be inconsistent from jurisdiction to jurisdiction. Noncompliance could result in legal liability/penalties. The Company is also subject to security obligations regarding sensitive health/financial/payment card data."
-    },
-    {
-      "risk_factor_title": "Foreign Exchange Rate Fluctuations",
-      "summary": "Changes in currency values impact international sales and earnings, affecting product pricing and margins.",
-      "details": "Apple's financial performance is affected by exchange rate changes between the US dollar and local currencies including sales and product margins. Strengthening of the dollar can hurt the value of sales in foreign currencies. Hedging activities may not fully offset adverse effects."
-    },
-    {
-      "risk_factor_title": "Investment Portfolio Risks",
-      "summary": "Changes in liquidity, credit, markets, or rates affect investment values, potentially leading to losses.",
-      "details": "Apple's investments can be negatively impacted by changes in market/economic factors and political conditions. Risks include those in liquidity, credit deterioration, financial results, market and economic conditions, political risk, sovereign risk, interest rate fluctuations. Fluctuations can result in significant losses and can have a material adverse impact."
-    },
-    {
-      "risk_factor_title": "Credit Risk",
-      "summary": "Credit risk on receivables and prepayments, especially with economic downturn, can negatively affect the business.",
-      "details": "Apple is exposed to credit risk on accounts receivable and prepayments. A majority are from third parties not secured by collateral. The risk is higher in markets with limited mitigation options. Economic downturns and concentration among a few vendors in Asia increases the Company's credit risk, particularly on receivables and prepayments associated with long-term supply agreements"
-    },
-    {
-      "risk_factor_title": "Tax Liabilities",
-      "summary": "Changes in tax rates or laws can increase tax liabilities, impacting the Company\u2019s financial condition.",
-      "details": "Apple is subject to taxes in the U.S. and foreign countries, including Ireland and Singapore. Tax laws/rates change significantly with economic/political conditions. Changes in tax rates or laws can increase tax liabilities, affecting the mix of earnings which impacts Apple's financial results as well as the examination of tax returns."
+      "risk_factor_title": "Financial Risks: Tax Liabilities",
+      "summary": "Changes in tax laws and rates could increase Apple's tax liabilities, negatively impacting the company's financial results.",
+      "details": "Apple is subject to taxes in various jurisdictions. Changes in tax laws or their interpretation, including global minimum tax standards, can affect the effective tax rate. Tax audits can result in unexpected liabilities. An increase or miscalculation in the Company's taxes can materially affect Apple's business, results of operations and financial condition."
     },
     {
       "risk_factor_title": "Stock Price Volatility",
-      "summary": "Apple's stock price experiences volatility. Failure to meet expectations related to growth can significantly reduce the stock price.",
-      "details": "Apple's stock has experienced extreme price and volume fluctuations. Factors include future growth, earnings growth, cash dividend increases and stock repurchases. If there is a failure to meet expectations, the price of Apple\u2019s stock may decline significantly."
+      "summary": "Apple's stock price is subject to volatility, and failure to meet expectations could lead to a significant price decline.",
+      "details": "The company's stock has experienced significant price volatility. Stock prices may also be affected in ways that may have been unrelated to these companies\u2019 operating performance and is affected by various market factors. A failure to meet expectations related to future growth, profitability, dividends, share repurchases or other market expectations may cause investor confidence and employee retention to decline."
     },
     {
-      "risk_factor_title": "Inventory and Asset Write-Downs",
-      "summary": "Apple faces write-down risks on inventory if obsolescence or demand changes, affecting assets and cancellation fees.",
-      "details": "Apple records write-downs for obsolete or excess inventory and accrues cancellation fees. Long-lived assets are reviewed for impairment. Incorrect forecasting can lead to excess/insufficient amounts of components or products. There can be no assurance the Company will not incur write-downs, fees or other charges."
+      "risk_factor_title": "Data Protection",
+      "summary": "Apple's business is subject to a variety of U.S. and international laws, rules, policies and other obligations regarding data protection.",
+      "details": "Complying with this emerging and changing requirements causes the Company to incur substantial costs and has required and may in the future require the Company to change its business practices. Noncompliance could result in inquiries or proceedings against the Company by governmental entities or others. In addition to reputational impacts, penalties could include ongoing audit requirements and significant legal liability."
+    },
+    {
+      "risk_factor_title": "Industry Regulations",
+      "summary": "The technology industry, including the company, is subject to scrutiny, exposing the company to government investigations, and legal actions and penalties.",
+      "details": "Investigations can result in legal proceedings and claims that could, in the aggregate, have a materially adverse impact on the Company\u2019s business, results of operations and financial condition. If such investigations or litigation are resolved against the Company, the Company can be exposed to significant fines and may be required to make further changes to its business practices, all of which could materially adversely affect the Company\u2019s business."
+    },
+    {
+      "risk_factor_title": "ESG Considerations",
+      "summary": "Environmental, social and governance considerations and reporting obligations expose the Company to potential liabilities and harm.",
+      "details": "A perceived failure by the Company to achieve its goals, further its initiatives, adhere to its public statements, comply with federal, state and international laws and regulations, or meet evolving stakeholder expectations and standards could result in legal and regulatory proceedings against the Company and materially adversely affect the Company\u2019s business"
+    },
+    {
+      "risk_factor_title": "IT System Failures",
+      "summary": "System failures and network disruptions can adversely impact Apple's business and operations.",
+      "details": "The Company and global supply chain rely on complex IT systems. Failures and disruptions can arise from various events including natural disasters, cyberattacks, or other disruptions. Such events can prevent access to online services, disrupt transactions, or hinder manufacturing and shipping. Such failures can also result in material and adverse affect to the company's reputation and financial condition."
+    },
+    {
+      "risk_factor_title": "Access to Intellectual Property",
+      "summary": "Apple relies on licenses to third-party IP. Inability to obtain or use this IP on reasonable terms could harm the business.",
+      "details": "The company's products include third-party IP. The company has from time to time been notified that it may be infringing certain patents or other intellectual property rights of third parties. Failure to obtain necessary licenses or use IP on commercially reasonable terms may require product modifications or preclude sales, impacting financial results."
     }
   ],
   "strategies_and_future_plans": [
     {
-      "future_strategy_focus_headline": "Continuous Innovation in Products & Services",
-      "summary": "Apple's success hinges on the timely introduction of innovative products, services, and technologies. They plan to enhance existing offerings and manage the transition to upgraded versions while managing risks associated with new technologies.",
+      "future_strategy_focus_headline": "Sustained Innovation & R&D",
+      "summary": "Apple plans to maintain its competitive edge by continually introducing innovative products, services, and technologies. This involves significant investment in research and development (R&D) to enhance existing offerings and expand into new areas.",
       "management_quote": "The Company\u2019s ability to compete successfully depends heavily on ensuring the continuing and timely introduction of innovative new products, services and technologies to the marketplace."
     },
     {
-      "future_strategy_focus_headline": "Services Growth & Diversification",
-      "summary": "Apple aims to bolster services, focusing on areas like advertising, the App Store, and cloud services. Success requires appealing digital content, reasonable terms with third parties, and protection against illegitimate content acquisition.",
+      "future_strategy_focus_headline": "Services Growth & Expansion",
+      "summary": "A key focus is growing its Services revenue, driven by advertising, the App Store, and cloud services. Apple aims to enhance its digital content offerings through subscriptions and partnerships, ensuring compelling content availability.",
       "management_quote": "Services net sales increased during 2024 compared to 2023 due primarily to higher net sales from advertising, the App Store\u00ae and cloud services."
     },
     {
-      "future_strategy_focus_headline": "Maintaining Supply Chain Resilience",
-      "summary": "Apple must obtain sufficient component quantities on commercially reasonable terms. Strategies include managing relationships with outsourcing partners and component suppliers, while mitigating risks from single-source dependencies.",
-      "management_quote": "Future operating results depend upon the Company\u2019s ability to obtain components in sufficient quantities on commercially reasonable terms."
+      "future_strategy_focus_headline": "Capital Return to Shareholders",
+      "summary": "Apple intends to continue returning capital to shareholders through share repurchases and dividends. In May 2024, Apple authorized a $110 billion share repurchase program. The company intends to increase its dividend on an annual basis.",
+      "management_quote": "During 2024, the Company repurchased $95.0 billion of its common stock and paid dividends and dividend equivalents of $15.2 billion."
     },
     {
-      "future_strategy_focus_headline": "Talent Acquisition and Cultural Preservation",
-      "summary": "Apple is focused on nurturing its inclusive culture to attract and retain skilled employees. This includes competitive compensation, growth opportunities, and commitment to workplace practices and policies.",
-      "management_quote": "Much of the Company\u2019s future success depends on the talents and efforts of its team members and the continued availability and service of key personnel"
+      "future_strategy_focus_headline": "Operational Efficiency & Supply Chain Management",
+      "summary": "Apple is focused on securing component supply and managing manufacturing purchase obligations. Future operating results depend upon the Company\u2019s ability to obtain components in sufficient quantities on commercially reasonable terms.",
+      "management_quote": "The Company orders components for its products and builds inventory in advance of product announcements and shipments...because the Company\u2019s markets are volatile..."
     },
     {
-      "future_strategy_focus_headline": "Navigating Regulatory Landscape",
-      "summary": "Apple is focused on adapting to evolving regulations across various regions. Expect ongoing changes to App Store policies plus products and services to comply with laws like the Digital Markets Act in the EU.",
-      "management_quote": "The Company expects to make further business changes in the future...in response to litigation, competition, market conditions and legal and regulatory requirements."
+      "future_strategy_focus_headline": "Global Market Adaptation",
+      "summary": "Apple will adapt to global market dynamics, including currency fluctuations and regional economic conditions to maximize sales and profitability. The Company is focused on managing pricing strategies across different regions.",
+      "management_quote": "The weakening of foreign currencies relative to the U.S. dollar adversely affects the U.S. dollar value of the Company\u2019s foreign currency\u2013denominated sales and earnings..."
     }
   ],
   "revenues": [
-    "| Products/Services             | 2024 (USD millions) |\n| ----------------------------- | ------------------- |\n| iPhone                        | 201,183             |\n| Mac                           | 29,984              |\n| iPad                          | 26,694              |\n| Wearables, Home and Accessories | 37,005              |\n| Services                      | 96,169              |\n| Total net sales               | 391,035             |\n",
-    "| Net sales          | September 28, 2024 |\n| ------------------ | ------------------ |\n| Products           | $294,866           |\n| Services           | $96,169            |\n| Total net sales    | $391,035           |\n| Cost of sales:     |                    |\n| Products           | $185,233           |\n| Services           | $25,119            |\n| Total cost of sales| $210,352           |\n| Gross margin       | $180,683           |\n",
-    "| Region                | Net Sales (2024) | Operating Income (2024) |\n| --------------------- | ---------------- | ----------------------- |\n| Americas              | $167,045         | $67,656                |\n| Europe                | $101,328         | $41,790                |\n| Greater China         | $66,952          | $27,082                |\n| Japan                 | $25,052          | $12,454                |\n| Rest of Asia Pacific | $30,658          | $13,062                |\n",
-    "| Region          | Net Sales (USD) |\n|-----------------|-----------------|\n| U.S.            | 142,196         |\n| China           | 66,952          |\n| Other countries | 181,887         |\n| **Total**       | **391,035**     |\n"
+    {
+      "table_title": "Revenue by Product and Service",
+      "revenue_items": [
+        {
+          "title": "Products",
+          "amount": 294866000.0
+        },
+        {
+          "title": "Services",
+          "amount": 96169000.0
+        }
+      ]
+    },
+    {
+      "table_title": "Revenue by Geography",
+      "revenue_items": [
+        {
+          "title": "Americas Net sales",
+          "amount": 167045.0
+        },
+        {
+          "title": "Americas Operating income",
+          "amount": 67656.0
+        },
+        {
+          "title": "Europe Net sales",
+          "amount": 101328.0
+        },
+        {
+          "title": "Europe Operating income",
+          "amount": 41790.0
+        },
+        {
+          "title": "Greater China Net sales",
+          "amount": 66952.0
+        },
+        {
+          "title": "Greater China Operating income",
+          "amount": 27082.0
+        },
+        {
+          "title": "Japan Net sales",
+          "amount": 25052.0
+        },
+        {
+          "title": "Japan Operating income",
+          "amount": 12454.0
+        },
+        {
+          "title": "Rest of Asia Pacific Net sales",
+          "amount": 30658.0
+        },
+        {
+          "title": "Rest of Asia Pacific Operating income",
+          "amount": 13062.0
+        }
+      ]
+    },
+    {
+      "table_title": "Revenue by Geography",
+      "revenue_items": [
+        {
+          "title": "U.S.",
+          "amount": 142196.0
+        },
+        {
+          "title": "China",
+          "amount": 66952.0
+        },
+        {
+          "title": "Other countries",
+          "amount": 181887.0
+        }
+      ]
+    },
+    {
+      "table_title": "Revenue by Product and Service",
+      "revenue_items": [
+        {
+          "title": "iPhone",
+          "amount": 201183.0
+        },
+        {
+          "title": "Mac",
+          "amount": 29984.0
+        },
+        {
+          "title": "iPad",
+          "amount": 26694.0
+        },
+        {
+          "title": "Wearables, Home and Accessories",
+          "amount": 37005.0
+        },
+        {
+          "title": "Services",
+          "amount": 96169.0
+        }
+      ]
+    }
   ]
 }
