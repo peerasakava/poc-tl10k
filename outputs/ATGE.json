@@ -1,0 +1,216 @@
+{
+  "symbol": "ATGE",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/730464/000155837024011099/atge-20240630x10k.htm",
+  "business_overview": {
+    "business_description": "Adtalem Global Education is a leading healthcare educator in the U.S., focused on preparing a diverse talent workforce for the healthcare industry. It operates through five institutions: Chamberlain University, Walden University, American University of the Caribbean School of Medicine (AUC), Ross University School of Medicine (RUSM), and Ross University School of Veterinary Medicine (RUSVM), offering programs in nursing, medicine, veterinary medicine, and other health-related fields.",
+    "revenue_model": "Adtalem generates revenue primarily through tuition fees and related educational service charges from students enrolled in its various programs. The company's revenue is influenced by enrollment numbers, tuition rates, and the mix of programs students are enrolled in. They operate through three segments: Chamberlain, Walden, and Medical and Veterinary.",
+    "strategic_direction": "Adtalem is focused on expanding access to aspiring students through a seamless student experience, leveraging innovative learning technologies, diversifying into new program areas, and integrating its five institutions to meet students' learning needs.",
+    "long_term_goals": "Adtalem aims to create value for society and its stakeholders by offering responsive educational programs supported by exceptional student services, delivered with integrity and accountability. The company is committed to advancing health equity, addressing social determinants of health, and delivering qualified healthcare clinicians to urban and rural communities."
+  },
+  "products_and_services": [
+    {
+      "product_service_name": "Chamberlain University Nursing Programs",
+      "summary": "Offers pre-licensure BSN, RN-BSN, MSN, and DNP degrees, preparing nurses for various roles in healthcare.",
+      "details": "Chamberlain's nursing programs include a 3-year BSN, online RN-BSN completion, MSN with specializations like Nurse Practitioner, and a DNP degree. These programs focus on academic excellence and preparing nurses to transform healthcare. Chamberlain's pre-licensure BSN program enables students to complete their degree in three years. The online MSN degree program offers five non-direct-care specialty tracks: Nurse Educator, Nurse Executive, Nursing Informatics, Population Health, and Healthcare Policy."
+    },
+    {
+      "product_service_name": "Walden University Degree and Certificate Programs",
+      "summary": "Provides online degree and certificate programs for working professionals in fields like nursing, education, counseling, and business.",
+      "details": "Walden offers bachelor's, master's, education specialist, and doctoral degrees, plus certificates, with over 350 specializations. Focused on career professionals, Walden's mission centers on empowering students to drive positive social change. Walden has ranked #1 among 380 accredited institutions for awarding research doctorates to African American students and #1 in awarding graduate degrees in multiple disciplines to African American students."
+    },
+    {
+      "product_service_name": "American University of the Caribbean School of Medicine (AUC)",
+      "summary": "Offers a Doctor of Medicine (MD) degree, training future physicians with international learning experiences and a focus on social accountability.",
+      "details": "AUC provides a medical education program that includes basic science instruction followed by clinical rotations at affiliated hospitals in the U.S., Canada, and the U.K. Eligible students sit for USMLE Step 1 and USMLE Step 2 CK. The mission of AUC is to train tomorrow\u2019s physicians, whose service to their communities and their patients is enhanced by international learning experiences, a diverse learning community, and an emphasis on social accountability and engagement."
+    },
+    {
+      "product_service_name": "Ross University School of Medicine (RUSM)",
+      "summary": "Provides a Doctor of Medicine (MD) degree with an innovative, experiential curriculum and a focus on patient-centric, culturally competent care.",
+      "details": "RUSM delivers a medical education program with basic science studies and clinical rotations at teaching hospitals in the U.S., Canada and the U.K. Students take USMLE Step 1 and Step 2 CK. The mission of RUSM is to deliver an innovative and experiential medical education program in an inclusive environment of scholars that fosters professional growth and leadership for a diverse pool of students to become ethical, compassionate, patient-centric, culturally competent physicians who advance healthcare in local and global communities."
+    },
+    {
+      "product_service_name": "Ross University School of Veterinary Medicine (RUSVM)",
+      "summary": "Offers a Doctor of Veterinary Medicine (DVM) degree, preparing students to advance animal and human health through research and knowledge.",
+      "details": "RUSVM's program includes a pre-clinical curriculum in St. Kitts followed by clinical clerkships at affiliates in the U.S., Canada, Australia, Ireland, New Zealand, and the U.K. RUSVM also offers Masters of Science and Ph.D. degrees. The mission of RUSVM is to provide the best learning environment to prepare students to become members and leaders of the worldwide public and professional healthcare team, advancing human and animal health\u00ad\u2013One Health\u2013through research and knowledge exchange."
+    },
+    {
+      "product_service_name": "Chamberlain University College of Health Professions Programs",
+      "summary": "Offers an online MPH degree, an online MSW degree, and an onsite MPAS degree for health professionals.",
+      "details": "Chamberlain's College of Health Professions offers an online Master of Public Health (\u201cMPH\u201d) degree program, an online Master of Social Work (\u201cMSW\u201d) degree program, and an onsite Master of Physician Assistant Studies (\u201cMPAS\u201d) degree program at the Chicago, Illinois campus. The MSW degree program aims to develop and empower students to be agents of social change in their communities and throughout the world."
+    },
+    {
+      "product_service_name": "Medical Education Readiness Program (MERP)",
+      "summary": "A preparatory program enhancing the academic foundation of prospective AUC and RUSM students to ensure their success in medical school.",
+      "details": "MERP is a 15-week program providing students with the skills needed to succeed in medical school. Successful completion of MERP guarantees admission to AUC or RUSM."
+    },
+    {
+      "product_service_name": "Veterinary Preparatory Program (Vet Prep)",
+      "summary": "Enhances pre-clinical science knowledge and study skills for students aiming to succeed in veterinary school at RUSVM.",
+      "details": "Vet Prep is a one-semester program designed to improve the pre-clinical science foundation critical for success in veterinary school."
+    }
+  ],
+  "risk_factors": [
+    {
+      "risk_factor_title": "Regulatory Audits, Investigations, and Lawsuits",
+      "summary": "Adtalem faces constant scrutiny. Adverse outcomes could lead to fines, Title IV restrictions, accreditation issues, and civil/criminal penalties, harming operations & stock price.",
+      "details": "The postsecondary education industry faces intense regulation. Audits, investigations, and lawsuits can lead to significant monetary and operational penalties. An issue at one Title IV institution could affect all others under Adtalem, regardless of compliance. Adverse publicity or findings can trigger further actions and erode Adtalem's financial stability. Defense and resolution of these matters could significantly impact our resources and operations."
+    },
+    {
+      "risk_factor_title": "Title IV Program Compliance",
+      "summary": "Adtalem relies heavily on Title IV funds. Failure to comply with regulations can lead to loss of funds, restrictions on operations, and significant financial harm.",
+      "details": "Adtalem's Title IV institutions receive a substantial portion of their revenue from federal student aid programs. Compliance failures regarding state authorization, accreditation, financial responsibility, or administrative capability can result in loss of Title IV eligibility. Changes to Title IV laws, funding cuts, or government shutdowns can also negatively impact student enrollment and revenue. Economic factors affecting students' ability to repay loans also impact Title IV compliance, potentially leading to program ineligibility."
+    },
+    {
+      "risk_factor_title": "Government Investigations & Actions",
+      "summary": "Increased scrutiny of postsecondary education may lead to investigations and lawsuits. Resolution could involve significant costs, altered business practices, and substantial damages.",
+      "details": "Adtalem faces potential government and regulatory investigations, private lawsuits, and shareholder claims. Responding can consume resources and exceed insurance coverage, impacting financials. Settlements might mandate business practice changes or large payments. Adverse findings could trigger further lawsuits, governmental inquiries, or actions, including Defense to Repayment claims, leading to restrictions on operations, and affecting licenses and accreditation."
+    },
+    {
+      "risk_factor_title": "Defense to Repayment Regulations",
+      "summary": "New borrower defense regulations create potential liability. Adverse findings may trigger student claims, large letters of credit, or loss of Title IV eligibility.",
+      "details": "ED's Defense to Repayment rules allow students to claim loan discharge based on institutional misconduct. Despite legal challenges to recent regulations, lawsuits or government actions could trigger claims under these regulations. This exposes Adtalem to potential liabilities, potentially requiring significant letters of credit or termination of Title IV eligibility, which could severely impact Adtalem's operations and financials."
+    },
+    {
+      "risk_factor_title": "Student Enrollment & Market Competition",
+      "summary": "Enrollment is subject to external factors. Intense competition from public and private institutions threatens pricing and student recruitment.",
+      "details": "Enrollment depends on regulatory, legislative, and economic factors. Negative perceptions of higher education, student debt aversion, and technological innovations can reduce enrollment. Adtalem faces competition from traditional and proprietary schools, some with greater resources or lower tuition. Increased online programs from traditional colleges intensify competition, potentially affecting enrollment levels, student persistence, and tuition rates, thus impacting financial results."
+    },
+    {
+      "risk_factor_title": "Data Breaches & Security Risks",
+      "summary": "Cyberattacks threaten student and employee data. Breaches could damage reputation, disrupt operations, and result in financial and legal repercussions.",
+      "details": "Adtalem collects and stores sensitive personal data. Security breaches can lead to misappropriation of confidential information, system malfunctions and reputational harm. Attacks on computer networks and information systems could disrupt educational content delivery, financial aid processing, and student services. This could severely hurt the reputation of Adtalem's institutions, its financial condition, operations, and cash flows."
+    },
+    {
+      "risk_factor_title": "Financial Aid & Student Loan Defaults",
+      "summary": "High student loan default rates can restrict Title IV Program eligibility. Budget cuts, financial aid changes, and delays impact student enrollment.",
+      "details": "Adtalem's Title IV institutions may lose eligibility to participate in Title IV programs if student loan default rates exceed the thresholds, impacting the company's business, financial condition, results of operation and cash flows. Government budgetary pressures can significantly impact Title IV programs by changing the laws or reducing funds for those programs hence affecting student enrollment."
+    },
+    {
+      "risk_factor_title": "Accreditation & State Authorization",
+      "summary": "Loss of accreditation or state authorization impacts ability to operate and receive Title IV funds. Regulatory approvals are needed for expansion.",
+      "details": "Maintaining accreditation and state authorization is crucial for Title IV eligibility and operations. Loss of either would severely restrict operations and eligibility to participate in Title IV programs. Opening new campuses or adding programs requires regulatory approvals, and failure to obtain them may hinder growth. Changes in ownership may require re-approval and potentially disrupt Title IV participation."
+    },
+    {
+      "risk_factor_title": "Debt Obligations & Financial Condition",
+      "summary": "Insufficient cash flow impacts debt payments. Restructuring debt may not be possible, potentially leading to default, asset sales, or bankruptcy.",
+      "details": "Adtalem's ability to service debt depends on its financial condition and operating performance. Inability to generate sufficient cash flow or refinance debt could lead to default, potentially triggering acceleration of debt repayment. Reliance on subsidiary cash flow and restrictions on distributions from non-guarantor subsidiaries may further constrain Adtalem's ability to meet its debt obligations."
+    },
+    {
+      "risk_factor_title": "Misrepresentation",
+      "summary": "Substantial misrepresentation to students can result in fines, debt discharge liability, and suspension or termination of Title IV participation.",
+      "details": "ED regulations prohibit substantial misrepresentation by Adtalem. Claims of misrepresentation expose Adtalem to penalties for errors made to non-students, liability for the conduct of others, and to liability even when no actual harm has occurred. If ED determines that an institution engaged in substantial misrepresentation may be fined, discharge the students' debt, or terminate participation in Title IV."
+    },
+    {
+      "risk_factor_title": "Faculty & Clinical Placement Limitations",
+      "summary": "Medical school enrollment may be impacted due to the inability to place students in hospitals in the U.S.",
+      "details": "The medical school enrollment growth may be limited due to certain states may limit the school's access to clinical affiliation arrangements, affect enrollment, financial conditions, results of operations, and cash flow."
+    },
+    {
+      "risk_factor_title": "Public Health Conditions",
+      "summary": "Disease outbreaks can negatively impact our revenue, profitability, and business.",
+      "details": "Outbreaks of communicable infections or diseases, or other public health pandemics in the locations in which we, our students, faculty, and employees live, work, and attend classes, could substantially harm our business. If our business experiences prolonged occurrences of adverse public health conditions, we believe it could have a material adverse effect on our business, financial condition, results of operations, and cash flows."
+    },
+    {
+      "risk_factor_title": "Refund Calculation & Payment",
+      "summary": "Failure to accurately calculate and pay refunds can lead to financial penalties and Title IV program participation restrictions.",
+      "details": "HEA and Ed requirements for Adtalem to calculate refunds of unearned Title IV program funds disbursed to students who withdraw from their educational program. Failure of Adtalem to properly calculate or timely pay, Adtalem may be subjected to sanctions by Ed, thus effecting business, financial conditions, operations, and cash flows."
+    },
+    {
+      "risk_factor_title": "Third-Party Vendor Compliance",
+      "summary": "Failure to comply with applicable regulations in the servicing of our students and institutions could subject us to fines or loss of our ability to participate in Title IV programs.",
+      "details": "Adtalem engages third-party servicers for student software, title IV and financing programs. Failure on the third-party services could lead to fines and the loss of eligibility to participate in title IV programs, thus impacting financial condition, operations, and cash flows"
+    },
+    {
+      "risk_factor_title": "Economic Assistance - Financial aid",
+      "summary": "Loss of economical funding from the state and federal government could reduce the enrollment.",
+      "details": "Some states may reduce or eliminate various student financial assistance programs or establish minimum performance measures as a condition of participation. If our students who receive this type of assistance cannot secure alternate sources of funding, they may be forced to withdraw, reduce the rate at which they seek to complete their education, or replace the source with more expensive forms of funding, such as private loans."
+    },
+    {
+      "risk_factor_title": "90/10 Rule",
+      "summary": "Exceeding the 90/10 rule can provisional certification status.",
+      "details": "Adtalem's Title IV institutions may lose eligibility to participate in Title IV programs if, on a cash basis, the percentage of the institution\u2019s revenue derived from Title IV programs for two consecutive fiscal years is greater than 90%. If exceeded, can trigger a condition for ED provinsional certification status for the institution's following fiscal years."
+    },
+    {
+      "risk_factor_title": "Reliance on Key Employees",
+      "summary": "Ability to attract, retain & develop employees is necessary for operations and strategic plans.",
+      "details": "The inability to attract, retain and develop key employees with appropriate qualifications and experience. If employees in key roles cannot be replaced, the lack of support and customer success may effect enrollment."
+    },
+    {
+      "risk_factor_title": "Acquisition Integration",
+      "summary": "Future acquisitions comes with risks and uncertainties.",
+      "details": "Acquiring education institutions comes with risks and uncertainties of failing to secure regulatory approval, diversion of attention of leaders, commitment issues, and financial commitments."
+    },
+    {
+      "risk_factor_title": "International Operations",
+      "summary": "We may be subject to political disruptions from expanding into new international markets.",
+      "details": "To the extent that we expand internationally, we will face risks that are inherent in international operations including, but not limited to compliance with foreign laws and regulations, and monetary policy risks."
+    },
+    {
+      "risk_factor_title": "Changes in tax laws",
+      "summary": "Proposed changes and lapses in U.S. tax laws could affect results.",
+      "details": "Effective tax rate and outcomes resulting from tax returns could affect results."
+    },
+    {
+      "risk_factor_title": "Goodwill and Intangible Asset Impairment",
+      "summary": "Business results could impair goodwill and intangible assets, leading to write-offs.",
+      "details": "Adtalem's market capitalization can be affected by market conditions, leading to a non-cash impairment charge by up to 63%. If these assets become impaired, a write-off may be required to the intangible assets and goodwill."
+    },
+    {
+      "risk_factor_title": "Share Repurchase Program",
+      "summary": "Share repurchase program may not add stockholder value causing price volatility and could impact our available cash balance",
+      "details": "The manner, timing, and amount of any share repurchases will vary based on stock price, priorities for using business operations , general business and market conditions. The share repurchase program authorization does not obligate us to acquire any specific number or dollar value of shares. Further, our share repurchases could have an impact on our share trading prices, increase the volatility of the price of our common stock, or reduce our available cash balance."
+    },
+    {
+      "risk_factor_title": "Natural Disasters",
+      "summary": "Natural disasters or political disruptions may impact school closings or casualty losses",
+      "details": "Experiencing interruptions or losses as the result of natural disasters, inclement weather, transit disruptions, political disruptions, or other events may cause value of our assets and/or close schools, which can effect recruiting in those locations"
+    },
+    {
+      "risk_factor_title": "Release of confidential information",
+      "summary": "Releasing confidential information could invoke civil penalties of us.",
+      "details": "As an educational institution participating in federal and state student assistance programs and collecting financial receipts from enrollees or their sponsors, we collect and retain certain confidential information and is subject to certain privacy and security rules"
+    },
+    {
+      "risk_factor_title": "Failure to Report Students Tuition",
+      "summary": "Failure to timely report students' tuition could lead to sanctions.",
+      "details": "Inaccurate or untimely reporting or administration of funds to students could result in suspension or termination of our eligibility to participate in these federal and state programs and have a material adverse impact on enrollment and revenue"
+    },
+    {
+      "risk_factor_title": "Presentation of Data",
+      "summary": "Enrollment may be adversely affected from data presentations that do not represent costs for prospective students.",
+      "details": "ED and other public policy organizations are concerned with the affordability of higher education and have developed various tools and resources to help students find low-cost educational alternatives."
+    },
+    {
+      "risk_factor_title": "Failure of financing regulations",
+      "summary": "Failure to comply could invoke fines or penalties.",
+      "details": "If comply with laws applicable to the financing programs including Truth in Lending and Fair Debt Collections Practices laws and the Unfair, Deceptive or Abusive Acts or Practices provisions of Title X of the Dodd-Frank Act, could invoke fines and penalties"
+    }
+  ],
+  "strategies_and_future_plans": [
+    {
+      "future_strategy_focus_headline": "Expanding Access and Innovation",
+      "summary": "Adtalem plans to broaden student access through a streamlined experience, innovative learning technologies, program diversification, and institutional integration to cater to diverse learning preferences.",
+      "management_quote": "Adtalem remains focused on expanding access to aspiring students through a seamless student experience, leveraging innovative learning technologies..."
+    },
+    {
+      "future_strategy_focus_headline": "Medical & Vet Enrollment Focus",
+      "summary": "Management aims to boost enrollment and operational effectiveness within the Medical and Veterinary segment, emphasizing academic support, enrollment experiences, and marketing strategies.",
+      "management_quote": "Management\u2019s focus is on increasing enrollment and renewing operational effectiveness, specifically around academic support, the enrollment experience, and marketing."
+    },
+    {
+      "future_strategy_focus_headline": "Strategic Acquisitions",
+      "summary": "Adtalem is actively seeking acquisition opportunities, aligned with their strategy, primarily within the U.S., to expand their capabilities and market presence in healthcare education.",
+      "management_quote": "As part of our strategy, we are actively exploring acquisition opportunities primarily in the U.S."
+    },
+    {
+      "future_strategy_focus_headline": "Campus and Program Expansion",
+      "summary": "Adtalem intends to open new campuses and offer new programs contingent upon regulatory approvals, allocation of financial resources and human capital.",
+      "management_quote": "As part of our strategy, we intend to open new campuses, offer new educational programs, and add capacity to certain existing locations."
+    },
+    {
+      "future_strategy_focus_headline": "International Expansion Risks",
+      "summary": "Adtalem recognizes risks inherent in international expansion including fluctuating exchange rates, compliance with laws, currency controls and economic and political instability.",
+      "management_quote": "To the extent that we expand internationally, we will face risks that are inherent in international operations..."
+    }
+  ]
+}

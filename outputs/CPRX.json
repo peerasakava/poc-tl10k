@@ -1,0 +1,181 @@
+{
+  "symbol": "CPRX",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1369568/000119312524050908/d723690d10k.htm",
+  "business_overview": {
+    "business_description": "Catalyst Pharmaceuticals is a commercial-stage biopharmaceutical company that focuses on in-licensing, developing, and commercializing medicines for patients living with rare and difficult-to-treat diseases. Their portfolio includes FIRDAPSE\u00ae (for Lambert-Eaton myasthenic syndrome or LEMS), FYCOMPA\u00ae (for epilepsy), and AGAMREE\u00ae (for Duchenne Muscular Dystrophy or DMD).",
+    "revenue_model": "The company generates revenue primarily through the sales of its prescription drugs: FIRDAPSE\u00ae, FYCOMPA\u00ae, and in the future, AGAMREE\u00ae. They utilize a field force experienced in neurology and rare diseases, patient support programs (Catalyst Pathways\u00ae), and partnerships with specialty pharmacies to distribute and support the use of their products. They offer financial assistance programs to help patients afford their medications.",
+    "strategic_direction": "The company's overall strategy involves acquiring, developing, and commercializing novel prescription drugs targeting rare neuromuscular and neurological diseases. They focus on broadening their product portfolio through acquisitions and licensing, expanding the geographic footprint of existing products, and improving disease awareness.",
+    "long_term_goals": "Specifically, Catalyst intends to:\n\n*   Continue to commercialize and improve disease awareness for FIRDAPSE\u00ae for LEMS.\n*   Continue to commercialize FYCOMPA\u00ae for epilepsy.\n*   Successfully launch AGAMREE\u00ae in the United States for DMD.\n*   Obtain approval for FIRDAPSE\u00ae in Japan and seek approval in other territories in Asia and Latin America.\n*   Seek to acquire additional products to broaden and diversify their product portfolio."
+  },
+  "products_and_services": [
+    {
+      "product_service_name": "FIRDAPSE\u00ae (amifampridine) Tablets 10 mg",
+      "summary": "FIRDAPSE\u00ae treats Lambert-Eaton myasthenic syndrome (LEMS) in adults and children ages six and up. It enhances neuromuscular transmission by prolonging nerve cell depolarization.",
+      "details": "FIRDAPSE\u00ae is a voltage-gated potassium channel blocker, preventing potassium ions from leaving nerve cells, prolonging depolarization, and enabling more calcium ions to enter. This process facilitates acetylcholine release, which is the neurotransmitter needed for muscle contraction. It addresses muscle weakness in LEMS patients. Catalyst Pathways\u00ae supports patient access, while the company ensures affordability through assistance programs. It also offers no-cost diagnostic testing."
+    },
+    {
+      "product_service_name": "FYCOMPA\u00ae (perampanel) CIII",
+      "summary": "FYCOMPA\u00ae is a prescription medication to treat focal onset seizures (with/without secondary generalized seizures) in people with epilepsy aged four and older, and primary generalized tonic-clonic seizures in people with epilepsy aged 12 and older.",
+      "details": "FYCOMPA\u00ae is a selective non-competitive AMPA receptor antagonist. Studies suggest that AMPA receptor antagonism can lead to reduced overstimulation and anticonvulsant effects, as well as inhibiting seizure generation and spread. Catalyst supports patients using FYCOMPA\u00ae through an Instant Savings Card Program. Eligible commercially insured patients could pay little as $10 for their FYCOMPA\u00ae co-pay (with a max savings of $1,300 per year)."
+    },
+    {
+      "product_service_name": "AGAMREE\u00ae (vamorolone) oral suspension 40 mg/ml",
+      "summary": "AGAMREE\u00ae is a novel corticosteroid approved for Duchenne Muscular Dystrophy (DMD) treatment in patients aged two and older. It aims to provide comparable efficacy to corticosteroids with a better side effect profile.",
+      "details": "AGAMREE\u00ae features a unique mode of action with differential effects on glucocorticoid and mineralocorticoid receptors. Support for AGAMREE\u00ae distribution will occur through Catalyst Pathways\u00ae, offering families personalized support and financial assistance. Clinical trials demonstrated improvements in motor function. Steroids are expected to remain the backbone of therapy for DMD patients and dosed concomitantly with other therapies."
+    },
+    {
+      "product_service_name": "Catalyst Pathways\u00ae",
+      "summary": "Catalyst Pathways\u00ae is a personalized treatment support program for patients. It offers education, guidance, and financial assistance for those using FIRDAPSE\u00ae and AGAMREE\u00ae.",
+      "details": "Catalyst Pathways\u00ae provides personalized support, education, and guidance for patients navigating treatment, including complex dosing regimens. It serves as a single source for patients who have been prescribed FIRDAPSE\u00ae and AGAMREE\u00ae. The program also provides access to financial assistance, bridging medication, and distribution through specialty pharmacies and helps patients await coverage determination."
+    }
+  ],
+  "risk_factors": [
+    {
+      "risk_factor_title": "Commercialization of Products",
+      "summary": "Success hinges on product commercialization. Failure to achieve commercial success would materially harm the business, financial condition, and results of operations.",
+      "details": "Generating revenue from FIRDAPSE\u00ae, AGAMREE\u00ae, and FYCOMPA\u00ae depends on many factors: effective sales, marketing, distribution systems, third-party manufacturers, market acceptance, pricing, competition, demonstration of product safety and efficacy, and intellectual property rights. Failure in any area could severely impact the company."
+    },
+    {
+      "risk_factor_title": "Market Acceptance of Products",
+      "summary": "Drug products may not gain sufficient market acceptance by physicians, patients, and/or third-party payors, negatively impacting the business and profitability.",
+      "details": "Market acceptance depends on efficacy, side effects, price, labeling, sales & marketing, patient costs, distribution, support programs, payor coverage and restrictions. Failure to achieve adequate acceptance will prevent the company from generating significant revenue or becoming profitable."
+    },
+    {
+      "risk_factor_title": "Business Competition",
+      "summary": "The biotechnology and pharmaceutical industries are highly competitive. Our offerings may not be accepted if our competitors are more effective, safer, or less expensive.",
+      "details": "The company faces substantial competition in the biotechnology and pharmaceutical industries, many of which have substantially greater resources. Competitors' present or future offerings or manufacturing efficiencies could negatively impact the business if they are superior to those of the company."
+    },
+    {
+      "risk_factor_title": "Orphan Drug Exclusivity",
+      "summary": "Failure to obtain or maintain orphan drug exclusivity could allow competitors to sell products to treat the same conditions at reduced prices, significantly affecting revenues.",
+      "details": "The company relies on orphan drug designation for competitive positioning, particularly where patent protection is limited. Loss of this exclusivity, or changes to the ODA, would allow competitors to market the same drug, reducing revenues. Even with exclusivity, different drugs can be approved for the same condition."
+    },
+    {
+      "risk_factor_title": "Drug Development Failure",
+      "summary": "Failure can occur at any stage of drug development, which could further delay or even prevent the company from generating revenue.",
+      "details": "Regulatory approval requires demonstrating safety and efficacy. Clinical trial failures, regulatory hurdles, patient enrollment issues, or third-party contractor failures can delay or prevent approval and commercialization. The company may experience numerous unforeseen events during, or as a result of, testing that could delay or prevent from obtaining regulatory approval."
+    },
+    {
+      "risk_factor_title": "Reliance on Third Parties",
+      "summary": "Reliance on outsourced services could lead to delays.",
+      "details": "The company outsources manufacturing. It is therefore reliant on the viability of third parties. If contract manufacturers or suppliers fail to meet standards or experience disruptions, the company's operations and ability to deliver products could be hampered. The company is also dependent on the licensing partners for supplies of AGAMREE\u00ae and FYCOMPA\u00ae"
+    },
+    {
+      "risk_factor_title": "Government Regulation",
+      "summary": "The regulatory process is lengthy, and approvals to manufacture/commercialize products may not be obtained in all countries or for additional indications.",
+      "details": "Obtaining regulatory approvals is a lengthy process requiring substantial resources. The company must demonstrate safety and efficacy to regulatory agencies, and manufacturing facilities must comply with cGMP standards. Failure to obtain approvals would prevent commercialization, and failure to comply with ongoing regulations could lead to lost approvals and harm to the business."
+    },
+    {
+      "risk_factor_title": "Intellectual Property Protection",
+      "summary": "Inability to obtain/maintain patent protection or sufficiently broad patent scope could hinder effective market competition.",
+      "details": "The company relies on patents, trademarks, trade secrets, and confidentiality agreements. Failure to secure or defend patents, or to operate without infringing third-party rights, could impede commercialization efforts and impact the ability to compete. The Paragraph IV litigation with respect to FIRDAPSE\u00ae and FYCOMPA\u00ae is ongoing."
+    },
+    {
+      "risk_factor_title": "Healthcare Laws and Regulations",
+      "summary": "Our operations are subject to anti-bribery, kickback, fraud, transparency, and other healthcare laws, potentially exposing us to penalties and harm.",
+      "details": "Arrangements with healthcare providers and payors are subject to anti-bribery, fraud, and abuse laws. Non-compliance could result in enforcement actions, sanctions, penalties, reputational harm, and diminished profits. Compliance efforts can be costly, and violations can have severe consequences. The company is at risk of potentially engaging in misconduct such as fraud or non-compliance with set regulations."
+    },
+    {
+      "risk_factor_title": "Additional Capital",
+      "summary": "Additional capital may be required to fund the business, but it is uncertain whether it will be available on favorable terms.",
+      "details": "The company may need to raise additional funds through equity offerings, debt financing, or collaborations. Raising capital might dilute existing stockholders. If not secured when needed, the company may be forced to delays, reducing scope or eliminating research and development programs."
+    },
+    {
+      "risk_factor_title": "Pricing and Reimbursement Pressure",
+      "summary": "Payor coverage, reimbursement, and pricing pressures could impair the company's ability to achieve viable financial outcomes.",
+      "details": "The company's commercial success depends on reimbursement by third-party payors and government health administrations. Cost containment pressure within the healthcare industry may limit coverage, reduce reimbursement rates, and affect the prices the company can obtain for its products. Recently enacted legislature, such as the IRA, will likely have a significant impact on the pricing. Additional statutory, regulatory, and administrative healthcare initiatives could lead to further reductions in coverage and reimbursement."
+    },
+    {
+      "risk_factor_title": "FYCOMPA\u00ae Risks",
+      "summary": "Risks associated with FYCOMPA\u00ae use, such as psychiatric and behavioral changes, may deter potential patients or lead to discontinuation.",
+      "details": "FYCOMPA\u00ae carries a boxed warning for serious psychiatric and behavioral changes. While rare, these side effects, alongside other risks, may cause reluctance to start or continue treatment, impacting the drug market and demand. Other serious side effects include suicidal thoughts or behavior and increased risk of seizures. The risk of such events could deter patients and providers."
+    },
+    {
+      "risk_factor_title": "Acquisition and In-Licensing Strategy",
+      "summary": "Strategy to acquire innovative platforms or drug development programs outside neuromuscular disease may not be successful.",
+      "details": "Acquiring licenses or in-licensing targets may be lengthy and complex; identified targets may be difficult to close deals with or may be unfavorable. If any product candidates or technology platforms they acquire are not successful or commercialized, acquisitions may entail operational, financial, and legal risks."
+    },
+    {
+      "risk_factor_title": "Manage Growth",
+      "summary": "If we encounter difficulties in managing our growth, this would adversely our ability to effectively commercialize our products.",
+      "details": "To manage future growth, we will hire, train, and manage additional employees, and we may not be able to financially support future growth, or hire, train, and manage the required personnel. If we cannot maintain uniform standards, controls, procedures, and policies, our operating costs to grow at a faster pace than we currently anticipate and could have a material adverse effect on our business, financial condition, results of operations and prospects."
+    },
+    {
+      "risk_factor_title": "System and Security Failures",
+      "summary": "System failures or security breaches affecting computer systems could disrupt product development and lead to data loss.",
+      "details": "Vulnerability exists for damage from viruses, unauthorized access, or failures. Loss of clinical trial data or proprietary information can delay regulatory efforts and increase costs. Remote working technologies and reliance on mobile devices also increases the risk of breaches."
+    },
+    {
+      "risk_factor_title": "Dependence on Personnel",
+      "summary": "The company's success is highly dependent on key personnel and advisors. Loss of their services could impede objectives.",
+      "details": "The company relies heavily on its executive officers and key employees. Losing these individuals or failing to recruit replacements could delay the company's developmental efforts. They have no employment or retention agreements with any officers or key employees."
+    },
+    {
+      "risk_factor_title": "Product Liability Claims",
+      "summary": "Risk of product liability claims exists, and adequate insurance may not be obtainable.",
+      "details": "Clinical testing and the sale of pharmaceutical products expose the company to potential liability risks. Adverse litigation could consume financial and managerial resources, negatively affecting the business, results of operations, prospect, and stock price. The amount of insurance may not be adequate to cover all liabilities because they cannot predict all possible harms or side effects that may result."
+    },
+    {
+      "risk_factor_title": "Business or Economic Disruption",
+      "summary": "Broad disruptions or global health concerns (e.g., COVID-19) could harm development efforts and increase costs.",
+      "details": "Social, economic, and labor instability can impact the company and its third-party partners. Potential business shutdowns or disruptions to the supply chain, clinical trial sites, or regulatory bodies could materially and negatively affect the ability to conduct business and run clinical trials."
+    },
+    {
+      "risk_factor_title": "Stock Price Volatility",
+      "summary": "The trading price of the company's common stock has been and could be highly volatile.",
+      "details": "Market prices are historically highly volatile, particularly in the pharmaceutical industry. The stock prices might fluctuate due to business developments, regulatory requirements, adverse publicity, competition, financial estimates, sales of shares, and economic conditions."
+    },
+    {
+      "risk_factor_title": "Takeover Attempts",
+      "summary": "Provisions in Delaware law and company documents could delay takeover attempts that stockholders may consider favorable.",
+      "details": "Certain provisions may make it harder for a third-party to acquire or change the company's management. These provisions may prevent completion of a transaction beneficial to stockholders by deterring potential acquirers or preventing a change in control."
+    },
+    {
+      "risk_factor_title": "Future Sales of Common Stock",
+      "summary": "Future sales of shares may cause the stock price to decline.",
+      "details": "Sales of shares, or the perception in the market that holders intend to sell shares, could reduce the market price of common stock."
+    },
+    {
+      "risk_factor_title": "Failure to Meet Publicly Announced Guidance",
+      "summary": "Failure to meet publicly announced guidance could cause our stock price to decline.",
+      "details": "Actual business results may vary significantly from guidance, and if we should downgrade our previously announced guidance or withdraw the previously announced guidance, the price of our common stock will likely decline."
+    },
+    {
+      "risk_factor_title": "Dividend Policy",
+      "summary": "The company does not intend to pay cash dividends on its common stock in the foreseeable future.",
+      "details": "Investors require dividend income. Stockholders will not realize a return unless the trading price of common stock is uncertain and unpredictable."
+    },
+    {
+      "risk_factor_title": "Employee Misconduct",
+      "summary": "Our employees, sales agents and consultants may engage in misconduct or other improper activities, including noncompliance with regulatory standards and requirements.",
+      "details": "It is not always possible to identify and deter misconduct such as failures to comply with FDA regulations, provide accurate information to the FDA, comply with manufacturing standards, comply with federal and state healthcare fraud and abuse laws and regulations. These actions could have a significant impact on the company including the imposition of significant fines or other sanctions."
+    }
+  ],
+  "strategies_and_future_plans": [
+    {
+      "future_strategy_focus_headline": "Strategic Portfolio Expansion",
+      "summary": "Catalyst aims to broaden its rare neurology product portfolio through acquisitions, licensing, & geographic expansion. Focus is on clinically differentiated, de-risked CNS & adjacent rare disease opportunities.",
+      "management_quote": "We believe that this strategic expansion will better position our company to build out a broader more diversified portfolio of drug candidates...add greater value to our company..."
+    },
+    {
+      "future_strategy_focus_headline": "Successful AGAMREE\u00ae Launch in US",
+      "summary": "Planned for Q1 2024, leveraging existing infrastructure. Aims for personalized patient support via Catalyst Pathways\u00ae. Expects minimal sales personnel expansion due to neuromuscular franchise synergy.",
+      "management_quote": "We currently expect to launch AGAMREE\u00ae in the U.S. during the first quarter of 2024...minimal sales and marketing personnel expansion...synergy of this product within our existing neuromuscular franchise."
+    },
+    {
+      "future_strategy_focus_headline": "Expanding FIRDAPSE\u00ae Globally",
+      "summary": "Supporting DyDo's Japan NDA. Territory expansion into Asia & Latin America underway via strategic partnerships. Focus on Asia Pacific & Latin American regions to increase global footprint.",
+      "management_quote": "We are currently initiating plans to seek opportunities to expand FIRDAPSE\u00ae\u2019s global footprint through strategic partnerships (with the current focus on the Asia Pacific and Latin American regions)."
+    },
+    {
+      "future_strategy_focus_headline": "Continue FIRDAPSE\u00ae Commercialization",
+      "summary": "Focus on improving disease awareness & supporting Catalyst Pathways\u00ae for personalized treatment support. Goal is to ensure no LEMS patient is denied access to FIRDAPSE\u00ae for financial reasons.",
+      "management_quote": "A cornerstone of our U.S. strategy is our continuing development of Catalyst Pathways\u00ae, our personalized treatment support program...no LEMS patient be denied access to FIRDAPSE\u00ae for financial reasons."
+    },
+    {
+      "future_strategy_focus_headline": "Continue FYCOMPA\u00ae Commercialization",
+      "summary": "Successfully distributing & marketing FYCOMPA\u00ae in the U.S. Believes having a second marketed product adds substantially to the business franchise.",
+      "management_quote": "We are currently successfully distributing and marketing FYCOMPA\u00ae. We believe that having a second marketed product adds substantially to our business franchise."
+    }
+  ]
+}
