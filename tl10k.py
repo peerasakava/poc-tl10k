@@ -1,8 +1,11 @@
 # /// script
 # requires-python = ">=3.12"
 # dependencies = [
+#     "beautifulsoup4",
 #     "edgartools",
 #     "openai",
+#     "requests",
+#     "rich",
 # ]
 # ///
 
@@ -28,6 +31,7 @@ from models import (
     RiskFactor,
     FutureStrategy,
 )
+from revenue_parser import RevenueParser
 
 def read_prompt(prompt_type: PromptType) -> str:
     with open(prompt_type.get_path(), 'r') as f:
@@ -149,11 +153,19 @@ def get_summarize(symbol: str, console: Console) -> dict:
             console.print(f"[red]No 10-K filing found for {symbol}[/red]")
             return None
 
-        filing_url = filing.filing_url        
+        filing_url = filing.filing_url
+    
+        # Get revenue tables
+        progress.update(fetch_task, description="[yellow]Analyzing revenue tables...[/yellow]")
+        parser = RevenueParser()
+        revenues = parser.analyze_revenue_tables(filing_url)
+        revenues_table = "\n\n".join(revenues)
+
         progress.update(fetch_task, description=f"[green]Found 10-K filing: {filing_url}[/green]")
         ten_k = filing.obj()
 
         item_1 = ten_k["ITEM 1"]
+        item_1_revenue = item_1 + "Revenues\n---\n" + revenues_table
         item_1A = ten_k["ITEM 1A"]
         item_1_merged = item_1 + "\n\n" + item_1A
         item_7 = ten_k["ITEM 7"]
@@ -163,7 +175,7 @@ def get_summarize(symbol: str, console: Console) -> dict:
         business_overview = get_overview(item_1, item_7)
         
         progress.update(fetch_task, description="[yellow]Analyzing products and services...[/yellow]")
-        products_and_services = get_products_and_services(item_1)
+        products_and_services = get_products_and_services(item_1_revenue)
         
         progress.update(fetch_task, description="[yellow]Analyzing risk factors...[/yellow]")
         risk_factors = get_risk_factors(item_1A)
@@ -172,14 +184,15 @@ def get_summarize(symbol: str, console: Console) -> dict:
         strategies_and_future_plans = get_strategies_and_future_plans(item_1_merged, item_7)
         
         progress.update(fetch_task, description="[green]Analysis completed![/green]")
-
+    
     summary = {
         "symbol": symbol,
         "filing_url": filing_url,
         "business_overview": business_overview.model_dump(),
         "products_and_services": [p.model_dump() for p in products_and_services],
         "risk_factors": [r.model_dump() for r in risk_factors],
-        "strategies_and_future_plans": [s.model_dump() for s in strategies_and_future_plans]
+        "strategies_and_future_plans": [s.model_dump() for s in strategies_and_future_plans],
+        "revenues": revenues
     }
 
     return summary
