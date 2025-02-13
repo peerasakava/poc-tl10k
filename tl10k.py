@@ -18,6 +18,7 @@ from rich.console import Console
 from rich.prompt import Prompt
 from rich.progress import Progress, SpinnerColumn, TextColumn
 from rich.panel import Panel
+from rich.syntax import Syntax
 from rich import print as rprint
 
 from models import (
@@ -40,7 +41,62 @@ def get_openai_client() -> OpenAI:
         base_url="https://openrouter.ai/api/v1"
     )
 
+def parse_json_response(content: str, response_model: Type[T], console: Console) -> T:
+    """Parse JSON response from the content and validate it against the response model.
+    
+    Args:
+        content: Raw response content containing JSON
+        response_model: Type of model to validate against
+        console: Rich console instance for pretty printing
+        
+    Returns:
+        Validated model instance
+        
+    Raises:
+        ValueError: If JSON parsing or model validation fails
+    """
+    json_match = re.search(r'```json\n(.+?)\n```', content, re.DOTALL)
+
+    if not json_match:
+        console.print()
+        console.print(Panel.fit(
+            content,
+            title="[bold red]Error: No JSON Found in Response[/]",
+            border_style="red"
+        ))
+        raise ValueError("No JSON content found in the response")
+
+    json_str = json_match.group(1)
+    try:
+        json_data = json.loads(json_str)
+        
+        # Handle list types
+        if hasattr(response_model, '__origin__') and response_model.__origin__ is list:
+            item_type = response_model.__args__[0]
+            return [item_type.model_validate(item) for item in json_data]
+        # Handle single model types
+        return response_model.model_validate(json_data)
+
+    except json.JSONDecodeError as e:
+        console.print()
+        console.print(Panel.fit(
+            f"Raw content:\n{content}\n\nError: {str(e)}",
+            title="[bold red]JSON Parse Error[/]",
+            border_style="red"
+        ))
+        raise ValueError(f"Failed to parse JSON response: {e}")
+    except Exception as e:
+        console.print()
+        console.print(Panel.fit(
+            f"JSON data:\n{json.dumps(json_data, indent=2)}\n\nError: {str(e)}",
+            title="[bold red]Model Validation Error[/]",
+            border_style="red"
+        ))
+        raise ValueError(f"Failed to validate response model: {e}")
+
 def generate_completion(prompt: str, response_model: Type[T], system_prompt: str = "You are a helpful 10-K summarize assistant.") -> T:
+    console = Console()
+
     client = get_openai_client()
     response = client.chat.completions.create(
         model="google/gemini-2.0-flash-001",
@@ -51,25 +107,7 @@ def generate_completion(prompt: str, response_model: Type[T], system_prompt: str
     )
 
     content = response.choices[0].message.content
-    
-    json_match = re.search(r'```json\n(.+?)\n```', content, re.DOTALL)
-
-    if json_match:
-        json_str = json_match.group(1)
-        try:
-            json_data = json.loads(json_str)
-            # Handle list types
-            if hasattr(response_model, '__origin__') and response_model.__origin__ is list:
-                item_type = response_model.__args__[0]
-                return [item_type.model_validate(item) for item in json_data]
-            # Handle single model types
-            return response_model.model_validate(json_data)
-        except json.JSONDecodeError as e:
-            raise ValueError(f"Failed to parse JSON response: {e}")
-        except Exception as e:
-            raise ValueError(f"Failed to validate response model: {e}")
-    else:
-        raise ValueError("No JSON content found in the response")
+    return parse_json_response(content, response_model, console)
 
 def get_overview(item1: str, item7: str) -> BusinessOverview:
     prompt = read_prompt(PromptType.OVERVIEW)
