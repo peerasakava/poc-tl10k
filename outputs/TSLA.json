@@ -2,276 +2,229 @@
   "symbol": "TSLA",
   "filing_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm",
   "business_overview": {
-    "business_description": "Tesla designs, develops, manufactures, sells, and leases fully electric vehicles and energy generation and storage systems. They primarily sell directly to customers and are expanding their customer-facing infrastructure. Tesla is also developing full self-driving technology and strives to lower the cost of ownership through manufacturing cost reductions and financial services.",
-    "revenue_model": "Tesla generates revenue through two main segments: Automotive and Energy Generation and Storage. Automotive revenues come from vehicle sales and leases, sales of automotive regulatory credits, and services like used vehicle sales, maintenance, parts, Supercharging, and insurance. The Energy segment generates revenue from the sale and leasing of solar and energy storage products, related services, and solar energy system incentives.",
-    "strategic_direction": "Tesla's overall strategy involves accelerating the transition to sustainable energy. This includes expanding manufacturing capacity, introducing new products, improving FSD capabilities, reducing costs, increasing production efficiency, vertically integrating and localizing the supply chain, and expanding global infrastructure.",
-    "long_term_goals": "Tesla's long-term goals include increasing vehicle production and deliveries, ramping up energy storage product production, continuing innovation in AI and battery technology, expanding the Supercharger network, and reducing manufacturing costs to increase affordability. They also aim launch their Robotaxi business in 2025."
+    "business_description": "Tesla designs, develops, manufactures, sells, and leases high-performance fully electric vehicles and energy generation and storage systems. They sell products directly to customers and are expanding their customer-facing infrastructure. The company is also developing full self-driving technology.",
+    "revenue_model": "Tesla generates revenue from two segments: (i) automotive, through sales and leasing of electric vehicles and sales of automotive regulatory credits, used vehicles, non-warranty maintenance services, part sales, paid Supercharging, and insurance services; and (ii) energy generation and storage, through sales and leasing of solar energy generation and energy storage products and related services and sales of solar energy systems incentives. The company is also increasingly focused on products and services based on AI, robotics and automation.",
+    "strategic_direction": "Tesla's overall strategy involves accelerating the world\u2019s transition to sustainable energy. This includes expanding production capacity, introducing new and more affordable products leveraging existing factories and production lines, reducing manufacturing costs, improving vehicle production and delivery, and investing in AI, robotics, and automation. In addition, The company aim to localize vehicle designs and production for particular market, increase vehicle delivery capability, maintain vehicle reliability and optimize Supercharger locations which helps to reducing cost per vehicle and ensure cost effectiveness and customer satisfaction.",
+    "long_term_goals": "Tesla's long-term goals include increasing the market penetration of energy storage products, continuing to expand manufacturing capacity at existing facilities and adding localized manufacturing in key markets, improving vehicle performance, decreasing production costs, increasing affordability and customer awareness, and expanding their global infrastructure, including service and charging capabilities."
   },
   "products_and_services": [
     {
       "product_service_name": "Automotive Sales",
-      "summary": "Tesla designs, develops, manufactures, sells and leases fully electric vehicles, including Model 3, Y, S, X, and Cybertruck.",
-      "details": "Tesla's core business revolves around electric vehicles. Model 3 is a mid-size sedan, Model Y a compact SUV, and Model S a full-size sedan with Model X being a mid-size SUV. Cybertruck expands into the pickup truck market. Tesla emphasizes performance, safety, and continuous improvement through over-the-air updates. Automotive sales accounts for $72,480 in 2024."
+      "summary": "Tesla designs, develops, manufactures, sells, and leases fully electric vehicles, including Model 3, Y, S, X, and Cybertruck.",
+      "details": "Tesla's core business is selling electric vehicles. The current lineup includes Model 3 (mid-size sedan), Model Y (compact SUV), Model S (full-size sedan), Model X (mid-size SUV), and Cybertruck (full-size pickup). Tesla emphasizes performance, safety, and manufacturability in its vehicle design and strives to lower ownership costs. The company sells directly to customers."
     },
     {
       "product_service_name": "Energy Generation and Storage",
-      "summary": "Tesla offers energy solutions like Powerwall (home energy storage), Megapack (grid-scale storage), and Solar Roof/Panels.",
-      "details": "Tesla's energy solutions offering includes products like Powerwall, an energy storage system for homes and small businesses, and Megapack, a utility-scale energy storage solution. They also sell Solar Roof, which combines roof tiles with solar panels, and retrofit solar energy systems. Emphasis is placed on software for remote control and optimization of energy storage systems. The revenue from this segment totaled $9,564 in 2024."
+      "summary": "Tesla offers energy solutions like Powerwall (home energy storage), Megapack (utility-scale storage), and Solar Roof (integrated solar roof tiles).",
+      "details": "Tesla's energy segment provides products for residential, commercial, and utility customers. Powerwall is a home energy storage solution. Megapack caters to larger-scale energy storage needs. Tesla also sells retrofit solar energy systems. Solar Roof combines roof tiles with solar energy generation. Tesla also develops software for remote control and optimization of energy storage systems."
     },
     {
-      "product_service_name": "Services and Other (Automotive)",
-      "summary": "Encompasses used vehicle sales, non-warranty maintenance, collision services, part sales, paid Supercharging, insurance services, and merchandise sales.",
-      "details": "This segment includes a variety of automotive-related services. It includes sales of used vehicles, non-warranty maintenance and collision repair services, part sales, revenue from paid Supercharging, insurance services, and retail merchandise sales. These services contribute to the overall Tesla ecosystem and customer experience. The services and other segment revenues was $10,534 in 2024."
+      "product_service_name": "Services and Other",
+      "summary": "This segment includes used vehicle sales, non-warranty maintenance, collision services, part sales, paid Supercharging, insurance, and merchandise.",
+      "details": "Tesla offers a range of services related to its automotive products, including maintenance, repairs, and parts sales. The segment also includes revenue from used vehicle sales, Supercharger usage, insurance services, and retail merchandise, providing additional revenue streams and supporting the overall customer experience."
     },
     {
       "product_service_name": "Automotive Regulatory Credits",
-      "summary": "Tesla earns and sells tradable credits related to zero-emission vehicles (ZEVs) to other regulated entities.",
-      "details": "Tesla generates revenue by selling automotive regulatory credits to other companies needing to meet emission standards. This revenue stream is a direct result of Tesla's focus on ZEVs and contributes to its financial performance and environmental impact as these credits totaled $2,763 in 2024."
+      "summary": "Tesla earns and sells tradable credits under regulations related to zero-emission vehicles (ZEVs), greenhouse gas, and fuel economy.",
+      "details": "Tesla generates revenue by selling automotive regulatory credits to other regulated entities needing to meet emission standards. As a manufacturer of electric vehicles, Tesla earns these credits and sells where allowed. This provides a revenue stream and supports environmental initiatives."
     },
     {
       "product_service_name": "Automotive Leasing",
-      "summary": "Tesla provides leasing options for its vehicles in select markets, offering an alternative to direct purchase.",
-      "details": "Tesla offers leasing programs for its vehicles in certain regions of North America, Europe, and Asia. These programs provide customers with an alternative to purchasing a vehicle outright. Revenue from automotive leasing totaled $1,827 in 2024."
+      "summary": "Tesla offers leasing options for its vehicles in select markets.",
+      "details": "Tesla provides leasing programs in North America, Europe, and Asia. These programs provide customers an alternative to purchasing a vehicle. Under certain programs, Tesla may provide resale value guarantees or buyback guarantees."
     },
     {
-      "product_service_name": "Energy Generation and Storage Leasing",
-      "summary": "Tesla provides leasing options for solar energy generation and energy storage to residential customers.",
-      "details": "Tesla offers financial options to customers by leasing solar and energy storage products. Tesla also provides solar PPAs, offered primarily to commercial customers, that charge a fee per kilowatt-hour based on the electricity produced by the solar energy systems, generating revenues of $522 thousand in 2024."
+      "product_service_name": "Public Charging (Supercharging)",
+      "summary": "Tesla operates a global network of Supercharger stations and offers charging solutions for homes and businesses.",
+      "details": "Tesla has Supercharger stations along well-traveled routes and in city centers. Tesla also partners with businesses to offer additional charging options. Tesla has opened its Supercharger network to non-Tesla vehicles, increasing accessibility and promoting EV adoption."
     },
     {
-      "product_service_name": "Full Self-Driving (FSD)",
-      "summary": "Tesla is developing FSD, an advanced driver-assistance system, aiming for fully autonomous driving in the future.",
-      "details": "Tesla is actively developing its Full Self-Driving (FSD) capabilities, including through developing its purpose-built Robotaxi product - Cybercab. It involves creating technologies, systems, and software to enable self-driving vehicles, utilizing primarily vision-based technologies enhanced by neural networks. Although at present, same as past, the driver is reponsible for remaining fully engaged in driving operation. Tesla intends to begin launching their Robotaxi business in 2025."
+      "product_service_name": "Financial Services (Insurance)",
+      "summary": "Tesla offers an insurance product using real-time driving behavior data in select states.",
+      "details": "Launched in 2021, Tesla Insurance uses real-time driving behavior to offer potentially lower rates and promote safer driving. It is currently available in 12 states, with plans for expansion, further reducing the total cost of ownership."
     }
   ],
   "risk_factors": [
     {
-      "risk_factor_title": "Production and Launch Delays",
-      "summary": "Delays in launching/ramping production of current/future products, features, and services could significantly harm our brand, business, and financial results.",
-      "details": "Past delays (e.g., Model X, Model 3) illustrate this risk. Future delays in vehicles, energy storage, or AI products, due to supplier issues, manufacturing complexities, regulatory hurdles, or energy costs, could hurt our reputation, financials, and ability to meet targets. Successfully scaling mass-market vehicle production is critical, and any bottlenecks can be detrimental."
+      "risk_factor_title": "Production and Launch Delays; Cost Control",
+      "summary": "Delays in launching/ramping production could hurt our brand, financials & ability to meet targets. Managing manufacturing costs is also critical.",
+      "details": "We've faced past production ramp delays (e.g., Model X, Model 3). Future success hinges on efficient & cost-effective manufacturing at global facilities (including Mexico). Bottlenecks, supply chain issues, hiring challenges and unexpected issues can delay new product/feature launches. Failure to ramp efficiently or control costs impacts profitability, our brand, and operating results."
     },
     {
-      "risk_factor_title": "Component Supply and Pricing",
-      "summary": "Our dependence on suppliers could result in component shortages, price increases, and production disruptions, impacting our ability to meet demand and control costs.",
-      "details": "We rely on many suppliers, some single-source, making us vulnerable to disruptions from business conditions, materials pricing (lithium, nickel, cobalt), labor issues, wars, disasters, or cyberattacks.  Supplier unwillingness to meet our needs can lead to production delays, design changes, and increased costs. Managing component forecasting, purchasing, and warehousing at scale is also crucial."
+      "risk_factor_title": "Supplier Component Delivery and Management",
+      "summary": "Component shortages/supplier issues can cause production delays, facility idleness, and design changes, hurting our ability to meet demand.",
+      "details": "Our products rely on numerous global suppliers. Disruptions (business conditions, pricing, labor, disasters, cyberattacks) can impact their ability to deliver. If suppliers can't meet our needs(timeline/quality/volume), we may face delays and increased expenses. Scaling production requires accurate forecasting & inventory management. Failure to manage this could lead to disruptions, increased costs, and harm our business/results."
     },
     {
-      "risk_factor_title": "Maintaining Public Credibility",
-      "summary": "Maintaining confidence among customers, suppliers, investors, and others is crucial for our long-term success.",
-      "details": "Challenging factors include limited operating history, customer familiarity, manufacturing/delivery delays, competition, electric vehicle uncertainty, production, and outside commentary, including potentially unreliable criticism, and may harm our business and make it more difficult to raise additional funds if needed."
+      "risk_factor_title": "Battery Cell Supply and Cost",
+      "summary": "Our growth relies on securing sufficient battery cells. Raw material price fluctuations and supplier constraints could hinder production and profitability.",
+      "details": "We depend on suppliers like Panasonic and CATL for battery cells; disruptions limit production.  We aim to manufacture our own cells, but this requires significant investment with no guarantee of success on timelines or costs. Fluctuations in raw material (lithium, nickel, cobalt) prices and availability impact cell cost and production. Failure to manage cell supply and costs could seriously harm our growth and profitability."
     },
     {
-      "risk_factor_title": "Competition",
-      "summary": "Intense competition in the automotive and energy markets could lead to lower sales, price reductions, and loss of market share, harming our business.",
-      "details": "We face growing competition from established and new automakers in the electric vehicle market, and from other companies in self-driving technology. Competitors may have greater resources. Similarly, we face competition in energy generation/storage.  Incentives favoring domestic manufacturers could also disadvantage us. This increased competition could negatively impact our financials."
+      "risk_factor_title": "Competition in the Automotive Market",
+      "summary": "We face strong/increasing competition in the automotive industry, which could lead to lower sales, reduced prices, and market share loss.",
+      "details": "The auto market is highly competitive, with more established and new manufacturers entering the electric vehicle space. Many competitors have greater resources. Increased competition may result in lower sales, price reductions, revenue shortfalls, and loss of market share. We also face competition in energy generation and storage from other providers and utilities."
     },
     {
-      "risk_factor_title": "Factory Construction and Production Ramps",
-      "summary": "Failure to meet construction timelines & production goals at new factories in terms of costs, demand, or capital efficiency could significantly hurt our business.",
-      "details": "Our growth relies on successful factory construction and production ramps. Uncertainties include regulatory compliance, license procurement, supply chain stability, hiring skilled workers, and scaling production. Problems meeting timelines, managing costs, maintaining debt financing terms, or fulfilling customer demand could negatively impact our financials and prospects."
+      "risk_factor_title": "Construction and Ramp of New Factories",
+      "summary": "Meeting construction timelines/production ramps at new factories is uncertain, potentially impacting growth and global affordability.",
+      "details": "Our ability to increase production and make our vehicles affordable globally relies on the construction and ramp-up of new factories. This process faces uncertainties inherent in new manufacturing operations, including regulatory compliance, supply chain constraints, hiring qualified employees, and bringing production equipment online. Issues with timelines, costs or demand may harm our business, prospects, operating results, and financial condition."
     },
     {
-      "risk_factor_title": "Battery Cell Supply and Costs Dependence",
-      "summary": "Our growth depends on securing enough battery cells. Failure to maintain/increase cell supply or control related costs may damage our brand and financial standing.",
-      "details": "We rely on limited suppliers like Panasonic/CATL, posing a production risk. Our cell manufacturing efforts require significant investment with no guarantee of success. Raw material price fluctuations (lithium, nickel, cobalt) affect cell costs and availability. Inability to secure cells or manage costs may force production cuts or price increases, harming our brand and growth."
-    },
-    {
-      "risk_factor_title": "Demand for Electric Vehicles",
-      "summary": "Our future growth relies on continued consumer demand for electric vehicles. A slowdown in EV adoption could harm our business and financial condition.",
-      "details": "The EV market is still small and could be affected by perceptions about EVs, limited range/charging, competition, fuel costs, regulations, incentives, and concerns about our viability. Cyclical automotive sales and broad economic conditions, including rising interest rates, also impact demand. Misjudging demand could harm our financials."
-    },
-    {
-      "risk_factor_title": "International Operations Risks",
-      "summary": "Expanding internationally exposes us to regulatory, political, economic, tax, and labor risks that could increase costs and harm our sales.",
-      "details": "Operating in numerous jurisdictions involves navigating complex and unpredictable legal, regulatory, and economic conditions. Risks include product compliance, local operations management, foreign taxes/regulations, and trade restrictions. Monitoring tax legislation changes is also crucial. Failing to manage these risks effectively could increase costs and hurt our business."
+      "risk_factor_title": "Maintaining Public Credibility and Confidence",
+      "summary": "Maintaining confidence among stakeholders is vital. Negative perceptions regarding financials or business prospects could impact growth.",
+      "details": "We must maintain credibility with customers, suppliers, analysts, investors, and ratings agencies. This can be challenging due to limited operating history, customer unfamiliarity, production scaling delays, competition, and the future uncertainty of electric vehicles. Commentary by third parties, including criticism, and speculation regarding our management team may harm our business and ability to raise funds."
     },
     {
       "risk_factor_title": "Product Defects and Performance",
-      "summary": "Product defects or failure to perform as expected could result in recalls, warranty claims, and reputational damage, harming our ability to sell our service.",
-      "details": "Design or manufacturing defects, software or hardware related, can cause performance issues or require repairs. Delays in Autopilot/FSD features or legal restrictions may impact our ability to market products.  Despite testing, latent defects may exist. Remedying issues may be costly or unsatisfactory, resulting in warranty claims, product recalls or other claims, and may harm our operations."
+      "summary": "Defects in our products could harm our reputation, lead to recalls, lawsuits, and significant expenses.",
+      "details": "Design or manufacturing defects in our products, hardware or software, can lead to repair needs. If Autopilot or FSD features' deployment is delayed, legally restricted, or heavily regulated, it could negatively impact our business/marketing. Despite testing, latent defects may still exist that we may be unable to detect prior to sale. This can expose us to lawsuits, consumer protection claims, recalls, and warranty expenses."
     },
     {
-      "risk_factor_title": "Product Liability Claims",
-      "summary": "We face potential product liability claims if our products don't perform as expected, leading to lawsuits, recalls, and significant expenses.",
-      "details": "The auto industry faces product liability claims. Our vehicles have been, and will be, involved in accidents, potentially involving Autopilot/FSD (Supervised). Battery packs also pose a risk of fire. Claims may lead to lawsuits, recalls, redesign efforts, negative publicity, and substantial monetary damages that may have to be covered by the company"
+      "risk_factor_title": "Dependence on Elon Musk",
+      "summary": "Our success is highly dependent on Elon Musk, who dedicates time to other ventures.",
+      "details": "We rely significantly on Elon Musk, the Technoking of Tesla/CEO. Though involved in our management, he doesn't dedicate his full time to Tesla. He holds management positions at Space Exploration Technologies Corp., X Corp., X.AI Corp., Neuralink Corp., and The Boring Company, and is involved with other ventures, which could impact Tesla's operations."
     },
     {
-      "risk_factor_title": "Dependence on Key Personnel",
-      "summary": "We are highly dependent on Elon Musk, and the loss of key employees could disrupt operations and delay product development.",
-      "details": "The loss of services from Elon Musk or other key employees could disrupt operations and delay product ramp. We rely on attracting and retaining skilled personnel in engineering, manufacturing, and other areas. Competition for talent is strong. Failing to retain employees or hire qualified staff, can harm the operations."
+      "risk_factor_title": "Cyberattacks and Data Security Breaches",
+      "summary": "Cyberattacks could compromise our and our customers or users' data, leading to significant liability and reputational damage.",
+      "details": "Our information technology systems face increasing cyberattack risks like malware, ransomware, and hacking. Breaches could result in intellectual property theft, data breaches, legal claims, regulatory investigations, and reputational harm, as well as unauthorized control or manipulation of our product's systems."
     },
     {
-      "risk_factor_title": "Reliance on Elon Musk",
-      "summary": "We are exposed to risks due to the degree of attention that Technoking of Tesla and our Chief Executive Officer, Elon Musk devotes to Tesla.",
-      "details": "Although Elon Musk spends significant time with Tesla he does not devote his full time and attention to Tesla, as he also currently holds management positions at Space Exploration Technologies Corp., X Corp., X.AI Corp., Neuralink Corp. and The Boring Company, and is involved in other ventures and with the Department of Government Efficiency."
+      "risk_factor_title": "International Operations",
+      "summary": "Expanding internationally exposes us to regulatory, political, and economic uncertainties that could increase costs and hinder sales.",
+      "details": "We are subject to legal and regulatory requirements, political uncertainty, and social, environmental and economic conditions in numerous jurisdictions. These conditions create risks related to product compliance, foreign regulations, trade restrictions, tariffs, and local preferences for domestically manufactured products. These conditions may increase our costs, impact our ability to sell our products and require significant management attention."
     },
     {
-      "risk_factor_title": "Cybersecurity and Data Breaches",
-      "summary": "Our systems and products are vulnerable to cyber-attacks, which could result in data breaches, intellectual property theft, and reputational damage.",
-      "details": "Expanding IT systems increase vulnerability to cyber threats. Security incidents could compromise data, disrupt operations, and lead to legal liabilities and reputational harm. Supply chain attacks on service providers pose additional risks. Unauthorized control of our products' systems could erode confidence in our products."
-    },
-    {
-      "risk_factor_title": "Union Activities",
-      "summary": "Union activities and labor disputes could disrupt our operations and increase employee costs.",
-      "details": "Unionization can result in higher employee costs and work stoppages. We may be required to become a union signatory. Labor unions may file unfair labor practice charges. Work stoppages at supplier or freight companies could also delay production and sales, harming our business."
-    },
-    {
-      "risk_factor_title": "Product Recalls and Field Actions",
-      "summary": "Product recalls, whether voluntary or involuntary, could result in significant expense, supply chain disruption and service burdens.",
-      "details": "Product recalls may result from various hardware and software-related safety or non-compliance determinations. In addition to recalls initiated by us for various causes, testing of or investigations into our products by government regulators or industry groups may compel us to initiate product recalls or may result in negative public perceptions about the safety of our products, even if we disagree with the defect determination or have data that contradicts it."
-    },
-    {
-      "risk_factor_title": "Warranty Reserves",
-      "summary": "Our current and future warranty reserves may be insufficient to cover future warranty claims and can negatively impact our financial records.",
-      "details": "Warranty reserves on all new and used Tesla vehicles we sell directly to customers and with respect to the energy generation and storage systems we sell, including on their installation and maintenance, are estimates, inherently uncertain as changes to our historical or projected experience, especially with respect to products that we have introduced relatively recently and/or that we expect to produce at significantly greater volumes than our past products, may cause material changes to our warranty reserves in the future."
-    },
-    {
-      "risk_factor_title": "Insufficient Insurance Coverage",
-      "summary": "Our insurance coverage may not adequately protect us from all business risks, potentially leading to substantial uncovered losses.",
-      "details": "We may not maintain as much insurance coverage as other companies and our own, which may include significant deductibles or self-insured retentions, policy limitations and exclusions, and we cannot be certain that our insurance coverage will be sufficient to cover all future losses or claims against us. A loss that is uninsured or which exceeds policy limits may require us to pay substantial amounts, which may harm our financial condition and operating results."
-    },
-    {
-      "risk_factor_title": "Debt Covenant Restrictions",
-      "summary": "Debt agreements include covenants that may restrict our operational flexibility and ability to obtain additional financing.",
-      "details": "The terms of certain of our debt facilities contain covenant restrictions that may limit our ability to operate our business, including restrictions on our and/or our subsidiaries\u2019 ability to, among other things, incur additional debt or create liens. In addition, under certain circumstances we are required to maintain a certain amount of liquidity."
-    },
-    {
-      "risk_factor_title": "Access to Additional Funds",
-      "summary": "We may have the need or want to raise additional funds through the issuance of equity, or debt securities, but these additional funds may not be available to us when we need or want them.",
-      "details": "If we cannot raise additional funds when we need them, our financial condition, results of operations, business and prospects could be materially and adversely affected."
-    },
-    {
-      "risk_factor_title": "Obsolescence of Manufacturing Equipment",
-      "summary": "We may be negatively impacted by early obsolescence of our manufacturing equipment.",
-      "details": "If our manufacturing equipment is retired early as a result of the useful life being shortened, causing the depreciation on such equipment to be accelerated, and our results of operations may be harmed."
-    },
-    {
-      "risk_factor_title": "Indebtedness Level",
-      "summary": "We many not have sufficient cash flow from our business to pay our indebtedness or that we will not incur additional indebtedness.",
-      "details": "Our ability to make scheduled payments of the principal and interest on our indebtedness when due, or to refinance our indebtedness as we may need or desire, depends on our future performance, which is subject to economic, financial, competitive and other factors beyond our control."
-    },
-    {
-      "risk_factor_title": "Currency Exchange Rate Risk",
-      "summary": "Fluctuations in currency exchange rates may negatively impact our revenues, costs, and profitability.",
-      "details": "Transacting business globally exposes us to foreign currency risks related to revenue, expenses, and debt. Strengthening the U.S. dollar reduces revenue reported in U.S. dollars. Fluctuations in currency values impact our net income. Depreciation of the U.S. dollar against currencies where we incur costs raise our expenses and compress our margins."
-    },
-    {
-      "risk_factor_title": "Intellectual Property Infringement",
-      "summary": "We may need to protect ordefend ourselves against intellection property infringement claims, which may be time-consuming and expensive.",
-      "details": "Our competitors or other third parties may hold or obtain patents, copyrights, trademarks or other proprietary rights that could prevent, limit or interfere with our ability to make, use, develop, sell or market our products and services, which could make it more difficult for us to operate our business."
-    },
-    {
-      "risk_factor_title": "Increased Scrutiny and Expectations with respect to ESG practices",
-      "summary": "If our ESG practices do not meet investor or other industry stakeholder expectations, we may incur additional costs and our brand, ability to attract and retain qualified employees and business may be harmed.",
-      "details": "Compliance with any current or future legal requirements on these topics may result in additional costs or risks to us, including harm to our reputation, reduction in customer demand, and increased legal and operational risks."
-    },
-    {
-      "risk_factor_title": "External Events and Disruptions",
-      "summary": "Our operations are vulnerable to events like natural disasters, wars, and health epidemics, which may halt product and shipment.",
-      "details": "We may be impacted by external disasters that cause potential damage or stoppage of our headquarters and productions facilities due to environmental events, wars, or health epidemics. We may incur expenses or delays relating to such events outside of our control, which could have a material adverse impact on our business, operating results and financial condition."
-    },
-    {
-      "risk_factor_title": "Government and Economic Incentives",
-      "summary": "Demand impacted by changing gov't and economic incentives. Reduced/eliminated incentives may hurt adoption/investment in our products.",
-      "details": "Government and economic incentives that support the development and adoption of electric vehicles in the U.S. and abroad, including certain tax exemptions, tax credits and rebates, may be reduced, eliminated, amended or exhausted from time to time and certain governmental rebates, tax credits and other financial incentives that are currently available with respect to our solar and energy storage product businesses may allow us to lower our costs and encourage customers to buy our products and investors to invest in our solar financing funds. "
-    },
-    {
-      "risk_factor_title": "Evolving Laws and Regulations",
-      "summary": "Evolving laws and regulations could impose substantial costs, legal prohibitions or unfavorable changes upon operations or products.",
-      "details": "Our business operations are and will continue to be subject to complex environmental, occupational, health and safety laws and regulations at numerous jurisdictional levels in the U.S., China, Germany and other locations abroad, including laws relating to the use, handling, storage, recycling, disposal and/or human exposure to hazardous materials, product material inputs and post-consumer products and with respect to constructing, expanding and maintaining our facilities."
-    },
-    {
-      "risk_factor_title": "Compliance With US and International privacy and consumer protection laws",
-      "summary": "Failure by us to comply with a variety of U.S. and international privacy and consumer protection laws may harm us.",
-      "details": "Any failure by us or our vendors or other business partners to comply with our public privacy notice or with federal, state or international privacy, data protection, artificial intelligence or security laws or regulations relating to the processing, collection, use, retention, security and transfer of personally identifiable information could result in regulatory or litigation-related actions against us, legal liability, fines, damages, ongoing audit requirements and other significant costs."
-    },
-    {
-      "risk_factor_title": "Governmental Investigaitons and Proceedings",
-      "summary": "We could be subject to liability, penalties and other restrictive sanctions and adverse consequences arising out of certain governmental investigations and proceedings.",
-      "details": "There exists the possibility that we could be subject to liability, penalties and other restrictive sanctions and adverse consequences if the SEC, the U.S. Department of Justice or any other government agency were to pursue legal action in the future. Moreover, we expect to incur costs in responding to related requests for information and subpoenas, and if instituted, in defending against any governmental proceedings."
-    },
-    {
-      "risk_factor_title": "Vehicle Sales",
-      "summary": "We may face regulatory challenges to or limitations on our ability to sell vehicles directly.",
-      "details": "Continued regulatory limitations and other obstacles interfering with our ability to sell vehicles directly to consumers may harm our financial condition and operating results."
-    },
-    {
-      "risk_factor_title": "Stock Price Volatility",
-      "summary": "Our stock price is likely to continue to fluctuate widely, influenced by factors beyond our control.",
-      "details": "Our stock price has been highly volatile. Factors include general market conditions (particularly for tech companies), short selling, public perception, and management-related news. Securities litigation may also arise from volatility. These movements could have a high intraday share price and a low intraday share price."
-    },
-    {
-      "risk_factor_title": "Financial Results Period-to-Period Variance",
-      "summary": "Our quarterly financial results may vary substantially, making short-term comparisons unreliable.",
-      "details": "Operating costs fluctuate based on new product development and production capacity expansion. Revenue varies as we enter new markets. Comparisons of financial results, especially short-term, may not be meaningful and may not meet expectations of equity research analysts, ratings agencies or investors driving that potentially causes the stock price to fall substantially."
-    },
-    {
-      "risk_factor_title": "Publicly Annouced Guidance",
-      "summary": "Failure to meet our publicly annouced guidance could cause our stock price to decline.",
-      "details": "Correctly identifying key factors affecting business conditions and predicting future events is inherently an uncertain process, and our guidance may not ultimately be accurate and has in the past been inaccurate in certain respects, such as the timing of new product manufacturing ramps.."
-    },
-    {
-      "risk_factor_title": "Elon Musk Stock Hold Sale",
-      "summary": "Forced sale of Elon Musk's stock could significantly decrease the stock price",
-      "details": "If the price of our common stock were to decline substantially, Mr. Musk may be forced by one or more of the banking institutions to sell shares of Tesla common stock to satisfy his loan obligations if he could not do so through other means. Any such sales could cause the price of our common stock to decline further. "
-    },
-    {
-      "risk_factor_title": "Anti-Takeover Provisions",
-      "summary": "Anti-takeover provisions in governing documents/debt facilities could deter acquisitions.",
-      "details": "Our certificate of formation and bylaws afford certain rights and powers to our board of directors that may facilitate the delay or prevention of an acquisition that it deems undesirable. We are also subject to Section 21.606 of the Texas Business Organizations Code and other provisions of Texas law that limit the ability of stockholders in certain situations to effect certain business combinations. In addition, a change in control may cause the acceleration of certain of our debt facilities"
-    },
-    {
-      "risk_factor_title": "Gigafactory New York Obligations",
-      "summary": "We must meet ongoing obligations under our agreement with the Research Foundation for the State University of New York relating to our Gigafactory New York.",
-      "details": "Under this agreement, we are obligated to, among other things, meet employment targets as well as specified minimum numbers of personnel in the State of New York and in Buffalo, New York and spend or incur $5.00 billion in combined capital, operational expenses, costs of goods sold and other costs in the State of New York during a period that was initially 10 years beginning April 30, 2018."
-    },
-    {
-      "risk_factor_title": "Financing Program Risks",
-      "summary": "Growing financing programs exposes us to compliance, residual value, credit, and financing risks impacting our funding.",
-      "details": "Failure to comply with national, state, and local laws could lead to penalties. Residual value guarantees could be triggered and, as a result, our financial condition and operating results may be harmed."
-    },
-    {
-      "risk_factor_title": "Liability and Penalties",
-      "summary": "Breach of contractual obligations exposes Tesla to financial risks and potential financial liability.",
-      "details": "Breach of contractual obligations and agreements could incur financial liabilities."
-    },
-    {
-      "risk_factor_title": "Lithium-Ion Cell Risks",
-      "summary": "Issues with lithium-ion cells at Gigafactories may hurt production/profitability.",
-      "details": "Our plan to grow the volume and profitability of our vehicles and energy storage products depends on significant lithium-ion battery cell production, including by our partner Panasonic at Gigafactory Nevada. We also produce several vehicle components at our Gigafactories, such as battery modules and packs and drive units, and manufacture energy storage products."
+      "risk_factor_title": "Financial Risk",
+      "summary": "Unfavorable interest rates, economic conditions, increased debt, currency exchange rates, and equity fluctuations impact our finances.",
+      "details": "Rising interest rates may reduce consumer spending on our products. Fluctuations in foreign currency exchange rates and commodity costs could impair our net income. We have outstanding amounts of indebtedness, restrictive covenants and no guarantee of having sufficient cash flow to pay our debts or we will not incur additional indebtedness."
     }
   ],
   "strategies_and_future_plans": [
     {
-      "future_strategy_focus_headline": "Driving Profitable Growth with AI & Autonomy!",
-      "summary": "Tesla's core strategy focuses on leveraging AI, robotics, and automation to drive profitable growth. This includes advancing FSD (Supervised) capabilities, developing the Cybercab Robotaxi, and cutting costs.",
-      "management_quote": "We are focused on profitable growth, including by leveraging existing factories and production lines to introduce new and more affordable products..."
+      "future_strategy_focus_headline": "Profitable Growth via New Products",
+      "summary": "Tesla aims for profitable growth by introducing new, more affordable products, while leveraging existing factories. They are currently ramping the Cybertruck and have the Cybercab in development. Key is iterative design and production changes.",
+      "management_quote": "We are focused on profitable growth, including by leveraging existing factories and production lines to introduce new and more affordable products...Cybercab..."
     },
     {
-      "future_strategy_focus_headline": "Scaling Production & Manufacturing Efficiency",
-      "summary": "Tesla aims to boost production by ramping factories to full capacity, improving efficiency, and introducing new products. This includes Cybertruck, Tesla Semi,  and future vehicles, while managing supply chain risks.",
-      "management_quote": "The next phase of production growth will depend on the continued ramp at our factories and be initiated by advances in autonomy and the introduction of new products..."
+      "future_strategy_focus_headline": "Full Self-Driving (FSD) Dominance",
+      "summary": "Tesla focuses on further improving and deploying its FSD (Supervised) capabilities, including future autonomous capabilities with the Cybercab 'Robotaxi'. Continual advancement of autonomy is vital for new product introduction.",
+      "management_quote": "We are focused on profitable growth, including...further improving and deploying our FSD (Supervised) capabilities, including future autonomous capabilities through our purpose-built Robotaxi product, Cybercab..."
     },
     {
-      "future_strategy_focus_headline": "Boosting Affordability & Demand",
-      "summary": "Tesla plans to increase vehicle affordability through cost reductions, localized manufacturing, and improved vehicle performance.  They aim to improve customer awareness and expand financing programs.",
-      "management_quote": "Our cost reduction efforts, cost innovation strategies, and additional localized procurement and manufacturing are key to our vehicles\u2019 affordability..."
+      "future_strategy_focus_headline": "Battery Tech Leadership",
+      "summary": "Tesla plans to increase available battery cell supply by manufacturing its own cells. They aim for high-volume output, lower costs, and longer range. Securing enough supply of battery cells is crucial for volume and profitability.",
+      "management_quote": "The next phase of production growth will...be initiated by advances in autonomy and the introduction of new products... manufacturing our own cells that we are developing..."
     },
     {
-      "future_strategy_focus_headline": "Expanding Energy Storage Dominance",
-      "summary": "Tesla will focus on growing energy storage product volume and market penetration, with facilities in Shanghai and Lathrop. Maintaining adequate battery supply is crucial.",
-      "management_quote": "We continue to increase the production and capabilities of our energy storage products to meet high levels of demand... and the ramps of our Megafactories in Shanghai and Lathrop"
+      "future_strategy_focus_headline": "Global Infrastructure Expansion",
+      "summary": "Tesla will expand its global infrastructure, including service and charging networks. Rapid Supercharger network increases are needed to support NACS adoption and customer demand as other manufacturers integrate.",
+      "management_quote": "As we expand our manufacturing operations globally, we will also have to continue to increase and staff our delivery, servicing and charging infrastructure accordingly..."
     },
     {
-      "future_strategy_focus_headline": "Investing in Infrastructure Growth",
-      "summary": "Tesla is committed to expanding its delivery, servicing, and charging infrastructure, including Supercharger network growth to support NACS adoption, while enhancing servicing operations.",
-      "management_quote": "We will also have to continue to increase and staff our delivery, servicing and charging infrastructure accordingly... expand our network in order to ensure adequate availability..."
+      "future_strategy_focus_headline": "Cost Reduction and Efficiency",
+      "summary": "Tesla relentlessly focuses on cost reduction and operational efficiencies throughout the company, including localized procurement and manufacturing to improve vehicle affordability.",
+      "management_quote": "We are focused on profitable growth, including...reducing costs, increasing vehicle production, utilized capacity and delivery capabilities, improving and developing our vehicles..."
+    },
+    {
+      "future_strategy_focus_headline": "Energy Storage Market Penetration",
+      "summary": "Tesla intends to increase market penetration of energy storage products. They plan to ramp production of products like the Powerwall 3, along with new Megafactories in Shanghai and Lathrop, California.",
+      "management_quote": "We are focused on ramping the production and increasing the market penetration of our energy storage products."
     }
   ],
   "revenues": [
-    "|                                          | 2024       |\n| :--------------------------------------- | :--------- |\n| Automotive sales                         | \\$72,480   |\n| Automotive regulatory credits            | \\$2,763    |\n| Energy generation and storage sales      | \\$9,564    |\n| Services and other                       | \\$10,534   |\n| Total revenues from sales and services  | \\$95,341   |\n| Automotive leasing                       | \\$1,827    |\n| Energy generation and storage leasing    | \\$522      |\n| Total revenues                           | \\$97,690   |\n",
-    "| Revenues                      | 2024      |\n| ----------------------------- | --------- |\n| Automotive sales              | $72,480   |\n| Automotive regulatory credits | $2,763    |\n| Automotive leasing            | $1,827    |\n| Total automotive revenues     | $77,070   |\n| Energy generation and storage | $10,086   |\n| Services and other            | $10,534   |\n| Total revenues                | $97,690   |\n",
-    "|                                         | 2024     |\n| --------------------------------------- | -------- |\n| **Automotive segment Revenues**         | $87,604  |\n| **Energy generation and storage segment Revenues** | $10,086  |\n",
-    "| Country/Region        | 2024 (USD millions) |\n| --------------------- | --------------------- |\n| United States         | 47,725                |\n| China                 | 20,944                |\n| Other International   | 29,021                |\n| **Total**             | **97,690**            |\n"
+    {
+      "table_title": "Revenue by Product and Service",
+      "revenue_items": [
+        {
+          "title": "Automotive sales",
+          "amount": 72480.0
+        },
+        {
+          "title": "Automotive regulatory credits",
+          "amount": 2763.0
+        },
+        {
+          "title": "Automotive leasing",
+          "amount": 1827.0
+        },
+        {
+          "title": "Total automotive revenues",
+          "amount": 77070.0
+        },
+        {
+          "title": "Energy generation and storage",
+          "amount": 10086.0
+        },
+        {
+          "title": "Services and other",
+          "amount": 10534.0
+        },
+        {
+          "title": "Total revenues",
+          "amount": 97690.0
+        }
+      ]
+    },
+    {
+      "table_title": "Revenue by Product and Service",
+      "revenue_items": [
+        {
+          "title": "Automotive sales",
+          "amount": 72480.0
+        },
+        {
+          "title": "Automotive regulatory credits",
+          "amount": 2763.0
+        },
+        {
+          "title": "Energy generation and storage sales",
+          "amount": 9564.0
+        },
+        {
+          "title": "Services and other",
+          "amount": 10534.0
+        },
+        {
+          "title": "Automotive leasing",
+          "amount": 1827.0
+        },
+        {
+          "title": "Energy generation and storage leasing",
+          "amount": 522.0
+        }
+      ]
+    },
+    {
+      "table_title": "Revenue by Geography",
+      "revenue_items": [
+        {
+          "title": "United States",
+          "amount": 47725.0
+        },
+        {
+          "title": "China",
+          "amount": 20944.0
+        },
+        {
+          "title": "Other international",
+          "amount": 29021.0
+        }
+      ]
+    },
+    {
+      "table_title": "Revenue by Segments",
+      "revenue_items": [
+        {
+          "title": "Automotive segment Revenues",
+          "amount": 87604.0
+        },
+        {
+          "title": "Energy generation and storage segment Revenues",
+          "amount": 10086.0
+        }
+      ]
+    }
   ]
 }

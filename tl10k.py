@@ -10,13 +10,13 @@
 # ///
 
 import os
+import json
+import re
 from pathlib import Path
 from typing import TypeVar, Type
 from edgar import *
 from openai import OpenAI
 from pydantic import BaseModel
-import json
-import re
 from rich.console import Console
 from rich.prompt import Prompt
 from rich.progress import Progress, SpinnerColumn, TextColumn

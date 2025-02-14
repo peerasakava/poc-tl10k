@@ -1,22 +1,48 @@
 import os
+import json
 import requests
+from functools import wraps
 from bs4 import BeautifulSoup
 from edgar import Company, set_identity
 from rich.console import Console
+from rich.panel import Panel
 from rich.progress import Progress, SpinnerColumn, TextColumn
 from openai import OpenAI
 from pydantic import BaseModel, Field
-from typing import List, Optional
+from typing import List, Optional, Callable, TypeVar, ParamSpec
+
+T = TypeVar('T')
+P = ParamSpec('P')
+
+def retry(max_retries: int = 3):
+    def decorator(func: Callable[P, T]) -> Callable[P, T]:
+        @wraps(func)
+        def wrapper(*args: P.args, **kwargs: P.kwargs) -> T:    
+            retries = 0
+            while retries < max_retries:
+                try:
+                    return func(*args, **kwargs)
+                except Exception as e:
+                    retries += 1
+                    if retries == max_retries:
+                        raise e
+                    console = Console()
+                    console.print(f"[yellow]Attempt {retries} failed, retrying...[/yellow]")
+            return func(*args, **kwargs)
+        return wrapper
+    return decorator
 
 class RevenueItem(BaseModel):
     """Model for a single revenue item in the table"""
     title: str = Field(..., description="Title of the revenue item, product/service name or country/region")
     amount: float = Field(..., description="Amount of revenue in millions of dollars")
+    is_subtotal: bool = Field(..., description="Whether the revenue item is a subtotal")
 
 class RevenueTable(BaseModel):
     """Model for the complete revenue table response"""
     table_title: str = Field(..., description="Title of the table")
     revenue_items: List[RevenueItem] = Field(..., description="List of revenue items in the table")
+    table_total_revenue: float = Field(..., description="Total amount of revenue in millions of dollars")
 
 class RevenueParser:
     def __init__(self):
@@ -28,6 +54,7 @@ class RevenueParser:
     
     def cleanup_table(self, table):
         """Clean up HTML table by removing unnecessary attributes.
+        Preserves only padding in style attributes.
 
         Args:
             table (BeautifulSoup): The table element to clean.
@@ -35,15 +62,27 @@ class RevenueParser:
         Returns:
             str: Cleaned HTML table string.
         """
+        import re
+        
         # Create a copy to avoid modifying the original
         table_copy = BeautifulSoup(str(table), 'html.parser')
         
         # List of attributes to remove
-        attrs_to_remove = ['style', 'contextref', 'name', 'format', 'id']
+        attrs_to_remove = ['contextref', 'name', 'format', 'id']
         
         # Find all elements in the table
         for element in table_copy.find_all():
-            # Remove specified attributes from each element
+            # Handle style attribute specially
+            if 'style' in element.attrs:
+                style = element['style']
+                # Extract padding if it exists
+                padding_match = re.search(r'padding:[^;]+', style)
+                if padding_match:
+                    element['style'] = padding_match.group(0) + ';'
+                else:
+                    del element['style']
+            
+            # Remove other specified attributes from each element
             for attr in attrs_to_remove:
                 if attr in element.attrs:
                     del element[attr]
@@ -71,7 +110,18 @@ class RevenueParser:
             rows = []
             MIN_NON_EMPTY_CELLS = 0
             for tr in soup.find_all('tr')[1:]:
-                row = [td.get_text(strip=True) for td in tr.find_all(['td', 'th'])]
+                cells = tr.find_all(['td', 'th'])
+                row = []
+                for td in cells:
+                    text = td.get_text(strip=True)
+                    # Check if the cell has right padding style
+                    style = td.get('style', '').lower()
+                    has_right_padding = 'padding-right' in style or \
+                                      any(p.strip().startswith('padding:') for p in style.split(';') if p.strip())
+                    if has_right_padding and text:
+                        text = f'- {text}'
+                    row.append(text)
+                
                 non_empty_cells = [cell for cell in row if cell and cell.strip()]
                 if len(non_empty_cells) >= MIN_NON_EMPTY_CELLS:
                     row = row[:len(headers)]
@@ -157,6 +207,7 @@ class RevenueParser:
                     if parent_table:
                         # Clean and add the HTML table to our results
                         cleaned_table = self.cleanup_table(parent_table)
+
                         tables.add(cleaned_table)
             
             return list(tables)
@@ -171,6 +222,7 @@ class RevenueParser:
             base_url="https://openrouter.ai/api/v1"
         )
 
+    @retry(max_retries=3)
     def refine_table(self, table: str) -> Optional[RevenueTable]:
         """Refine the tables by using LLM to extract relevant information.
         
@@ -180,9 +232,12 @@ class RevenueParser:
         Returns:
             Optional[RevenueTable]: The refined table as a RevenueTable model, or None if no table found
         """
-        from tl10k import parse_json_response
         
+        # print the raw response
+        console = Console()
+
         client = self.get_openai_client()
+
         with open('prompts/revenue_table_extractor.txt', 'r') as f:
             prompt = f.read()
 
@@ -197,21 +252,76 @@ class RevenueParser:
         )
 
         content = response.choices[0].message.content
-        # print the raw response
-        console = Console()
 
         if "no table" in content.lower():
             return None
 
         try:
             # Parse and validate the JSON response
-            revenue_table = parse_json_response(content, RevenueTable, console)
+            revenue_table = self.parse_json_response(content, console)
+
             return revenue_table
         except ValueError as e:
             console.print(f"[red]Error parsing revenue table: {e}[/]")
             return None
 
 
+    def parse_json_response(self, content: str, console: Console) -> RevenueTable:
+        """Parse JSON response from CDATA section and validate against RevenueTable model.
+        
+        Args:
+            content (str): The response content containing CDATA section with JSON
+            console (Console): Rich console for output
+            
+        Returns:
+            RevenueTable: Parsed and validated revenue table
+            
+        Raises:
+            ValueError: If JSON cannot be parsed or validated
+        """
+        try:
+            # Find the CDATA section
+            start_tag = '<![CDATA['
+            end_tag = ']]>'
+            
+            start_idx = content.find(start_tag)
+            end_idx = content.find(end_tag)
+            
+            if start_idx == -1 or end_idx == -1:
+                raise ValueError("No CDATA section found in response")
+            
+            # Extract JSON string from CDATA
+            json_str = content[start_idx + len(start_tag):end_idx].strip()
+            
+            # Parse and validate using Pydantic
+            revenue_table = RevenueTable.model_validate_json(json_str)
+
+            console.print()
+            console.print(Panel.fit(
+                content,
+                title="[bold yellow]Data: JSON Found in Response[/]",
+                border_style="yellow"
+            ))
+            
+            return revenue_table
+            
+        except json.JSONDecodeError as e:
+            console.print()
+            console.print(Panel.fit(
+                content,
+                title="[bold red]Error: No JSON Found in Response[/]",
+                border_style="red"
+            ))
+            raise ValueError(f"Invalid JSON format: {e}")
+        except KeyError as e:
+            console.print()
+            console.print(Panel.fit(
+                content,
+                title="[bold red]Error: Missing Required Field[/]",
+                border_style="red"
+            ))
+            raise ValueError(f"Missing required field: {e}")
+            
     def analyze_revenue_tables(self, filing_url: str) -> list:
         """Analyze revenue tables from a filing URL.
         
@@ -259,7 +369,7 @@ if __name__ == '__main__':
     set_identity(os.getenv("EDGAR_IDENTITY"))
     
     # Example symbol
-    symbol = "AAPL"
+    symbol = "MSFT"
     
     with Progress(
         SpinnerColumn(),

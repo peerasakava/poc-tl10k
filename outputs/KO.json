@@ -1,0 +1,357 @@
+{
+  "symbol": "KO",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/21344/000002134424000009/ko-20231231.htm",
+  "business_overview": {
+    "business_description": "The Coca-Cola Company is a total beverage company that owns or licenses and markets numerous beverage brands across various categories, including Trademark Coca-Cola, sparkling flavors, water, sports, coffee and tea, juice, value-added dairy and plant-based beverages, and emerging beverages. Their products are available in over 200 countries and territories, reaching consumers through a network of independent bottling partners, distributors, wholesalers, retailers, and consolidated bottling and distribution operations.",
+    "revenue_model": "The company operates in two lines of business: concentrate operations and finished product operations. Concentrate operations generate revenue by selling beverage concentrates, syrups, and certain finished beverages to authorized bottling partners. Finished product operations generate revenue by selling sparkling soft drinks and a variety of other finished beverages to retailers, distributors, and wholesalers. Additionally, they sell directly to consumers through retail stores operated by Costa.",
+    "strategic_direction": "The company is guided by its purpose, which is to refresh the world and make a difference. Its vision for growth has three connected pillars: Loved Brands, Done Sustainably, and For a Better Shared Future. They are focused on unlocking the potential of their portfolio of strong brands, developing a robust innovation pipeline, increasing consumer-centric marketing effectiveness and efficiency, winning in the marketplace with aligned data-driven revenue growth management and execution capabilities, and further embedding sustainability goals into their operations.",
+    "long_term_goals": "The company aims to sustain value creation for the company and its stakeholders. They are investing in their brand portfolio, strategic capabilities, and workforce to support future growth. Longer term goals include capturing growth by manufacturing, distributing and selling existing, enhanced and new innovative products to consumers throughout the world, and optimizing its portfolio of brands, products and services in order to create and satisfy consumer demand in every market."
+  },
+  "products_and_services": [
+    {
+      "product_service_name": "Concentrate Operations",
+      "summary": "Produces & sells beverage concentrates, syrups (including fountain syrups), & some finished beverages to authorized bottling partners.",
+      "details": "This operation forms the core of Coca-Cola's business model. Bottlers use these concentrates/syrups to create finished beverages. Concentrate operations are included in the geographic operating segments and the Global Ventures operating segment. In 2023, concentrate operations generated $26,539 million in revenue, representing approximately 58% of the company's $45,754 million total."
+    },
+    {
+      "product_service_name": "Finished Product Operations",
+      "summary": "Involves selling finished sparkling soft drinks & other beverages directly to retailers, distributors, & wholesalers.",
+      "details": "Finished product operations are primarily composed of consolidated bottling and distribution operations, included in the Bottling Investments operating segment. These operations sell beverages in authorized containers, bearing Company trademarks, to retailers or through distributors and wholesalers. Additionally, the Company sells directly to consumers through Costa retail stores. These operations generated $19,215 million in revenue in 2023."
+    },
+    {
+      "product_service_name": "Trademark Coca-Cola Beverages",
+      "summary": "Nonalcoholic beverages bearing the trademark Coca-Cola or any trademark including Coca-Cola or Coke.",
+      "details": "This includes Coca-Cola, Diet Coke/Coca-Cola Light, and Coca-Cola Zero Sugar, along with variations & line extensions. Trademark Coca-Cola accounted for 47% of Coca-Cola's worldwide unit case volume in 2023, indicating its significance. In the U.S., it represented 42% of the unit case volume."
+    },
+    {
+      "product_service_name": "Sparkling Soft Drinks",
+      "summary": "Includes various carbonated beverages like Coca-Cola, Sprite, Fanta, & Schweppes (in certain countries).",
+      "details": "Sparkling soft drinks represented 69% of Coca-Cola's worldwide unit case volume in 2023. This category is a significant driver of the company's overall volume, highlighting the continued consumer demand for sparkling beverages."
+    },
+    {
+      "product_service_name": "Water, Sports, Coffee, and Tea Beverages",
+      "summary": "Covers a range of beverages like Dasani, Powerade, Costa, Gold Peak, and Topo Chico.",
+      "details": "This category addresses consumer demand for healthier and more diverse beverage choices. Brands included in these products are Aquarius, Ayataka, BODYARMOR, Ciel, Costa, Dasani, do\u011fadan, FUZE TEA, Georgia, glac\u00e9au smartwater, glac\u00e9au vitaminwater, Gold Peak, Ice Dew, I LOHAS, Powerade and Topo Chico."
+    },
+    {
+      "product_service_name": "Juice, Value-Added Dairy, and Plant-Based Beverages",
+      "summary": "Encompasses products such as Minute Maid, Simply, fairlife, AdeS, and innocent.",
+      "details": "This category caters to consumers seeking nutritious options and reflects the company's diversification into adjacent beverage segments. Brands included in these products are AdeS, Del Valle, fairlife, innocent, Minute Maid, Minute Maid Pulpy and Simply."
+    },
+    {
+      "product_service_name": "Alcoholic Beverages",
+      "summary": "Ready-to-drink alcoholic beverages, including hard seltzers, alternatives and pre-mixed cocktails in markets outside the U.S.",
+      "details": "The Company has directly entered the alcohol beverage category in numerous markets outside the United States and are focused on three segments of alcohol "
+    }
+  ],
+  "risk_factors": [
+    {
+      "risk_factor_title": "Unfavorable Economic & Geopolitical Conditions",
+      "summary": "Global economic and political instability (inflation, conflicts, etc.) could reduce consumer demand & increase costs, impacting financial performance.",
+      "details": "Economic downturns, geopolitical events (international conflicts), & trade restrictions could lower demand for beverages as consumers cut spending or switch to cheaper alternatives. These events may cause supply chain disruptions, price volatility, heightened security risks, and product boycotts while restrictions on cross-border transfers could impact profitability. These factors could harm the company's financial results."
+    },
+    {
+      "risk_factor_title": "Disruption of Supply Chain & Increased Costs",
+      "summary": "Supply chain disruptions and rising costs for raw materials, energy, and transportation could hurt financial results.",
+      "details": "The company faces risks from disruptions in manufacturing and sourcing due to limited suppliers, political instability, adverse weather, and other factors. Price volatility in raw materials, energy, and transportation could increase costs. The business must offset these pressures through price increases in products. Inability to offset these costs or significant decreases in sales volume could adversely affect the company's financial results."
+    },
+    {
+      "risk_factor_title": "Failure to Protect Information Systems",
+      "summary": "Cybersecurity incidents and data breaches could disrupt operations, cause financial losses, and damage the company's reputation.",
+      "details": "The company relies on its networks and information systems, making it vulnerable to cyberattacks, system shutdowns, & data breaches. These incidents could disrupt operations, lead to data loss, and result in legal action, regulatory fines, and reputational damage. The company has invested in security but can\u2019t guarantee complete protection. Such incidents could have a material adverse effect."
+    },
+    {
+      "risk_factor_title": "Increased Competition",
+      "summary": "Intense competition in the beverage industry could lead to lower prices, higher marketing costs, and reduced market share.",
+      "details": "The company faces stiff competition in the beverage market. If competitors take actions that limit market share, competitive pressures could force price reductions or restrict the ability to increase prices. Increased marketing costs and price deflation from e-commerce could also negatively affect revenues. Failure to innovate & maintain brand loyalty could hurt the business."
+    },
+    {
+      "risk_factor_title": "Reliance on Bottling Partners",
+      "summary": "The company depends on its bottling partners. Poor relationships or financial struggles among bottlers could negatively impact the company\u2019s business.",
+      "details": "A significant portion of the company\u2019s revenues comes from sales to independent bottling partners. Misalignment of interests, disputes over pricing, or dissatisfaction with brand innovation could lead bottlers to take actions detrimental to the company. The financial health of bottling partners is crucial; deterioration in their condition could reduce revenues & equity income."
+    },
+    {
+      "risk_factor_title": "Changes in Consumer Preferences",
+      "summary": "Failure to adapt to evolving consumer preferences could negatively affect the company's sales and financial results.",
+      "details": "Consumer preferences are changing due to health concerns, demographics, lifestyles, environmental considerations, and digital shopping trends. Failure to address these changes, anticipate future trends, or implement digital initiatives effectively could negatively impact sales, revenue growth, and financial performance."
+    },
+    {
+      "risk_factor_title": "Obesity and Health Concerns",
+      "summary": "Growing health concerns about obesity may reduce demand for sweetened products, negatively impacting profitability.",
+      "details": "Public concern about obesity, sweetened beverages, potential taxes, regulations on marketing, and negative publicity from legal actions could reduce demand or increase costs. This would particularly affect sales of sweetened products and adversely affect the company's profitability."
+    },
+    {
+      "risk_factor_title": "Tax Law Changes & Disputes",
+      "summary": "Changes in tax rates or unfavorable resolution of tax audits could significantly impact the company's financial results.",
+      "details": "The company is subject to income tax and indirect taxes in many jurisdictions. Unfavorable movements in tax rates, changes in tax laws, and adverse outcomes from tax audits (like the IRS dispute) could increase uncertainty and materially affect the company's net income and cash flow. Significant judgment is required in tax positions."
+    },
+    {
+      "risk_factor_title": "Product Safety and Quality Concerns",
+      "summary": "Failure to maintain product safety and quality standards could lead to recalls and erode consumer confidence.",
+      "details": "Maintaining consumer confidence in product safety and quality is critical. A widespread product recall due to contamination or mislabeling could result in significant losses and negative publicity. Expanding into new beverage categories also increases the risk of not meeting safety standards."
+    },
+    {
+      "risk_factor_title": "Water Scarcity and Quality",
+      "summary": "Limited water resources and declining water quality may increase costs and constrain the company\u2019s capacity.",
+      "details": "Water is essential for the business. Scarcity of such a vital resource, pollution, and the effects of climate change, may lead to higher costs, capacity constraints and reputational damage. These issues could negatively impact the profitability of the Company.\u201d"
+    },
+    {
+      "risk_factor_title": "Managing Acquired Businesses",
+      "summary": "Failure to integrate and manage acquired businesses effectively could hurt financial results.",
+      "details": "Acquiring businesses or brands carries integration risks. If the company encounters problems integrating acquired operations, brands, bottling partners, technologies, or extending company controls, or fails to realize expected benefits or encounters unforeseen costs, its financial results could be negatively impacted. Managing joint ventures is also crucial."
+    },
+    {
+      "risk_factor_title": "Sustainability",
+      "summary": "Evolving sustainability standards, including increased focus on plastic packaging, creates cost, operational, reputation and legal risks.",
+      "details": "Failure to meet sustainability goals relating to packaging, water, and carbon emissions and to address waste concerns could damage the company's reputation and reduce demand. Governmental regulations mandating plastic waste reduction could increase costs, put the company at a competitive disadvantage, impact operations, and require increased capital expenditures."
+    },
+    {
+      "risk_factor_title": "Failure to Attract and Retain Skilled Workforce",
+      "summary": "Inability to attract and retain talented employees could negatively affect business operations and future success.",
+      "details": "Competition for skilled employees is increasing. Failure to attract, develop, motivate, and retain a high-skilled workforce could disrupt operations and hurt the business. Changes in immigration laws could also impede recruitment. Loss of experienced employees could erode competitiveness."
+    },
+    {
+      "risk_factor_title": "Adverse Weather Conditions",
+      "summary": "Unusual weather may have a temporary effect on sales and contribute to lower sales, which could have an adverse effect on our results of operations for such periods.",
+      "details": "The sales of our products are influenced to some extent by weather conditions in the markets in which we operate. Unusually cold or rainy weather during the summer months may have a temporary effect on the demand for our products and contribute to lower sales, which could have an adverse effect on our results of operations for such periods."
+    },
+    {
+      "risk_factor_title": "Reliance on third-party providers and partners",
+      "summary": "Failure of third-party providers and partners could negatively affect financial results.",
+      "details": "Company relies on third parties. If, they do not fulfill their commitments or experience events that could directly or indirectly impact us, including risks relating to cybersecurity, privacy violations our financial results could suffer."
+    },
+    {
+      "risk_factor_title": "Labor Relations",
+      "summary": "Inability to renew labor agreements or labor unrest could negatively affect the business",
+      "details": "Union negotiations maybe challenging, may lead to increase labor costs. Strikes, work stoppages or other labor unrest could impair our ability to supply concentrates and syrups or our bottlers' ability to supply finished beverages to customers"
+    },
+    {
+      "risk_factor_title": "Increased Focus on Food Products",
+      "summary": "Increased food costs, decreased food production negatively affect supply chain and increase regulation of foods may impact business.",
+      "details": "If regulation of food increases, company may fail to source raw material at current rates"
+    },
+    {
+      "risk_factor_title": "Reliance on Digital Transformation",
+      "summary": "If company unable to successfully manage digital transformation, financial results shall decline.",
+      "details": "The digital evolution is affecting many areas of our consumer and supplier ecosystem."
+    },
+    {
+      "risk_factor_title": "Fluctuations in Foreign Currency Exchange Rates",
+      "summary": "Currency fluctuations against the U.S. dollar could significantly affect financial results.",
+      "details": "The company generates revenue and incurs expenses in multiple currencies. Fluctuations in exchange rates, especially a strengthening U.S. dollar, can impact revenues, income, and the value of balance sheet items."
+    },
+    {
+      "risk_factor_title": "If interest rates increase",
+      "summary": "If interest rates increase, income could decrease.",
+      "details": "Company finances exposure to interest rates. Financial risk managment program may not address issues."
+    },
+    {
+      "risk_factor_title": "If long-term growth objectives not achieved",
+      "summary": "The value of an investment could decline if long-term grow objectives not achieved.",
+      "details": "May not achieve growth through sales potential and an asessment of the potential price and product mix."
+    },
+    {
+      "risk_factor_title": "Default by or failure of financial counterparty",
+      "summary": "Could cause significant losses.",
+      "details": "As part of hedging activities, company is exposed to risk of defaulter by counterpart financial institutions."
+    },
+    {
+      "risk_factor_title": "Impairment charges",
+      "summary": "Required to recognize charges that could materially affect financial results.",
+      "details": "Non-current assets, trademarks etc. Could require the need for the Company to record significant impairment charges, or proportionate share that negatively impacts net income."
+    },
+    {
+      "risk_factor_title": "If we fail to comply with privacy and data protection laws",
+      "summary": "Adverse publicity, government enforcement and/or private litigation.",
+      "details": "Failure to protect the identifiable data of personnel, or other parties."
+    },
+    {
+      "risk_factor_title": "Evolving sustainability requirements",
+      "summary": "Legal and reputational risks increased, increased costs.",
+      "details": "Increasing focus on sustainability issues may see legal and financial risks and require mandatory due diligence."
+    },
+    {
+      "risk_factor_title": "Significant additional labeling or warning requirements",
+      "summary": "May inhibit sales of affected products.",
+      "details": "Ex. In California Prop 65, if additional warnings needed for product, then consumer reaction to warnings may badly effect sales, in California and other markets."
+    },
+    {
+      "risk_factor_title": "Litigation or legal proceedings",
+      "summary": "Legal actions and litigation claims can expose the company to significant liabilities and damage reputation.",
+      "details": "The company is exposed to risk from litigation claims and legal proceedings from advertising practices to disputes."
+    },
+    {
+      "risk_factor_title": "Markets with high-risk legal compliance environments",
+      "summary": "Expose the company to increased legal reputational risk.",
+      "details": "Company operations in locations with high risk for legal compliance."
+    },
+    {
+      "risk_factor_title": "Failure to protect Intellectual property",
+      "summary": "If there are disputes that are unresolved, there may be harm to our business.",
+      "details": "The company may face conflict regarding intellectual property rights, which results in expensive litigation."
+    },
+    {
+      "risk_factor_title": "Changes in our laws applicable to to our products or our business opperations",
+      "summary": "Increase our costs or reduce our operating revenues",
+      "details": "Includes laws relating to competition, environment, safety or privacy.  These could negatively impact cost, or force changes to production."
+    },
+    {
+      "risk_factor_title": "Increases in Taxes Could Harm Our Business",
+      "summary": "Business operation are subject to taxes that could harm the company",
+      "details": "May reduce net business operation revenues, in addition to numerous other tariffs or taxes."
+    }
+  ],
+  "strategies_and_future_plans": [
+    {
+      "future_strategy_focus_headline": "Portfolio Optimization",
+      "summary": "Coca-Cola aims to unlock potential in its global, regional, and local brands. Focus includes innovation, scalable initiatives, and consumer-centric marketing for effectiveness and efficiency.  ",
+      "management_quote": "We are focused on the following strategic priorities: unlocking the potential of our portfolio; developing a robust innovation pipeline..."
+    },
+    {
+      "future_strategy_focus_headline": "Sustainability Integration",
+      "summary": "The Company is focused on embedding sustainability goals into operations, focusing on areas like packaging, water stewardship, climate, sustainable agriculture, human rights, and inclusion. ",
+      "management_quote": "Further embedding sustainability goals into our operations."
+    },
+    {
+      "future_strategy_focus_headline": "Winning in the Marketplace",
+      "summary": "Coca-Cola plans to win in the marketplace by aligning data-driven revenue growth management with strong execution capabilities.  This will help improve efficiency.",
+      "management_quote": "Winning in the marketplace with aligned data-driven revenue growth management and execution capabilities."
+    },
+    {
+      "future_strategy_focus_headline": "Digitalization of Operations",
+      "summary": "The Coca-Cola Company intends to digitalize operations via data, AI, automation, robotics and tools. Aims include improving consumer experiences and providing better tools for retail customers.",
+      "management_quote": "Therefore, one of our top priorities is to digitalize the Coca-Cola system..."
+    },
+    {
+      "future_strategy_focus_headline": "Talent Management",
+      "summary": "Coca-Cola is committed to attracting and retaining talent while building an inclusive culture that inspires employees, serves communities, and shapes a strong, sustainable business.",
+      "management_quote": "We are committed to building an equitable and inclusive culture that inspires and supports the growth of our employees..."
+    }
+  ],
+  "revenues": [
+    {
+      "table_title": "Revenue by Region",
+      "revenue_items": [
+        {
+          "title": "Europe, Middle East & Africa",
+          "amount": 8078.0,
+          "is_subtotal": true
+        },
+        {
+          "title": "Latin America",
+          "amount": 5830.0,
+          "is_subtotal": true
+        },
+        {
+          "title": "North America",
+          "amount": 16774.0,
+          "is_subtotal": true
+        },
+        {
+          "title": "Asia Pacific",
+          "amount": 5455.0,
+          "is_subtotal": true
+        },
+        {
+          "title": "Global Ventures",
+          "amount": 3064.0,
+          "is_subtotal": true
+        },
+        {
+          "title": "Bottling Investments",
+          "amount": 7860.0,
+          "is_subtotal": true
+        },
+        {
+          "title": "Corporate",
+          "amount": 126.0,
+          "is_subtotal": true
+        },
+        {
+          "title": "Eliminations",
+          "amount": -1433.0,
+          "is_subtotal": true
+        }
+      ],
+      "table_total_revenue": 45754.0
+    },
+    {
+      "table_title": "Revenue by Product and Geography",
+      "revenue_items": [
+        {
+          "title": "Concentrate operations",
+          "amount": 26539.0,
+          "is_subtotal": false
+        },
+        {
+          "title": "Finished product operations",
+          "amount": 19215.0,
+          "is_subtotal": false
+        }
+      ],
+      "table_total_revenue": 45754.0
+    },
+    {
+      "table_title": "Revenue and Income Statement",
+      "revenue_items": [
+        {
+          "title": "Net operating revenues",
+          "amount": 93862.0,
+          "is_subtotal": false
+        },
+        {
+          "title": "Cost of goods sold",
+          "amount": 55780.0,
+          "is_subtotal": false
+        },
+        {
+          "title": "Gross profit",
+          "amount": 38082.0,
+          "is_subtotal": true
+        },
+        {
+          "title": "Operating income",
+          "amount": 11868.0,
+          "is_subtotal": true
+        },
+        {
+          "title": "Consolidated net income",
+          "amount": 7657.0,
+          "is_subtotal": true
+        },
+        {
+          "title": "Less: Net income attributable to noncontrolling interests",
+          "amount": 75.0,
+          "is_subtotal": false
+        },
+        {
+          "title": "Net income attributable to common shareowners",
+          "amount": 7582.0,
+          "is_subtotal": true
+        },
+        {
+          "title": "Company equity income (loss) \u2014 net",
+          "amount": 1691.0,
+          "is_subtotal": true
+        }
+      ],
+      "table_total_revenue": 93862.0
+    },
+    {
+      "table_title": "Revenue by Geography",
+      "revenue_items": [
+        {
+          "title": "United States",
+          "amount": 16550.0,
+          "is_subtotal": false
+        },
+        {
+          "title": "International",
+          "amount": 29204.0,
+          "is_subtotal": false
+        }
+      ],
+      "table_total_revenue": 45754.0
+    }
+  ]
+}

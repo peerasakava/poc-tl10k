@@ -11,34 +11,47 @@
 </source_context>
 
 <response_format>
-<think>
-  // the place for you to think and explain every step of your process
-</think>
-
-```json
-{
-    "table_title": str, // title of the table e.g. "Revenue by Product and Service" or "Revenue by Geography" ...
-    "revenue_items": [
-        // list of items in the table
+    <think>
+    // the place for you to think and explain every step of your process
+    </think>
+    <markdown-table>
+    // the table that convert from html table in markdown format
+    </markdown-table>
+    <potential-subtotals>
+    // the bulleted list of potential subtotals with reasons
+    </potential-subtotals>
+    <json>
+        <![CDATA[
         {
-            "title": str, // title of the revenue item, product or service name or country or region
-            "amount": float, // amount of revenue (millions of dollars)
+            "table_title": str, // title of the table e.g. "Revenue by (Product and Service|Geography)"
+            "revenue_items": [
+                // list of items in the table
+                {
+                    "title": str, // title of the revenue item, product or service name or country or region
+                    "amount": float, // amount of revenue (millions of dollars),
+                    "is_subtotal": bool // whether the revenue item is a subtotal
+                }
+            ],
+            "table_total_revenue": float // total amount of revenue in millions of dollars
         }
-    ] 
-}
-```
+        ]]>
+    </json>
 </response_format>
 
 <concern-points>
-1. specify the total row in table. some table has multiple total rows. you need to find it and remove it from the table.
-2. extract the title of the table. the title is the name of the product or service or the name of the country or region.
+1. clarify the table is related to "Revenue" only not include other financial statements. if not, return "null"
+2. specify the total row in table. some table has multiple total rows. you need to find it and remove it from the table.
+3. extract the title of the table. the title is the name of the product or service or the name of the country or region.
+4. don't forget to set flag of `is_subtotal` to `True` for the potential subtotal rows.
+5. do not add the total row to the `revenue_items`.
 </concern-points>
 
 <instructions>
-    1. Explain what you are thinking in `<think>` tag. and think tag should not contain in JSON block.
-    2. Write the JSON response in the json block below `<think>...</think>`
+    1. Explain what you are thinking in `<think>` tag. think step by step out loud to clarify each row is sub or total of segment.
+    2. Write the JSON response in the `<json>` tag below `<think>...</think>`
 </instructions>
 
 <note>
-    if there is no total, return null in json block
+    - if there is no total, return null in `<json>` tag
+    - if there has data, response must start with <think> tag.
 </note>
