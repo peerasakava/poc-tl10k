@@ -109,7 +109,31 @@ response = client.models.generate_content(
     }
 )
 
+def cost_estimate(usage_metadata: types.GenerateContentResponseUsageMetadata) -> float:
+    """Calculate the estimated cost based on token usage.
+    
+    Args:
+        usage_metadata: Usage metadata from the Gemini API response
+        
+    Returns:
+        float: Estimated cost in USD
+    """
+    # Constants for pricing (USD per 1M tokens)
+    INPUT_PRICE = 0.10  # $0.10 per 1M tokens for text/image input
+    OUTPUT_PRICE = 0.40  # $0.40 per 1M tokens for text output
+    
+    # Calculate costs
+    input_cost = (usage_metadata.prompt_token_count / 1_000_000) * INPUT_PRICE
+    output_cost = (usage_metadata.candidates_token_count / 1_000_000) * OUTPUT_PRICE
+    
+    return input_cost + output_cost
+
 rprint("[bold blue]Usage Metadata:[/bold blue]")
 rprint(response.usage_metadata)
+
+# Calculate and display cost estimate
+total_cost = cost_estimate(response.usage_metadata)
+rprint(f"[bold yellow]Estimated Cost:[/bold yellow] ${total_cost:.6f} USD")
+
 rprint("\n[bold green]Parsed Response:[/bold green]")
 rprint(response.parsed)
