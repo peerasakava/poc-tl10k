@@ -14,3 +14,7 @@ wheels/
 
 # windsurf rules
 .windsurfrules
+
+# Ignore files
+downloads/
+outputs/

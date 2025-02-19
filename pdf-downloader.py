@@ -49,9 +49,69 @@ async def create_pdf_from_html(html: str, pdf_path: str):
         console.print("[bold green]✓[/bold green] PDF creation completed successfully")
 
 async def main():
+    company_symbols = [
+        # Small-Cap Symbols
+        "RTX",
+        "CROX",
+        "BYND",
+        "ROKU",
+        "ETSY",
+        "FUBO",
+        "SDC",
+        "SHAK",
+        "GPRO",
+        "BOOT",
+
+        # Mid-Cap Symbols
+        "ADI",
+        "TXN",
+        "ADSK",
+        "SHW",
+        "CMG",
+        "LULU",
+        "SQ",
+        "PYPL",
+        "DOCU",
+        "MDB",
+        "DDOG",
+        "CRWD",
+        "ZM",
+        "HOOD",
+
+        # Large-Cap Symbols
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL",  # or GOOG depending on preference
+        "TSLA",
+        "BRK.B", # or BRK.A depending on preference
+        "META",
+        "V",
+        "JPM",
+        "JNJ",
+        "WMT",
+        "PG",
+        "UNH",
+        "XOM"
+    ]
+
     console = Console()
-    symbol = input("Enter company symbol: ")
-    await download_filing(symbol)
+    total = len(company_symbols)
+    
+    console.print("[bold blue]Starting download of 10-K filings[/bold blue]")
+    console.print(f"[yellow]Total companies to process: {total}[/yellow]")
+    
+    # Create downloads directory if it doesn't exist
+    os.makedirs("downloads", exist_ok=True)
+    
+    for idx, symbol in enumerate(company_symbols, 1):
+        console.rule(f"[bold cyan]Processing {symbol} ({idx}/{total})[/bold cyan]")
+        try:
+            await download_filing(symbol)
+        except Exception as e:
+            console.print(f"[bold red]Error processing {symbol}: {str(e)}[/bold red]")
+    
+    console.rule("[bold green]Download Process Complete[/bold green]")
 
 if __name__ == "__main__":
     asyncio.run(main())
