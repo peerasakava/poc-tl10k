@@ -147,17 +147,23 @@ def llm_extraction_from_summarized(symbol: str, summarized: str) -> ExtractionRe
     - UK: $800M
 
     Validation Rules:
-    1. All amounts must:
+    1. Total revenue must be the rule of thumb to validate the extraction
+    - Total revenue must equal the reported total
+    - All Items summation must equal the reported total
+    - Segment must not be a region or country
+
+    2. All amounts must:
     - Be converted to millions USD if presented differently
     - Match the total revenue across both perspectives
     - Be rounded to 2 decimal places
+    - Be consolidated revenue
 
-    2. Item names must be:
+    3. Item names must be:
     - Unique within each perspective
     - Free of redundant qualifiers
     - Consistent with original filing terminology
 
-    3. Completeness checks:
+    4. Completeness checks:
     - Sum of items must equal the reported total
     - Both perspectives must be attempted
     - Missing data must be noted in metadata
@@ -293,53 +299,52 @@ def cost_estimate(usage_metadata: types.GenerateContentResponseUsageMetadata) ->
     return input_cost + output_cost
 
 def main():
-    # List of symbols to process
-    # symbols = ['RTX', 'CROX', 'BYND', 'ROKU', 'ETSY', 'FUBO', 'SDC', 'SHAK', 'GPRO', 'BOOT', 'ADI', 
-    #           'TXN', 'ADSK', 'SHW', 'CMG', 'LULU', 'SQ', 'PYPL', 'DOCU', 'MDB', 'DDOG', 'CRWD', 'ZM', 
-    #           'HOOD', 'AAPL', 'MSFT', 'AMZN', 'GOOGL', 'TSLA', 'BRK.B', 'META', 'V', 'JPM', 'JNJ', 
-    #           'WMT', 'PG', 'UNH', 'XOM']
-    symbols = ['F']
+    # Get symbol input from user
+    console = Console()
+    symbol = console.input("[bold blue]Enter stock symbol (e.g. AAPL): [/bold blue]").strip().upper()
     
     # Create output directory if it doesn't exist
     output_dir = pathlib.Path('outputs/revenues')
     output_dir.mkdir(parents=True, exist_ok=True)
     
-    for symbol in symbols:
-        try:
-            rprint(f"\n[bold green]Processing symbol:[/bold green] [yellow]{symbol}[/yellow]")
+    if not symbol:
+        console.print("[bold red]Error:[/bold red] Symbol cannot be empty")
+        return
+        
+    try:
+        rprint(f"\n[bold green]Processing symbol:[/bold green] [yellow]{symbol}[/yellow]")
+        
+        filepath = pathlib.Path(f'downloads/{symbol}_10-K.pdf')
+        if not filepath.exists():
+            rprint(f"[bold red]Error:[/bold red] PDF file not found for {symbol}")
+            return
             
-            filepath = pathlib.Path(f'downloads/{symbol}_10-K.pdf')
-            if not filepath.exists():
-                rprint(f"[bold red]Error:[/bold red] PDF file not found for {symbol}")
-                continue
-                
-            summarized_text = llm_think_and_explain_revenue(symbol, filepath)
+        summarized_text = llm_think_and_explain_revenue(symbol, filepath)
 
-            console = Console()
+        console = Console()
 
-            console.print(Panel.fit(
-                summarized_text,
-                title="[bold blue]Revenue Analysis Summary[/bold blue]",
-                border_style="blue",
-                padding=(1, 2)
-            ))
+        console.print(Panel.fit(
+            summarized_text,
+            title="[bold blue]Revenue Analysis Summary[/bold blue]",
+            border_style="blue",
+            padding=(1, 2)
+        ))
 
-            response = llm_extraction_from_summarized(symbol, summarized_text)
-            
-            # Print response in a beautiful format
-            console.print(response)
-            
-            # Save response to JSON file
-            output_file = output_dir / f"{symbol}-rev.json"
-            # # First get the JSON string
-            json_data = response.model_dump_json()
-            # # Then write it to file
-            with open(output_file, 'w') as f:
-                f.write(json_data)
-            
-        except Exception as e:
-            rprint(f"[bold red]Error processing {symbol}:[/bold red] {str(e)}")
+        response = llm_extraction_from_summarized(symbol, summarized_text)
+        
+        # Print response in a beautiful format
+        console.print(response)
+        
+        # Save response to JSON file
+        output_file = output_dir / f"{symbol}-rev.json"
+        # # First get the JSON string
+        json_data = response.model_dump_json()
+        # # Then write it to file
+        with open(output_file, 'w') as f:
+            f.write(json_data)
+        
+    except Exception as e:
+        rprint(f"[bold red]Error processing {symbol}:[/bold red] {str(e)}")
     
 if __name__ == "__main__":
     main()
-

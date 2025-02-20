@@ -120,6 +120,24 @@ def find_table_elements(html_content: str) -> str:
     # Parse HTML content
     soup = BeautifulSoup(html_content, 'html.parser')
     
+    # Add CSS styling to head
+    head = soup.find('head')
+    if not head:
+        head = soup.new_tag('head')
+        soup.insert(0, head)
+    
+    style = soup.new_tag('style')
+    style.string = '''
+        table { 
+            border-collapse: collapse !important; 
+            width: 100% !important;
+        }
+        td, th { 
+            border: 1px solid black !important;
+        }
+    '''
+    head.append(style)
+    
     # Find revenue tables
     revenue_tables = (Pipeline(soup)
             .bind(find_elements)
@@ -130,10 +148,7 @@ def find_table_elements(html_content: str) -> str:
     # Add banner above each revenue table and style the table
     banner_html = create_revenue_banner()
     for table in revenue_tables:
-        # Add CSS styling to make table more visible
-        table['style'] = 'border-collapse: collapse; width: 100%;'
-        for cell in table.find_all(['td', 'th']):
-            cell['style'] = 'border: 1px solid black;'
+        # Add banner above the table
         
         banner = BeautifulSoup(banner_html, 'html.parser')
         table.insert_before(banner)
@@ -206,7 +221,7 @@ async def main():
         "XOM"
     ]
 
-    # company_symbols = ["F"]
+    # company_symbols = ["LULU"]
 
     console = Console()
     total = len(company_symbols)
