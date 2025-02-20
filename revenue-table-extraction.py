@@ -1,6 +1,7 @@
 # /// script
 # requires-python = ">=3.12"
 # dependencies = [
+#     "beautifulsoup4",
 #     "google-genai",
 #     "pydantic",
 #     "rich",
