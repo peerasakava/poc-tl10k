@@ -127,9 +127,14 @@ def find_table_elements(html_content: str) -> str:
             .bind(find_parent_tables)
             .run())
     
-    # Add banner above each revenue table
+    # Add banner above each revenue table and style the table
     banner_html = create_revenue_banner()
     for table in revenue_tables:
+        # Add CSS styling to make table more visible
+        table['style'] = 'border-collapse: collapse; width: 100%;'
+        for cell in table.find_all(['td', 'th']):
+            cell['style'] = 'border: 1px solid black;'
+        
         banner = BeautifulSoup(banner_html, 'html.parser')
         table.insert_before(banner)
     
@@ -154,53 +159,54 @@ async def create_pdf_from_html(html: str, pdf_path: str):
         console.print("[bold green]✓[/bold green] PDF creation completed successfully")
 
 async def main():
-    # company_symbols = [
-    #     # Small-Cap Symbols
-    #     "RTX",
-    #     "CROX",
-    #     "BYND",
-    #     "ROKU",
-    #     "ETSY",
-    #     "FUBO",
-    #     "SDC",
-    #     "SHAK",
-    #     "GPRO",
-    #     "BOOT",
+    company_symbols = [
+        # Small-Cap Symbols
+        "RTX",
+        "CROX",
+        "BYND",
+        "ROKU",
+        "ETSY",
+        "FUBO",
+        "SDC",
+        "SHAK",
+        "GPRO",
+        "BOOT",
 
-    #     # Mid-Cap Symbols
-    #     "ADI",
-    #     "TXN",
-    #     "ADSK",
-    #     "SHW",
-    #     "CMG",
-    #     "LULU",
-    #     "SQ",
-    #     "PYPL",
-    #     "DOCU",
-    #     "MDB",
-    #     "DDOG",
-    #     "CRWD",
-    #     "ZM",
-    #     "HOOD",
+        # Mid-Cap Symbols
+        "ADI",
+        "TXN",
+        "ADSK",
+        "SHW",
+        "CMG",
+        "LULU",
+        "SQ",
+        "PYPL",
+        "DOCU",
+        "MDB",
+        "DDOG",
+        "CRWD",
+        "ZM",
+        "HOOD",
+        "F"
 
-    #     # Large-Cap Symbols
-    #     "AAPL",
-    #     "MSFT",
-    #     "AMZN",
-    #     "GOOGL",  # or GOOG depending on preference
-    #     "TSLA",
-    #     "BRK.B", # or BRK.A depending on preference
-    #     "META",
-    #     "V",
-    #     "JPM",
-    #     "JNJ",
-    #     "WMT",
-    #     "PG",
-    #     "UNH",
-    #     "XOM"
-    # ]
+        # Large-Cap Symbols
+        "AAPL",
+        "MSFT",
+        "AMZN",
+        "GOOGL",  # or GOOG depending on preference
+        "TSLA",
+        "BRK.B", # or BRK.A depending on preference
+        "META",
+        "V",
+        "JPM",
+        "JNJ",
+        "WMT",
+        "PG",
+        "UNH",
+        "XOM"
+    ]
 
-    company_symbols = ["PFE", "MRK", "ABBV", "BMY"]
+    # company_symbols = ["F"]
 
     console = Console()
     total = len(company_symbols)

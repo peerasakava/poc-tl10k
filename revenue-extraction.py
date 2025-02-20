@@ -54,7 +54,7 @@ def llm_think_and_explain_revenue(symbol: str, filepath: pathlib.Path) -> str:
 
     You need to explain the title/category of the revenue and number in your summarize
 
-    FOCUS ONLY ON "SALES AND OTHER OPERATING REVENUE"
+    FOCUS ONLY ON "SALES AND OTHER OPERATING REVENUE" IN LATEST YEAR
     </task>
 
     <context>
@@ -63,8 +63,10 @@ def llm_think_and_explain_revenue(symbol: str, filepath: pathlib.Path) -> str:
 
     <instructions>
     1. UNDERSTAND THE BUSINESS SEGMENT OF THE COMPANY
-    2. FIND THE TOTAL REVENUE OF THE COMPANY
-    3. FIND THE DETAIL OF REVENUE STREAM BY EACH SEGMENT, PRODUCT/SERVICE AND COUNTRY/REGION
+    2. FIND AND ANALYZE THE TABLE THAT HAVE A BANNER, IS IT RELEVANT TO REVENUE OR NOT? IS IT USABLE AS A DATA SOURCE? [TABLE BY TABLE]
+    3. CONCLUDE THE CONSOLIDATED TOTAL REVENUE OF THE COMPANY FROM DATA SOURCE
+    4. SUMMARIZE THE DETAIL OF REVENUE STREAM BY EACH SEGMENT, PRODUCT/SERVICE WITH CONSOLIDATED NUMBER
+    5. SUMMARIZE THE DETAIL OF REVENUE STREAM BY GEOGRAPHY, COUNTRY/REGION WITH CONSOLIDATED NUMBER
     </instructions>
 
     <note>
@@ -75,48 +77,6 @@ def llm_think_and_explain_revenue(symbol: str, filepath: pathlib.Path) -> str:
     </note>
     """
 
-    # prompt = f"""
-    # Revenue Analysis from 10-K Filing for {symbol}
-
-    # **Objective:**  
-    # Extract and summarize detailed information on the company's revenue streams from its 10-K filing. The summary is for investment insights and focuses solely on revenue figures without interpreting or calculating them.
-
-    # **Task Description:**  
-    # You are provided with the 10-K filing document for the company identified by {symbol}. Your goal is to analyze the document, understand the company's business segments, and compile a detailed summary of its revenue sources. Specifically, you must:
-
-    # 1. **Business Overview:**  
-    # - Identify and describe the business segments that contribute to the company's revenue.
-    # - Focus on understanding the context of the company's products and services.
-
-    # 2. **Revenue Identification:**  
-    # - Locate the total revenue figure of the company.
-    # - **IMPORTANT:** Only consider "REVENUE". **Do not include** any figures related to "OTHER INCOME", "NET ASSETS", "NET LOSSES", or "INTERSEGMENT REVENUE".
-
-    # 3. **Revenue Stream Breakdown:**  
-    # - Detail the revenue streams segmented by:
-    #     - Business segment
-    #     - Product or service category
-    #     - Country or geographic region
-    # - Clearly label and explain each revenue category along with its corresponding numerical value as stated in the document.
-
-    # 4. **Utilize Key Document Markers:**  
-    # - Pay special attention to any table that is preceded by the banner:  
-    #     **"THIS IS THE TABLE YOU ARE LOOKING FOR!"**  
-    #     This banner indicates a critical table likely containing the revenue figures you need.
-
-    # 5. **Reporting Requirements:**  
-    # - Explain every potential revenue table found.
-    # - Ensure that every significant number is included and accurately reported.
-    # - **Do not perform any mathematical calculations.** Your role is to extract and explain the numbers as presented in the document.
-
-    # **Context for Use:**  
-    # The information you compile will serve as a key resource for investors. It provides an in-depth understanding of the company’s revenue streams, which is critical for assessing business performance and making informed investment decisions.
-
-    # **Additional Notes:**  
-    # - Maintain focus on revenue-related data and disregard any unrelated financial numbers.
-    # - The summary must be comprehensive and free from ambiguity so that investors can confidently interpret the company’s business model.
-    # """
-   
     contents = [
         types.Part.from_bytes(
             data=filepath.read_bytes(),
@@ -139,51 +99,6 @@ def llm_think_and_explain_revenue(symbol: str, filepath: pathlib.Path) -> str:
 def llm_extraction_from_summarized(symbol: str, summarized: str) -> ExtractionResult:
     client = genai.Client(api_key=os.environ["RKET_GEMINI_API_KEY"])
 
-    # prompt = f"""
-    # <task>
-    # You are provided with a summarized 10-K filing document for {symbol}. Your goal is to extract every available and detailed revenue breakdown for the latest fiscal year mentioned in the document. Organize the extracted data into just 2 revenue tables according to the following categories:
-
-    # 1. Revenue by Source  
-    #    - Identify and extract the fully detailed breakdown of revenue by source. Include all details such as individual product names (e.g., "Product A", "Product B", "Brand C", "Service X", etc.), services, this must be atomized but not seperate financial activities in the segment.
-    #    - Not contain the up-level category to the item.
-    #    - Not contain the word "Revenue" or "Revenues" or "Net" in the item title.
-
-    # 2. Revenue by Geography  
-    #    - Extract the full breakdown of revenue by geographic regions. Include all details such as major regions, countries or even more localized geographic segments if available.
-
-    # The extracted data should be organized into the following schema:
-
-    # - ExtractionResult
-    #   - **revenue_tables**: A list of RevenueTable objects, each containing:
-    #     - **title**: A descriptive title for the table (e.g., "Revenue by Source")
-    #     - **perspective**: One of the following values from RevenuePerspective enum:
-    #       - REVENUE_BY_SOURCE: "Revenue by Source"
-    #       - REVENUE_BY_GEOGRAPHY: "Revenue by Geography"
-    #     - **items**: A list of RevenueDetailItem objects, each containing:
-    #       - **unit_title**: The specific revenue item title (product/service name or country/region)
-    #       - **amount**: The revenue amount in millions of dollars
-    #     - **total**: The overall total revenue for the table in millions of dollars
-
-    # **Important:** 
-    # - Ensure no available details are omitted
-    # - If the summarized text contains more granular breakdowns, include all such details accordingly
-    # - Focus solely on the latest fiscal year's data
-    # - All revenue amounts should be in millions of dollars
-    # </task>
-
-    # <response_format>
-    # json object
-    # </response_format>
-
-    # <note>
-    # Your extraction should include every available detail from the summarized text, breaking down revenue into as many specific categories and items as provided. Do not limit the number of categories or items—even if the summary sections group items broadly, refer to detailed breakdowns or supplemental figures if they exist.
-    # </note>
-
-    # <summarized-text>
-    # {summarized}
-    # </summarized-text>
-    # """
-
     prompt = f"""
     <task>
     You are a specialized financial data extraction expert focusing on 10-K filings. Your task is to analyze the provided summarized 10-K filing for {symbol} and extract comprehensive revenue breakdowns for the most recent fiscal year. Structure the data into 2 distinct revenue perspectives:
@@ -204,13 +119,32 @@ def llm_extraction_from_summarized(symbol: str, summarized: str) -> ExtractionRe
 
     2. Revenue by Geography
     Key Requirements:
-    - Extract all available geographic revenue allocations
-    - Include:
-        * Country-specific breakdowns where available
-        * Regional groupings as presented
-        * Sub-regional details if provided
-    - Maintain the company's original geographic classifications
+    - Extract geographic revenue allocations at the highest level of aggregation presented
+    - For each geographic category, use either:
+        * The highest-level regional grouping (e.g., "Non-U.S.", "Europe", "Asia")
+        OR
+        * Individual country breakdowns if no higher-level grouping exists
+    - Do not include both a parent category AND its constituent countries/regions
+    - Maintain the company's original primary geographic classifications
     - Standardize region names while preserving specific country mentions
+
+    Example of correct extraction:
+    If filing shows:
+    - United States: $1000M
+    - Non-U.S.: $2000M
+        - Canada: $500M
+        - UK: $800M
+        - Other: $700M
+
+    Should extract ONLY:
+    - United States: $1000M
+    - Non-U.S.: $2000M
+
+    NOT:
+    - United States: $1000M
+    - Non-U.S.: $2000M
+    - Canada: $500M
+    - UK: $800M
 
     Validation Rules:
     1. All amounts must:
@@ -259,11 +193,26 @@ def llm_extraction(symbol: str, filepath: pathlib.Path) -> ExtractionResult:
     You are provided with a 10-K filing document for {symbol}. Your goal is to extract every available and detailed revenue breakdown for the latest fiscal year mentioned in the document. Organize the extracted data into a maximum of 2 revenue tables according to the following perspectives:
 
     1. Revenue by Source  
-       - Identify and extract the full breakdown of revenue details by source. Look for all granular revenue lines and all revenue tables, such as individual product names (e.g., "Product A", "Product B", "Brand C", "Service X", etc.), services, and any subcategories provided in the filing.
-       - Ensure that if there are multiple levels of detail (e.g., categories and sub-items), every distinct revenue stream is captured.
+        - Identify and extract the full breakdown of revenue details by source. Look for all granular revenue lines and all revenue tables, such as individual product names (e.g., "Product A", "Product B", "Brand C", "Service X", etc.), services, and any subcategories provided in the filing.
+        - Ensure that if there are multiple levels of detail (e.g., categories and sub-items), every distinct revenue stream is captured.
 
     2. Revenue by Geography  
-       - Extract the full breakdown of revenue by geographic regions. Include all details such as major regions, countries or even more localized geographic segments if available.
+        - Extract the full breakdown of revenue by geographic regions at the highest level of categorization provided in the main summary.
+        - If the document presents both high-level categories (e.g., "U.S." and "Non-U.S.") and detailed country breakdowns, only include the highest level categories in your extraction.
+        - Do not mix different levels of geographic breakdowns in the same table. For example, if "Non-U.S." is provided as a total, do not include individual non-U.S. countries in the same table.
+
+    Example of correct geographic revenue extraction:
+    If the document shows:
+      - United States: $246,802
+      - Non-U.S.: $357,914
+        - Germany: $42,159
+        - Japan: $36,827
+        - Australia: $22,901
+        - Italy: $18,574
+
+    The extraction should only include:
+      - United States: $246,802
+      - Non-U.S.: $357,914
 
     The extracted data should be organized into the following schema:
 
@@ -316,6 +265,7 @@ def llm_extraction(symbol: str, filepath: pathlib.Path) -> ExtractionResult:
         ],
         config={
             'temperature': 0,
+            'top_p': 1,
             'response_mime_type': 'application/json',
             'response_schema': ExtractionResult,
         }
@@ -348,7 +298,7 @@ def main():
     #           'TXN', 'ADSK', 'SHW', 'CMG', 'LULU', 'SQ', 'PYPL', 'DOCU', 'MDB', 'DDOG', 'CRWD', 'ZM', 
     #           'HOOD', 'AAPL', 'MSFT', 'AMZN', 'GOOGL', 'TSLA', 'BRK.B', 'META', 'V', 'JPM', 'JNJ', 
     #           'WMT', 'PG', 'UNH', 'XOM']
-    symbols = ['XOM']
+    symbols = ['F']
     
     # Create output directory if it doesn't exist
     output_dir = pathlib.Path('outputs/revenues')
