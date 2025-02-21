@@ -27,6 +27,7 @@ async def download_filing(symbol: str):
         return
     
     console.print("[yellow]Downloading HTML content...[/yellow]")
+    console.print(f"[dim]URL: {filing.filing_url}[/dim]")
     html = filing.attachments[1].download()
     pdf_path = f"downloads/{symbol}_10-K.pdf"
 
@@ -98,7 +99,8 @@ def create_revenue_banner() -> str:
     Returns:
         str: HTML string for the banner
     """
-    return '<div style="background-color: red; color: yellow; padding: 4px; text-align: center; margin: 4px 0;">THIS IS THE TABLE YOU ARE LOOKING FOR!</div>'
+    title = "REVENUE RELEVANT TABLE"
+    return f'<div style="background-color: red; color: yellow; padding: 4px; text-align: center; margin: 4px 0;">{title}!</div>'
 
 def find_table_elements(html_content: str) -> str:
     """Find tables containing us-gaap elements with specific keywords using a monadic pipeline

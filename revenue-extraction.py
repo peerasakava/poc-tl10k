@@ -64,7 +64,7 @@ def llm_think_and_explain_revenue(symbol: str, filepath: pathlib.Path) -> str:
 
     <instructions>
     1. understand the business segment of the company
-    2. find and analyze the table that have a banner "THIS IS THE TABLE YOU ARE LOOKING FOR!", is it relevant to revenue or not? is it usable as a data source? [table by table]
+    2. find and analyze the table that have a banner "REVENUE RELEVANT TABLE", is it relevant to revenue or not? is it usable as a data source? [table by table]
     3. conclude the consolidated total revenue of the company from data source
     4. summarize the detail of revenue stream by each segment, product/service with consolidated number
         4.1 do it without any calculation
