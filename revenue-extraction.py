@@ -18,10 +18,11 @@ from pydantic import BaseModel, Field
 from rich import print as rprint
 from rich.console import Console
 from rich.panel import Panel
+from rich.pretty import Pretty
 
-class RevenuePerspective(Enum):
-    REVENUE_BY_SOURCE = "Revenue by Source"
-    REVENUE_BY_GEOGRAPHY = "Revenue by Geography"
+class RevenueDimension(Enum):
+    BY_SOURCE = "Revenue by Source"
+    BY_GEOGRAPHY = "Revenue by Geography"
 
 class RevenueDetailItem(BaseModel):
     unit_title: str = Field(..., description="Title of the business unit of the revenue item, product/service name or country/region")
@@ -33,7 +34,7 @@ class BusinessUnitCategory(BaseModel):
 
 class RevenueTable(BaseModel):
     title: str = Field(..., description="Title of the table")
-    perspective: RevenuePerspective = Field(..., description="Perspective of the table")
+    dimension: RevenueDimension = Field(..., description="Dimension of the revenue for this table")
     items: List[RevenueDetailItem] = Field(..., description="List of revenue items in the table")
     total: float = Field(..., description="Total amount of revenue in millions of dollars")
     
@@ -110,7 +111,7 @@ def llm_extraction_from_summarized(symbol: str, summarized: str) -> ExtractionRe
 
     prompt = f"""
     <task>
-    You are a specialized financial data extraction expert focusing on 10-K filings. Your task is to analyze the provided summarized 10-K filing for {symbol} and extract comprehensive revenue breakdowns for the most recent fiscal year. Structure the data into 2 distinct revenue perspectives:
+    You are a specialized financial data extraction expert focusing on 10-K filings. Your task is to analyze the provided summarized 10-K filing for {symbol} and extract comprehensive revenue breakdowns for the most recent fiscal year. Structure the data into 2 distinct revenue dimensions:
 
     1. Revenue by Source (Business Activities)
     Key Requirements:
@@ -163,18 +164,18 @@ def llm_extraction_from_summarized(symbol: str, summarized: str) -> ExtractionRe
 
     2. All amounts must:
     - Be converted to millions USD if presented differently
-    - Match the total revenue across both perspectives
+    - Match the total revenue across both dimensions
     - Be rounded to 2 decimal places
     - Be consolidated revenue
 
     3. Item names must be:
-    - Unique within each perspective
+    - Unique within each dimension
     - Free of redundant qualifiers
     - Consistent with original filing terminology
 
     4. Completeness checks:
     - Sum of items must equal the reported total
-    - Both perspectives must be attempted
+    - Both dimensions must be attempted
     - Missing data must be noted in metadata
 
     Error Handling:
@@ -205,14 +206,13 @@ def llm_extraction(symbol: str, filepath: pathlib.Path) -> ExtractionResult:
 
     prompt = f"""
     <task>
-    You are provided with a 10-K filing document for {symbol}. Your goal is to extract every available and detailed revenue breakdown for the latest fiscal year mentioned in the document. Organize the extracted data into a maximum of 2 revenue tables according to the following perspectives:
+    You are provided with a 10-K filing document for {symbol}. Your goal is to extract every available and detailed revenue breakdown for the latest fiscal year mentioned in the document. Organize the extracted data into a maximum of 2 revenue tables according to the following dimensions:
 
     1. Revenue by Source  
         - Identify and extract the full breakdown of revenue details by source. Look for all granular revenue lines and all revenue tables, such as individual product names (e.g., "Product A", "Product B", "Brand C", "Service X", etc.), services, and any subcategories provided in the filing.
         - Ensure that if there are multiple levels of detail (e.g., categories and sub-items), every distinct revenue stream is captured.
 
     2. Revenue by Geography  
-        - Extract the full breakdown of revenue by geographic regions at the highest level of categorization provided in the main summary.
         - If the document presents both high-level categories (e.g., "U.S." and "Non-U.S.") and detailed country breakdowns, only include the highest level categories in your extraction.
         - Do not mix different levels of geographic breakdowns in the same table. For example, if "Non-U.S." is provided as a total, do not include individual non-U.S. countries in the same table.
 
@@ -240,9 +240,9 @@ def llm_extraction(symbol: str, filepath: pathlib.Path) -> ExtractionResult:
 
       - **revenue_tables**: A list of RevenueTable objects, each containing:
         - **title**: A descriptive title for the table (e.g., "2024 Revenue by Source")
-        - **perspective**: One of the following values from RevenuePerspective enum:
-          - REVENUE_BY_SOURCE: "Revenue by Source"
-          - REVENUE_BY_GEOGRAPHY: "Revenue by Geography"
+        - **dimension**: One of the following values from RevenueDimension enum:
+          - BY_SOURCE: "Revenue by Source"
+          - BY_GEOGRAPHY: "Revenue by Geography"
         - **items**: A list of RevenueDetailItem objects, each containing:
           - **business_unit_id**: ID linking to the corresponding BusinessUnitCategory
           - **unit_title**: The specific revenue item title (product/service name or country/region)
@@ -308,52 +308,67 @@ def cost_estimate(usage_metadata: types.GenerateContentResponseUsageMetadata) ->
     return input_cost + output_cost
 
 def main():
-    # Get symbol input from user
     console = Console()
-    symbol = console.input("[bold blue]Enter stock symbol (e.g. AAPL): [/bold blue]").strip().upper()
     
     # Create output directory if it doesn't exist
     output_dir = pathlib.Path('outputs/revenues')
     output_dir.mkdir(parents=True, exist_ok=True)
     
-    if not symbol:
-        console.print("[bold red]Error:[/bold red] Symbol cannot be empty")
-        return
+    while True:
+        # Clear screen for better UX
+        console.clear()
+        console.print("[bold cyan]Revenue Extraction Tool[/bold cyan]", justify="center")
+        console.print("[dim]Press Ctrl+C to exit[/dim]", justify="center")
+        console.print("")
         
-    try:
-        rprint(f"\n[bold green]Processing symbol:[/bold green] [yellow]{symbol}[/yellow]")
+        # Get symbol input from user
+        symbol = console.input("[bold blue]Enter stock symbol (e.g. AAPL): [/bold blue]").strip().upper()
         
-        filepath = pathlib.Path(f'downloads/{symbol}_10-K.pdf')
-        if not filepath.exists():
-            rprint(f"[bold red]Error:[/bold red] PDF file not found for {symbol}")
-            return
+        if not symbol:
+            console.print("[bold red]Error:[/bold red] Symbol cannot be empty")
+            console.input("[dim]Press Enter to continue...[/dim]")
+            continue
             
-        summarized_text = llm_think_and_explain_revenue(symbol, filepath)
+        try:
+            rprint(f"\n[bold green]Processing symbol:[/bold green] [yellow]{symbol}[/yellow]")
+            
+            filepath = pathlib.Path(f'downloads/{symbol}_10-K.pdf')
+            if not filepath.exists():
+                rprint(f"[bold red]Error:[/bold red] PDF file not found for {symbol}")
+                console.input("[dim]Press Enter to continue...[/dim]")
+                continue
+                
+            summarized_text = llm_think_and_explain_revenue(symbol, filepath)
 
-        console = Console()
+            console.print(Panel.fit(
+                summarized_text,
+                title="[bold blue]Revenue Analysis Summary[/bold blue]",
+                border_style="blue",
+                padding=(1, 2)
+            ))
 
-        console.print(Panel.fit(
-            summarized_text,
-            title="[bold blue]Revenue Analysis Summary[/bold blue]",
-            border_style="blue",
-            padding=(1, 2)
-        ))
-
-        response = llm_extraction_from_summarized(symbol, summarized_text)
-        
-        # Print response in a beautiful format
-        console.print(response)
-        
-        # Save response to JSON file
-        output_file = output_dir / f"{symbol}-rev.json"
-        # # First get the JSON string
-        json_data = response.model_dump_json()
-        # # Then write it to file
-        with open(output_file, 'w') as f:
-            f.write(json_data)
-        
-    except Exception as e:
-        rprint(f"[bold red]Error processing {symbol}:[/bold red] {str(e)}")
+            response = llm_extraction_from_summarized(symbol, summarized_text)
+            
+            # Print response in a beautiful format using rich JSON formatting
+            console.print(Panel.fit(
+                Pretty(response.model_dump()),
+                title="[bold green]Extracted Revenue Data[/bold green]",
+                border_style="green",
+                padding=(1, 2)
+            ))
+            
+            # Save response to JSON file
+            output_file = output_dir / f"{symbol}-rev.json"
+            json_data = response.model_dump_json()
+            with open(output_file, 'w') as f:
+                f.write(json_data)
+            
+            console.print(f"\n[bold green]✓[/bold green] Data saved to: [blue]{output_file}[/blue]")
+            console.input("\n[dim]Press Enter to process another symbol...[/dim]")
+            
+        except Exception as e:
+            console.print(f"[bold red]Error processing {symbol}:[/bold red] {str(e)}")
+            console.input("[dim]Press Enter to continue...[/dim]")
     
 if __name__ == "__main__":
     main()
