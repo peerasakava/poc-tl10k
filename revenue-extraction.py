@@ -95,8 +95,8 @@ def llm_think_and_explain_revenue(symbol: str, filepath: pathlib.Path) -> str:
     ]
     
     response = client.models.generate_content(
-        # model="gemini-2.0-flash-001",
-        model="gemini-2.0-flash-thinking-exp-01-21",
+        model="gemini-2.0-flash-001",
+        # model="gemini-2.0-flash-thinking-exp-01-21",
         contents=contents,
         config={
             'temperature': 0,
