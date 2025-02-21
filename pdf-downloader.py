@@ -202,7 +202,7 @@ async def main():
         "CRWD",
         "ZM",
         "HOOD",
-        "F"
+        "F",
 
         # Large-Cap Symbols
         "AAPL",
@@ -218,10 +218,9 @@ async def main():
         "WMT",
         "PG",
         "UNH",
-        "XOM"
+        "XOM",
+        "KO"
     ]
-
-    # company_symbols = ["LULU"]
 
     console = Console()
     total = len(company_symbols)
