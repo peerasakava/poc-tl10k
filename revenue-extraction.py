@@ -63,27 +63,29 @@ def llm_think_and_explain_revenue(symbol: str, filepath: pathlib.Path) -> str:
     </context>
 
     <instructions>
-    1. UNDERSTAND THE BUSINESS SEGMENT OF THE COMPANY
-    2. FIND AND ANALYZE THE TABLE THAT HAVE A BANNER, IS IT RELEVANT TO REVENUE OR NOT? IS IT USABLE AS A DATA SOURCE? [TABLE BY TABLE]
-    3. CONCLUDE THE CONSOLIDATED TOTAL REVENUE OF THE COMPANY FROM DATA SOURCE
-    4. SUMMARIZE THE DETAIL OF REVENUE STREAM BY EACH SEGMENT, PRODUCT/SERVICE WITH CONSOLIDATED NUMBER
-        4.1 DO IT WITHOUT ANY CALCULATION
-        4.2 [IMPORTANT ⚠️] THIS PART MUST BE RELEVANT TO PRODUCT/SERVICE, BRAND AND OTHERS THAT GATHER REVENUE
-        4.3 JUST EXPLAIN THE NUMBER EXACTLY FROM SOURCE
-    5. SUMMARIZE THE DETAIL OF REVENUE STREAM BY GEOGRAPHY, COUNTRY/REGION WITH CONSOLIDATED NUMBER
-        5.1 DO IT WITHOUT ANY CALCULATION
-        5.2 JUST EXPLAIN THE NUMBER EXACTLY FROM SOURCE
-        5.3 [IMPORTANT ⚠️] THE DATA SOURCE MUST BE RELATED TO OVERALL REVENUE NOT JUST IN SOME PRODUCT/SERVICE OR SEGMENT
-        5.4 IF NOT FOUND, SKIP TO THE NEXT STEP
-    6. CREATE THE MARKDWON TABLE OF REVENUE BY SOURCE AND REVENUE BY GEOGRAPHY BASED ON THE ABOVE SUMMARY
-        6.1 [IMPORTANT ⚠️] SUBTOTAL OF THE REVENUE BY SOURCE AND REVENUE BY GEOGRAPHY SHOULD NOT BE INCLUDED
-        6.2 SPLIT THE REVENUE BY SOURCE AND REVENUE BY GEOGRAPHY ACCORDING TO THE TABLE
-        6.3 LAST ROW OF THE TABLE MUST BE THE TOTAL OF REVENUE
-          6.3.1 [IMPORTANT ⚠️] IF THE TOTAL OF TABLE IS NOT MATCH THE TOTAL REVENUE OF LATEST YEAR, THAT MEANS THE DATA SOURCE IS NOT RELATED TO OVERALL REVENUE, SKIP IT.
+    1. understand the business segment of the company
+    2. find and analyze the table that have a banner "THIS IS THE TABLE YOU ARE LOOKING FOR!", is it relevant to revenue or not? is it usable as a data source? [table by table]
+    3. conclude the consolidated total revenue of the company from data source
+    4. summarize the detail of revenue stream by each segment, product/service with consolidated number
+        4.1 do it without any calculation
+        4.2 [important ⚠️] this part must be relevant to product/service, brand and others that gather revenue
+        4.3 just explain the number exactly from source
+            4.3.1 breakdown the level of segment, product/service and brand like what are the subtotal or what are the detail
+    5. summarize the detail of revenue stream by geography, country/region with consolidated number
+        5.1 do it without any calculation
+        5.2 just explain the number exactly from source
+        5.3 [important ⚠️] the data source must be related to overall revenue not just in some product/service or segment
+        5.4 if not found, skip to the next step
+    6. create the markdwon table of revenue by source and revenue by geography based on the above summary
+        6.1 [important ⚠️] subtotal of the revenue by source and revenue by geography should not be included
+        6.2 split the revenue by source and revenue by geography according to the table
+        6.3 [important ⚠️] the title of row in the table must add "(subtotal)" or "(total)" if it applies
+        6.4 last row of the table must be the total of revenue
+            6.4.1 [important ⚠️] if the total of table is not match the total revenue of latest year, that means the data source is not related to overall revenue, skip it.
+        6.5 bottom of each table must be add the flag "usable" or "not usable" to indicate if the table is relevant to revenue
     </instructions>
 
     <note>
-    - Pay special attention to the page that contains banner "THIS IS THE TABLE YOU ARE LOOKING FOR!". It will help you to find the table easily because we added a banner above table that have potential to be revenue table.
     - Explain all the potential revenue table 
     - Do not skip any significant number
     - DO NOT calculate any number. Just explain the number.
@@ -98,14 +100,17 @@ def llm_think_and_explain_revenue(symbol: str, filepath: pathlib.Path) -> str:
         prompt
     ]
     
+    generation_config = {
+        "temperature": 0,
+        "top_p": 0.95,
+        "response_mime_type": "text/plain",
+    }
+
     response = client.models.generate_content(
-        model="gemini-2.0-flash-001",
-        # model="gemini-2.0-flash-thinking-exp-01-21",
+        # model="gemini-2.0-flash-001",
+        model="gemini-2.0-flash-thinking-exp-01-21",
         contents=contents,
-        config={
-            'temperature': 0,
-            'top_p': 1
-        }
+        config=generation_config
     )
     
     return response.text
@@ -126,6 +131,7 @@ def llm_extraction_from_summarized(symbol: str, summarized: str) -> ExtractionRe
         * Financial segment breakdowns (these belong in segment reporting)
         * Terms like "Revenue(s)" or "Net" in item names
         * Non-revenue items like operating income or profit
+        * Subtotal rows
     - Standardize item names:
         * Remove redundant prefixes/suffixes
         * Maintain specific branding/product names as stated
@@ -134,6 +140,9 @@ def llm_extraction_from_summarized(symbol: str, summarized: str) -> ExtractionRe
     2. Revenue by Geography
     Key Requirements:
     - Extract geographic revenue allocations at the highest level of aggregation presented
+    - Exclude:
+        * Parent/umbrella categories when child items are available
+        * Subtotal rows
     - For each geographic category, use either:
         * The highest-level regional grouping (e.g., "Non-U.S.", "Europe", "Asia")
         OR
@@ -260,6 +269,10 @@ def llm_extraction(symbol: str, filepath: pathlib.Path) -> ExtractionResult:
     - All revenue amounts should be in millions of dollars
     </task>
 
+    <important>
+    - Return only the table that have total match to the total revenue of the summarized text
+    </important>
+
     <response_format>
     json object
     </response_format>
@@ -318,6 +331,7 @@ def main():
     output_dir = pathlib.Path('outputs/revenues')
     output_dir.mkdir(parents=True, exist_ok=True)
     
+    symbol = None
     while True:
         # Clear screen for better UX
         console.clear()
@@ -325,13 +339,14 @@ def main():
         console.print("[dim]Press Ctrl+C to exit[/dim]", justify="center")
         console.print("")
         
-        # Get symbol input from user
-        symbol = console.input("[bold blue]Enter stock symbol (e.g. AAPL): [/bold blue]").strip().upper()
-        
-        if not symbol:
-            console.print("[bold red]Error:[/bold red] Symbol cannot be empty")
-            console.input("[dim]Press Enter to continue...[/dim]")
-            continue
+        # Get symbol input from user if not repeating
+        if symbol is None:
+            symbol = console.input("[bold blue]Enter stock symbol (e.g. AAPL): [/bold blue]").strip().upper()
+            
+            if not symbol:
+                console.print("[bold red]Error:[/bold red] Symbol cannot be empty")
+                console.input("[dim]Press Enter to continue...[/dim]")
+                continue
             
         try:
             rprint(f"\n[bold green]Processing symbol:[/bold green] [yellow]{symbol}[/yellow]")
@@ -371,6 +386,7 @@ def main():
             choice = console.input("\n[dim]Press [bold]\"Enter\"[/bold] for new stock or [bold]\"r\"[/bold] to repeat the same company: [/dim]").strip().lower()
             if choice == 'r':
                 continue
+            symbol = None
             
         except Exception as e:
             console.print(f"[bold red]Error processing {symbol}:[/bold red] {str(e)}")
